@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Snowy Christmas Miracle — Look Inside | Melon Glow Books</title>
+<style>
+  :root{
+    --navy:#0d1b33;
+    --navy-deep:#081222;
+    --cream:#f5efe0;
+    --cream-dim:#cbc4b2;
+    --gold:#d4af6a;
+    --gold-soft:#e9d3a3;
+  }
+  *{box-sizing:border-box;}
+  html{ scroll-snap-type:y proximity; }
+  body{
+    margin:0;
+    background:var(--navy);
+    color:var(--cream);
+    font-family:'Georgia', 'Iowan Old Style', serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .eyebrow{
+    font-family:'Trebuchet MS', 'Segoe UI', sans-serif;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    font-size:clamp(.85rem, 1.1vw, 1.05rem);
+    color:var(--gold);
+    font-weight:700;
+  }
+
+  .intro-section{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:60px 24px;
+    scroll-snap-align:start;
+  }
+
+  h1{
+    font-size:clamp(2.4rem, 5.5vw, 5rem);
+    line-height:1.08;
+    margin:.3em 0 .3em;
+    color:var(--cream);
+    font-weight:400;
+  }
+  h1 em{ font-style:italic; color:var(--gold-soft); }
+  .pitch{
+    font-family:'Trebuchet MS', 'Segoe UI', sans-serif;
+    font-style:italic;
+    color:var(--gold-soft);
+    font-size:clamp(1.15rem, 1.7vw, 1.55rem);
+    max-width:760px;
+    margin:0 auto 1.6em;
+    line-height:1.55;
+  }
+  .tagline{
+    font-family:'Trebuchet MS', 'Segoe UI', sans-serif;
+    color:var(--cream-dim);
+    font-size:clamp(1.15rem, 1.7vw, 1.55rem);
+    max-width:800px;
+    margin:0 auto 1.1em;
+    line-height:1.7;
+  }
+  .tagline:last-of-type{ margin-bottom:0; }
+  .scroll-hint{
+    margin-top:44px;
+    font-family:'Trebuchet MS','Segoe UI',sans-serif;
+    font-size:.78rem;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--gold);
+    opacity:.8;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:8px;
+  }
+  .scroll-hint span{
+    width:1px;
+    height:34px;
+    background:linear-gradient(var(--gold), transparent);
+    animation:pulse 1.8s ease-in-out infinite;
+  }
+  @keyframes pulse{
+    0%,100%{ opacity:.3; }
+    50%{ opacity:1; }
+  }
+
+  .page-progress{
+    position:fixed;
+    top:20px;
+    right:20px;
+    font-family:'Trebuchet MS','Segoe UI',sans-serif;
+    font-size:.75rem;
+    letter-spacing:.06em;
+    color:var(--cream-dim);
+    background:rgba(13,27,51,.72);
+    border:1px solid rgba(212,175,106,.3);
+    padding:6px 12px;
+    border-radius:20px;
+    z-index:10;
+    opacity:0;
+    transition:opacity .3s ease;
+  }
+  .page-progress.visible{ opacity:1; }
+
+  .page-section{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px 10px;
+    scroll-snap-align:start;
+  }
+  .page-section img{
+    max-width:98vw;
+    max-height:98vh;
+    height:98vh;
+    width:auto;
+    display:block;
+    border-radius:6px;
+    box-shadow:0 40px 80px -24px rgba(0,0,0,.65), 0 0 0 1px rgba(212,175,106,.2);
+  }
+
+  .video-block{
+    max-width:640px;
+    margin:0 auto;
+    padding:60px 24px 0;
+    text-align:center;
+    scroll-snap-align:start;
+  }
+  .video-label{
+    font-family:'Trebuchet MS','Segoe UI',sans-serif;
+    font-size:.78rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--gold);
+    margin-bottom:14px;
+  }
+  .video-block video{
+    width:100%;
+    border-radius:8px;
+    box-shadow:0 24px 60px -16px rgba(0,0,0,.6);
+    display:block;
+  }
+  .video-caption{
+    margin-top:14px;
+    font-family:'Trebuchet MS','Segoe UI',sans-serif;
+    font-size:.9rem;
+    color:var(--cream-dim);
+  }
+
+  .cta{
+    max-width:720px;
+    margin:0 auto;
+    text-align:center;
+    padding:80px 28px 70px;
+    border-top:1px solid rgba(212,175,106,.25);
+    scroll-snap-align:start;
+  }
+  .btn-row{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+  .btn{
+    font-family:'Trebuchet MS','Segoe UI',sans-serif;
+    font-weight:700;
+    letter-spacing:.03em;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:3px;
+    font-size:.92rem;
+    display:inline-block;
+  }
+  .btn-primary{ background:var(--gold); color:var(--navy-deep); }
+  .btn-secondary{ border:1px solid var(--gold); color:var(--gold-soft); }
+
+  footer{
+    text-align:center;
+    padding:32px 24px 50px;
+    color:var(--cream-dim);
+    font-family:'Trebuchet MS','Segoe UI',sans-serif;
+    font-size:.85rem;
+  }
+  footer a{ color:var(--gold-soft); }
+</style>
+</head>
+<body>
+
+<div class="page-progress" id="pageProgress">Page 1 of 9</div>
+
+<section class="intro-section">
+  <span class="eyebrow">Pepper the Dog's Holiday Adventure</span>
+  <h1>A Snowy <em>Christmas Miracle</em></h1>
+  <p class="pitch">A cozy bedtime story about a little puppy's first snowfall — and the Christmas miracle that brought her home.</p>
+  <p class="tagline">Curled up by the fire while her family trims the tree, Pepper spots something magical through the window: snow, falling for the very first time.</p>
+  <p class="tagline">Before anyone notices, she slips out into the cold, sparkling night to see it up close. What she finds out there is a story every family will want to read together, year after year.</p>
+  <p class="tagline">Perfect for children ages 3 to 6, this warm holiday tale about wonder, mishaps, and finding your way home is a treasured addition to any Christmas Eve tradition.</p>
+  <div class="scroll-hint"><span></span>Scroll to look inside</div>
+</section>
+
+<section class="page-section cover-section"><img src="cover-snowy-christmas-miracle.jpg" alt="A Snowy Christmas Miracle book cover"></section>
+
+<section class="page-section" data-page="1"><img src="snowy-christmas-miracle-page1.jpg" alt="Page 1"></section>
+<section class="page-section" data-page="2"><img src="snowy-christmas-miracle-page2.jpg" alt="Page 2"></section>
+<section class="page-section" data-page="3"><img src="snowy-christmas-miracle-page3.jpg" alt="Page 3"></section>
+<section class="page-section" data-page="4"><img src="snowy-christmas-miracle-page4.jpg" alt="Page 4"></section>
+<section class="page-section" data-page="5"><img src="snowy-christmas-miracle-page5.jpg" alt="Page 5"></section>
+<section class="page-section" data-page="6"><img src="snowy-christmas-miracle-page6.jpg" alt="Page 6"></section>
+<section class="page-section" data-page="7"><img src="snowy-christmas-miracle-page7.jpg" alt="Page 7"></section>
+<section class="page-section" data-page="8"><img src="snowy-christmas-miracle-page8.jpg" alt="Page 8"></section>
+<section class="page-section" data-page="9"><img src="snowy-christmas-miracle-page9.jpg" alt="Page 9"></section>
+
+<section class="page-section"><img src="pepper-series-grid-8titles.jpg" alt="Pepper's World Keeps Growing — the eight-book series"></section>
+
+<div class="cta">
+  <div class="btn-row">
+    <a class="btn btn-primary" href="https://melonglowbooks.com/pepper-sales-sheet.pdf">Sales Sheet</a>
+    <a class="btn btn-secondary" href="https://melonglowbooks.com/wholesale-order.html">Request the Order Sheet</a>
+  </div>
+</div>
+
+<footer>
+  Melon Glow Books &middot; Santa Rosa, CA &middot; <a href="mailto:support@melonglowbooks.com">support@melonglowbooks.com</a>
+</footer>
+
+<script>
+(function(){
+  var total = 9;
+  var progress = document.getElementById('pageProgress');
+
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting && entry.target.dataset.page){
+        progress.textContent = 'Page ' + entry.target.dataset.page + ' of ' + total;
+        progress.classList.add('visible');
+      }
+    });
+  }, {threshold:0.55});
+
+  document.querySelectorAll('.page-section[data-page]').forEach(function(s){ observer.observe(s); });
+
+  var introObserver = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting){
+        progress.classList.remove('visible');
+      }
+    });
+  }, {threshold:0.4});
+  introObserver.observe(document.querySelector('.intro-section'));
+  introObserver.observe(document.querySelector('.cover-section'));
+  introObserver.observe(document.querySelectorAll('.page-section')[document.querySelectorAll('.page-section').length - 1]);
+})();
+</script>
+
+</body>
+</html>

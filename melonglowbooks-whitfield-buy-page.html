@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="p:domain_verify" content="948c2d9817219fff61d01d39e4835ea7"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. James Whitfield — Melon Glow Books</title>
+<meta name="description" content="Plain-English health guides for patients, caregivers, and nurses, by reconstructive foot surgeon Dr. James Whitfield.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1B2440;
+    --cream:#FBF6EC;
+    --gold:#C9A227;
+    --teal:#5E9690;
+    --slate:#5B6478;
+    --rust:#8C4A3C;
+    --card:#FFFFFF;
+    --line: rgba(27,36,64,0.12);
+    --maxw: 1120px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
+
+  a:focus-visible, button:focus-visible{
+    outline:3px solid var(--gold);
+    outline-offset:3px;
+  }
+
+  @media (prefers-reduced-motion: no-preference){
+    .reveal{
+      opacity:0;
+      transform:translateY(14px);
+      transition:opacity .7s ease, transform .7s ease;
+    }
+    .reveal.in{opacity:1; transform:none;}
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky; top:0; z-index:40;
+    background:rgba(251,246,236,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    max-width:var(--maxw); margin:0 auto; padding:16px 28px;
+    display:flex; align-items:center; justify-content:space-between;
+    flex-wrap:wrap; gap:10px;
+  }
+  .brand{
+    display:flex; align-items:center; gap:10px;
+    font-family:'Lora', serif; font-weight:600; font-size:1.05rem;
+    letter-spacing:.01em;
+  }
+  .brand .mark{
+    width:30px; height:30px; border-radius:50%;
+    background:var(--ink);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .brand .mark svg{width:16px; height:16px;}
+  .nav-links{display:flex; gap:22px; font-size:.92rem; font-weight:500; align-items:center; flex-wrap:wrap;}
+  .nav-links a{text-decoration:none; color:var(--slate);}
+  .nav-links a:hover{color:var(--ink);}
+  .nav-links a.pill{ background:var(--ink); color:#FBF6EC; padding:9px 18px; border-radius:20px; font-weight:600; }
+  .nav-links a.pill:hover{ background:var(--rust); color:#fff; }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;
+    background:var(--ink);
+    color:var(--cream);
+    overflow:hidden;
+    padding:96px 0 84px;
+  }
+  .crack-svg{
+    position:absolute; inset:0; width:100%; height:100%;
+    opacity:.55;
+    pointer-events:none;
+  }
+  .hero-inner{
+    position:relative; z-index:2;
+    max-width:var(--maxw); margin:0 auto; padding:0 28px;
+    display:grid; grid-template-columns:1.3fr 1fr; gap:48px; align-items:end;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    text-transform:uppercase; letter-spacing:.14em;
+    font-size:.72rem; color:var(--gold);
+    margin:0 0 18px;
+  }
+  h1{
+    font-family:'Lora', serif; font-weight:700;
+    font-size:clamp(2.3rem, 4.4vw, 3.6rem);
+    line-height:1.08; margin:0 0 20px;
+    max-width:14ch;
+  }
+  .hero p.lede{
+    font-size:1.08rem; line-height:1.6; color:#D8DCEA;
+    max-width:46ch; margin:0 0 28px;
+  }
+  .quote-card{
+    border-left:3px solid var(--gold);
+    padding:6px 0 6px 20px;
+    font-family:'Lora', serif; font-style:italic;
+    font-size:1.05rem; line-height:1.55; color:#EDE7D6;
+  }
+  .quote-card cite{
+    display:block; margin-top:10px; font-style:normal;
+    font-family:'Inter',sans-serif; font-size:.82rem;
+    color:var(--gold); font-weight:600; letter-spacing:.02em;
+  }
+  .hero-cta{
+    display:inline-flex; align-items:center; gap:10px;
+    margin-top:30px;
+    background:var(--gold); color:var(--ink);
+    font-weight:600; font-size:.95rem;
+    padding:13px 22px; border-radius:3px;
+    text-decoration:none;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .hero-cta:hover{transform:translateY(-2px); box-shadow:0 10px 24px rgba(0,0,0,.25);}
+
+  /* ---------- About strip ---------- */
+  .about{
+    padding:56px 0; border-bottom:1px solid var(--line);
+  }
+  .about-grid{
+    display:grid; grid-template-columns:120px 1fr; gap:28px; align-items:start;
+  }
+  .about-grid .label{
+    font-family:'IBM Plex Mono', monospace; font-size:.72rem;
+    text-transform:uppercase; letter-spacing:.12em; color:var(--rust);
+    padding-top:6px;
+  }
+  .about-grid p{
+    font-size:1.02rem; line-height:1.7; color:var(--slate); margin:0 0 14px;
+    max-width:62ch;
+  }
+  .about-grid p:last-child{margin-bottom:0;}
+
+  /* ---------- Books section ---------- */
+  .books{padding:72px 0 96px;}
+  .section-head{
+    display:flex; align-items:baseline; justify-content:space-between;
+    margin-bottom:40px; gap:20px; flex-wrap:wrap;
+  }
+  .section-head h2{
+    font-family:'Lora', serif; font-weight:700; font-size:1.9rem; margin:0;
+  }
+  .section-head .count{
+    font-family:'IBM Plex Mono', monospace; font-size:.78rem; color:var(--slate);
+  }
+
+  .book-grid{
+    display:grid; grid-template-columns:repeat(2, 1fr); gap:26px;
+  }
+  @media (max-width: 760px){ .book-grid{grid-template-columns:1fr;} }
+
+  .book-card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:6px;
+    overflow:hidden;
+    display:flex; flex-direction:column;
+  }
+  .book-cover{
+    position:relative;
+    height:180px;
+    display:flex; align-items:center; justify-content:center;
+    background: linear-gradient(155deg, var(--bcA, #1B2440), var(--bcB, #2c3a66));
+    overflow:hidden;
+  }
+  .book-cover.has-image{
+    height:320px;
+    background:#0e1424;
+  }
+  .book-cover img.cover-img{
+    position:absolute; inset:0; z-index:1;
+    width:100%; height:100%;
+    object-fit:cover; object-position:top center;
+  }
+  .book-cover svg.crack{
+    position:absolute; inset:0; width:100%; height:100%; opacity:.5;
+  }
+  .book-cover .spine-title{
+    position:relative; z-index:2;
+    color:#F4EFE2;
+    font-family:'Lora', serif; font-weight:600; font-style:italic;
+    font-size:1.15rem; text-align:center; padding:0 28px; line-height:1.35;
+  }
+  .book-body{
+    padding:22px 24px 24px;
+    display:flex; flex-direction:column; gap:10px; flex:1;
+  }
+  .book-body h3{
+    font-family:'Lora', serif; font-weight:700; font-size:1.18rem; margin:0;
+    line-height:1.3;
+  }
+  .book-body .subtitle{
+    font-size:.86rem; color:var(--slate); font-style:italic; margin:0;
+  }
+  .book-body .desc{
+    font-size:.92rem; line-height:1.55; color:var(--slate); margin:6px 0 4px;
+    flex:1;
+  }
+  .meta-row{
+    display:flex; gap:8px; flex-wrap:wrap; margin:4px 0 6px;
+  }
+  .chip{
+    font-family:'IBM Plex Mono', monospace; font-size:.68rem;
+    letter-spacing:.03em;
+    border:1px solid var(--line); border-radius:20px;
+    padding:4px 10px; color:var(--slate); background:#FAFAF7;
+  }
+  .buy-row{
+    display:flex; gap:10px; margin-top:8px; flex-wrap:wrap;
+  }
+  .buy-btn{
+    flex:1; min-width:140px;
+    text-align:center;
+    font-size:.86rem; font-weight:600;
+    padding:11px 14px; border-radius:4px;
+    text-decoration:none;
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .buy-btn.primary{ background:var(--ink); color:#fff; }
+  .buy-btn.primary:hover{transform:translateY(-1px); box-shadow:0 8px 18px rgba(27,36,64,.25);}
+  .buy-btn.secondary{ background:transparent; color:var(--ink); border:1px solid var(--ink); }
+  .buy-btn.secondary:hover{background:var(--ink); color:#fff;}
+  .buy-btn.ebook{
+    display:block; width:100%;
+    text-align:center; font-size:.86rem; font-weight:600;
+    padding:11px 14px; border-radius:4px;
+    text-decoration:none; margin-top:4px;
+    background:transparent; color:var(--teal); border:1px solid var(--teal);
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .buy-btn.ebook:hover{background:var(--teal); color:#fff;}
+  .buy-btn.direct{
+    display:block; width:100%;
+    text-align:center; font-size:.86rem; font-weight:700;
+    padding:11px 14px; border-radius:4px;
+    text-decoration:none; margin-top:8px;
+    background:var(--gold); color:var(--ink); border:1px solid var(--gold);
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .buy-btn.direct:hover{transform:translateY(-1px); box-shadow:0 8px 18px rgba(201,162,39,.35);}
+  .avail-note{
+    font-size:.74rem; color:var(--slate); margin-top:2px;
+  }
+  .avail-note.direct-note{
+    color:var(--rust); font-weight:600;
+  }
+
+  /* ---------- Trust strip ---------- */
+  .trust{
+    background:#F1EADA; border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+    padding:40px 0;
+  }
+  .trust .wrap{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:24px;
+  }
+  @media (max-width:760px){ .trust .wrap{grid-template-columns:1fr;} }
+  .trust-item{font-size:.92rem; color:var(--ink); line-height:1.5;}
+  .trust-item .num{
+    font-family:'Lora', serif; font-weight:700; font-size:1.5rem;
+    color:var(--rust); display:block; margin-bottom:6px;
+  }
+
+  /* ---------- Footer ---------- */
+  footer{padding:48px 0 60px;}
+  .footer-grid{
+    display:flex; justify-content:space-between; align-items:flex-start;
+    flex-wrap:wrap; gap:24px;
+    border-top:1px solid var(--line); padding-top:32px;
+  }
+  .footer-brand{font-family:'Lora', serif; font-weight:600; font-size:1rem;}
+  .footer-links{display:flex; gap:22px; font-size:.86rem; flex-wrap:wrap;}
+  .footer-links a{text-decoration:none; color:var(--slate);}
+  .footer-links a:hover{color:var(--ink);}
+  .copyright{font-size:.78rem; color:var(--slate); margin-top:24px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <span class="mark">
+        <img src="logo.png" alt="" width="30" height="30" style="border-radius:50%;">
+      </span>
+      Dr. James Whitfield
+    </div>
+    <nav class="nav-links">
+      <a href="home.html" class="pill">← Melon Glow Books Home</a>
+      <a href="pepper-the-dog.html">Pepper the Dog</a>
+      <a href="#books">Books</a>
+      <a href="#guides">Guides &amp; Workbooks</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <svg class="crack-svg" viewBox="0 0 1200 500" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 360 L210 340 L260 300 L300 330 L420 250 L460 270 L600 180 L650 210 L820 120 L900 150 L1200 60"
+          stroke="#C9A227" stroke-width="1.4" fill="none" opacity="0.6"/>
+    <path d="M260 300 L290 250 M300 330 L330 380 M460 270 L490 230 M650 210 L640 160 M900 150 L940 110"
+          stroke="#C9A227" stroke-width="1" fill="none" opacity="0.4"/>
+  </svg>
+  <div class="hero-inner">
+    <div>
+      <p class="eyebrow">Plain-English Health Guides</p>
+      <h1>Care that protects the parts of you that can't repair themselves.</h1>
+      <p class="lede">Dr. James Whitfield draws on nearly 30 years of reconstructive foot surgery to write health guides patients, caregivers, and nurses can actually use — clear language, daily logs, and the warnings that matter.</p>
+      <a class="hero-cta" href="#books">
+        See the books
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+    <div class="quote-card">
+      "Your foot is not indestructible. Treat it like the glass it is."
+      <cite>— Dr. James Whitfield, The Glass Foot</cite>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid reveal">
+    <div class="label">About</div>
+    <div>
+      <p>Dr. James Whitfield is a reconstructive foot surgeon writing for the people he used to see too late — patients managing diabetes, the caregivers watching over them, and the nurses charting it all in between.</p>
+      <p>Each book pairs a short, plain-English explanation of what's actually happening in the body with practical daily tools: inspection checklists, symptom logs, and the specific red flags that mean "call your doctor today."</p>
+    </div>
+  </div>
+</section>
+
+<section class="books" id="books">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>The Books</h2>
+      <span class="count">7 titles · paperback, hardcover &amp; ebook</span>
+    </div>
+
+    <div class="book-grid">
+
+      <!-- 1. My Feet Are Killin' Me! -->
+      <article class="book-card reveal" id="my-feet-are-killin-me">
+        <div class="book-cover has-image" style="--bcA:#8C4A3C; --bcB:#B06A52;">
+          <img class="cover-img" src="cover-my-feet-are-killin-me.jpg" alt="My Feet Are Killin' Me! cover">
+        </div>
+        <div class="book-body">
+          <h3>My Feet Are Killin' Me!</h3>
+          <p class="subtitle">A Surgeon's Field Manual for Feet That Never Get a Day Off</p>
+          <p class="desc">Stop the pain, escape the "foot coffin," and reclaim your life. Dr. Whitfield's Tripod Principle unlocks why the modern shoe systematically dismantles your foot's natural architecture — and the step-by-step field manual to diagnose, repair, and maintain it.</p>
+          <div class="meta-row">
+            <span class="chip">Paperback</span>
+            <span class="chip">Hardcover</span>
+          </div>
+          <div class="buy-row">
+            <a class="buy-btn primary" href="https://shop.ingramspark.com/b/084?params=UsIXO5HzcbGlZtUnOJHPjVhgS62e1UlbkPTPJWcGQNX" target="_blank" rel="noopener">Buy Hardcover — $27.99</a>
+            <a class="buy-btn secondary" href="https://www.amazon.com/dp/B0H8M6JR1M" target="_blank" rel="noopener">Buy Paperback — $16.99</a>
+          </div>
+          <a class="buy-btn direct" href="mailto:Support@melonglowbooks.com?subject=Bulk%2FDirect%20Order%20-%20My%20Feet%20Are%20Killin%27%20Me&body=Hi%20Melon%20Glow%20Books%2C%0A%0AI'd%20like%20to%20order%20directly%20%2F%20in%20bulk%3A%0A%0ATitle%3A%20My%20Feet%20Are%20Killin%27%20Me%21%0AQuantity%3A%20%0AShipping%20address%3A%20%0A%0AThanks!">Bulk Orders (10+ copies)</a>
+          <p class="avail-note direct-note">Bulk pricing: 10+ copies 20% off &middot; 50+ copies 35% off</p>
+          <p class="avail-note">Available now in paperback &amp; hardcover. Hardcover ISBN: 979-8-9969954-7-9. Also available through libraries &amp; independent bookstores worldwide via IngramSpark.</p>
+        </div>
+      </article>
+
+      <!-- 2. Morning Heel Pain No More -->
+      <article class="book-card reveal" id="morning-heel-pain-no-more">
+        <div class="book-cover has-image" style="--bcA:#6B3636; --bcB:#8C4A3C;">
+          <img class="cover-img" src="cover-morning-heel-pain.jpg" alt="Morning Heel Pain No More cover">
+        </div>
+        <div class="book-body">
+          <h3>Morning Heel Pain No More</h3>
+          <p class="subtitle">Why Your First Steps Hurt the Most — And What To Do About It</p>
+          <p class="desc">A doctor-written 10-minute daily relief routine, the best stretches, self-massage &amp; ice techniques, and a full 30-day tracker to monitor your progress — plus the real reason mornings hurt most, and the cowboy boot trick for fast first-step relief.</p>
+          <div class="meta-row">
+            <span class="chip">Paperback — $15.99</span>
+            <span class="chip">Digital PDF — $9.99</span>
+          </div>
+          <div class="buy-row">
+            <a class="buy-btn primary" href="https://www.amazon.com/dp/B0H93KWKHR" target="_blank" rel="noopener">Buy Paperback — $15.99</a>
+          </div>
+          <a class="buy-btn direct" href="mailto:Support@melonglowbooks.com?subject=Bulk%2FDirect%20Order%20-%20Morning%20Heel%20Pain%20No%20More&body=Hi%20Melon%20Glow%20Books%2C%0A%0AI'd%20like%20to%20order%20directly%20%2F%20in%20bulk%3A%0A%0ATitle%3A%20Morning%20Heel%20Pain%20No%20More%0AQuantity%3A%20%0AShipping%20address%3A%20%0A%0AThanks!">Buy Direct / Bulk from Melon Glow Books</a>
+          <p class="avail-note direct-note">Bulk pricing: 10+ copies 20% off &middot; 50+ copies 35% off</p>
+          <p class="avail-note">Available now in paperback (ISBN 979-8-9969954-8-6) and as an instant digital PDF download.</p>
+        </div>
+      </article>
+
+      <!-- 3. Diabetic Foot Care Handbook & Journal -->
+      <article class="book-card reveal" id="handbook-journal">
+        <div class="book-cover has-image" style="--bcA:#16203C; --bcB:#2B3E68;">
+          <img class="cover-img" src="cover-diabetic-handbook.jpg" alt="Diabetic Foot Care Handbook & Journal cover">
+        </div>
+        <div class="book-body">
+          <h3>Diabetic Foot Care Handbook &amp; Journal</h3>
+          <p class="subtitle">A Guide for Patients, Caregivers &amp; Nurses</p>
+          <p class="desc">Why diabetic feet are uniquely fragile, the daily inspection routine that prevents amputations, and red flags that need same-day attention — plus 7 daily log pages.</p>
+          <div class="meta-row">
+            <span class="chip">Paperback</span>
+            <span class="chip">Hardcover</span>
+          </div>
+          <div class="buy-row">
+            <a class="buy-btn primary" href="https://shop.ingramspark.com/b/084?params=Pqpq8ViUNKVoXcUvuUSvwsTzHLa6xAMDmAt7fNVPoma" target="_blank" rel="noopener">Buy Hardcover Direct — $21.99</a>
+            <a class="buy-btn secondary" href="https://shop.ingramspark.com/b/084?params=qizrtKNDB15Q9CiHAFbdC5bzmUO7ry5URtIdj212pYK" target="_blank" rel="noopener">Buy Paperback Direct — $14.99</a>
+          </div>
+          <p class="avail-note">Available exclusively through IngramSpark — not sold on Amazon or Kindle. Also available through libraries &amp; independent bookstores worldwide.</p>
+          <a class="buy-btn ebook" href="diabetic-foot-care-handbook-preview.html" target="_blank" rel="noopener">View Digital Review Copy →</a>
+        </div>
+      </article>
+
+      <!-- 2. Foot Health Journal & Pain Tracker -->
+      <article class="book-card reveal" id="foot-health-journal">
+        <div class="book-cover has-image" style="--bcA:#243A4A; --bcB:#3E6271;">
+          <img class="cover-img" src="cover-foot-health-journal.jpg" alt="Foot Health Journal & Pain Tracker cover">
+        </div>
+        <div class="book-body">
+          <h3>Foot Health Journal &amp; Pain Tracker</h3>
+          <p class="subtitle">Daily tracking for any foot condition</p>
+          <p class="desc">A general-purpose companion for tracking pain, swelling, footwear, and triggers over time — built for anyone managing an ongoing foot condition, not just diabetes.</p>
+          <div class="meta-row">
+            <span class="chip">6 × 9 in</span>
+            <span class="chip">$9.99</span>
+          </div>
+          <div class="buy-row">
+            <a class="buy-btn primary" href="https://www.amazon.com/dp/B0H52F4R41" target="_blank" rel="noopener">Buy Paperback</a>
+          </div>
+          <a class="buy-btn ebook" href="https://www.amazon.com/s?k=Foot+Health+Journal+Pain+Tracker+Dr+James+Whitfield&i=digital-text" target="_blank" rel="noopener">Get the eBook (Kindle)</a>
+          <a class="buy-btn direct" href="mailto:Support@melonglowbooks.com?subject=Bulk%2FDirect%20Order%20-%20Foot%20Health%20Journal%20%26%20Pain%20Tracker&body=Hi%20Melon%20Glow%20Books%2C%0A%0AI'd%20like%20to%20order%20directly%20%2F%20in%20bulk%3A%0A%0ATitle%3A%20Foot%20Health%20Journal%20%26%20Pain%20Tracker%0AQuantity%3A%20%0AShipping%20address%3A%20%0A%0AThanks!">Buy Direct / Bulk from Melon Glow Books</a>
+          <p class="avail-note direct-note">Bulk pricing: 10+ copies 20% off &middot; 50+ copies 35% off</p>
+          <p class="avail-note">Also available through libraries &amp; independent bookstores worldwide via IngramSpark.</p>
+        </div>
+      </article>
+
+      <!-- 3. Diabetic Foot Care Notebook -->
+      <article class="book-card reveal" id="diabetic-notebook">
+        <div class="book-cover has-image" style="--bcA:#3A2A3C; --bcB:#5C4361;">
+          <img class="cover-img" src="cover-diabetic-notebook.jpg" alt="Diabetic Foot Care Notebook cover">
+        </div>
+        <div class="book-body">
+          <h3>Diabetic Foot Care Notebook</h3>
+          <p class="subtitle">A focused companion notebook</p>
+          <p class="desc">A streamlined notebook edition for patients who want the daily inspection structure without the full handbook chapters — easy to slip in a bag for appointments.</p>
+          <div class="meta-row">
+            <span class="chip">Paperback</span>
+            <span class="chip">$14.99</span>
+          </div>
+          <div class="buy-row">
+            <a class="buy-btn primary" href="https://www.amazon.com/dp/B0H55J9KHQ" target="_blank" rel="noopener">Buy Paperback</a>
+          </div>
+          <a class="buy-btn ebook" href="https://www.amazon.com/s?k=Diabetic+Foot+Care+Notebook+Dr+James+Whitfield&i=digital-text" target="_blank" rel="noopener">Get the eBook (Kindle)</a>
+          <a class="buy-btn direct" href="mailto:Support@melonglowbooks.com?subject=Bulk%2FDirect%20Order%20-%20Diabetic%20Foot%20Care%20Notebook&body=Hi%20Melon%20Glow%20Books%2C%0A%0AI'd%20like%20to%20order%20directly%20%2F%20in%20bulk%3A%0A%0ATitle%3A%20Diabetic%20Foot%20Care%20Notebook%0AQuantity%3A%20%0AShipping%20address%3A%20%0A%0AThanks!">Buy Direct / Bulk from Melon Glow Books</a>
+          <p class="avail-note direct-note">Bulk pricing: 10+ copies 20% off &middot; 50+ copies 35% off</p>
+          <p class="avail-note">Also available through libraries &amp; independent bookstores worldwide via IngramSpark.</p>
+        </div>
+      </article>
+
+      <!-- 4. Blood Pressure & Heart Health Journal -->
+      <article class="book-card reveal" id="blood-pressure-journal">
+        <div class="book-cover has-image" style="--bcA:#3C2222; --bcB:#6B3636;">
+          <img class="cover-img" src="cover-blood-pressure.jpg" alt="The Blood Pressure & Heart Health Journal cover">
+        </div>
+        <div class="book-body">
+          <h3>Blood Pressure &amp; Heart Health Journal</h3>
+          <p class="subtitle">Daily tracking for heart health</p>
+          <p class="desc">Simple daily logging for blood pressure, medication, and symptoms — designed to give your doctor a clear picture between visits instead of guesswork.</p>
+          <div class="meta-row">
+            <span class="chip">Paperback</span>
+          </div>
+          <div class="buy-row">
+            <a class="buy-btn primary" href="https://www.amazon.com/dp/B0H7WB92KF" target="_blank" rel="noopener">Buy Paperback</a>
+          </div>
+          <a class="buy-btn ebook" href="https://www.amazon.com/s?k=Blood+Pressure+Heart+Health+Journal+Dr+James+Whitfield&i=digital-text" target="_blank" rel="noopener">Get the eBook (Kindle)</a>
+          <a class="buy-btn direct" href="mailto:Support@melonglowbooks.com?subject=Bulk%2FDirect%20Order%20-%20Blood%20Pressure%20%26%20Heart%20Health%20Journal&body=Hi%20Melon%20Glow%20Books%2C%0A%0AI'd%20like%20to%20order%20directly%20%2F%20in%20bulk%3A%0A%0ATitle%3A%20Blood%20Pressure%20%26%20Heart%20Health%20Journal%0AQuantity%3A%20%0AShipping%20address%3A%20%0A%0AThanks!">Buy Direct / Bulk from Melon Glow Books</a>
+          <p class="avail-note direct-note">Bulk pricing: 10+ copies 20% off &middot; 50+ copies 35% off</p>
+          <p class="avail-note">Also available through libraries &amp; independent bookstores worldwide via IngramSpark.</p>
+        </div>
+      </article>
+
+      <!-- 5. Caregiver Logbook -->
+      <article class="book-card reveal" id="caregiver-logbook">
+        <div class="book-cover has-image" style="--bcA:#22372C; --bcB:#3D5F4C;">
+          <img class="cover-img" src="cover-caregiver.jpg" alt="Caregiver Logbook & Daily Health Record cover">
+        </div>
+        <div class="book-body">
+          <h3>Caregiver Logbook</h3>
+          <p class="subtitle">For the person doing the caring</p>
+          <p class="desc">A daily logbook built for caregivers — tracking medications, appointments, meals, and the small changes that are easy to forget but matter to the care team.</p>
+          <div class="meta-row">
+            <span class="chip">Paperback</span>
+          </div>
+          <div class="buy-row">
+            <a class="buy-btn primary" href="https://www.amazon.com/dp/B0H6LJ519G" target="_blank" rel="noopener">Buy Paperback</a>
+          </div>
+          <a class="buy-btn ebook" href="https://www.amazon.com/s?k=Caregiver+Logbook+Dr+James+Whitfield&i=digital-text" target="_blank" rel="noopener">Get the eBook (Kindle)</a>
+          <a class="buy-btn direct" href="mailto:Support@melonglowbooks.com?subject=Bulk%2FDirect%20Order%20-%20Caregiver%20Logbook&body=Hi%20Melon%20Glow%20Books%2C%0A%0AI'd%20like%20to%20order%20directly%20%2F%20in%20bulk%3A%0A%0ATitle%3A%20Caregiver%20Logbook%0AQuantity%3A%20%0AShipping%20address%3A%20%0A%0AThanks!">Buy Direct / Bulk from Melon Glow Books</a>
+          <p class="avail-note direct-note">Bulk pricing: 10+ copies 20% off &middot; 50+ copies 35% off</p>
+          <p class="avail-note">Also available through libraries &amp; independent bookstores worldwide via IngramSpark.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="books" id="guides" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Guides &amp; Workbooks</h2>
+      <span class="count">Instant PDF downloads · print at home</span>
+    </div>
+
+    <div class="book-grid">
+
+      <!-- Digital 1: Questions to Ask Your Foot Surgeon -->
+      <article class="book-card reveal" id="foot-surgeon-workbook">
+        <div class="book-cover has-image" style="--bcA:#16203C; --bcB:#2B3E68;">
+          <img class="cover-img" src="cover-foot-surgeon-workbook.jpg" alt="Questions to Ask Your Foot Surgeon workbook cover">
+        </div>
+        <div class="book-body">
+          <h3>Questions to Ask Your Foot Surgeon</h3>
+          <p class="subtitle">A Pre-Appointment Workbook</p>
+          <p class="desc">A 13-page printable workbook to help you walk into your foot surgery consultation prepared, organized, and informed.</p>
+          <div class="meta-row">
+            <span class="chip">Instant PDF</span>
+            <span class="chip">13 pages</span>
+            <span class="chip">$7.99</span>
+          </div>
+          <a class="buy-btn direct" href="https://melonglow0.gumroad.com/l/foot-surgeon-questions" target="_blank" rel="noopener">Buy &amp; Download — $7.99</a>
+          <p class="avail-note">Delivered instantly via Gumroad. Print at home (US Letter).</p>
+        </div>
+      </article>
+
+      <!-- Digital 2: The Plantar Fasciitis Recovery Plan -->
+      <article class="book-card reveal" id="plantar-fasciitis-guide">
+        <div class="book-cover has-image" style="--bcA:#16203C; --bcB:#2B3E68;">
+          <img class="cover-img" src="cover-plantar-fasciitis.jpg" alt="The Plantar Fasciitis Recovery Plan guide cover">
+        </div>
+        <div class="book-body">
+          <h3>The Plantar Fasciitis Recovery Plan</h3>
+          <p class="subtitle">A Step-by-Step Home Guide</p>
+          <p class="desc">A 9-page step-by-step home recovery plan with a 3-phase approach and a 14-day symptom tracker.</p>
+          <div class="meta-row">
+            <span class="chip">Instant PDF</span>
+            <span class="chip">9 pages</span>
+            <span class="chip">$9.99</span>
+          </div>
+          <a class="buy-btn direct" href="https://melonglow0.gumroad.com/l/plantar-fasciitis-recovery" target="_blank" rel="noopener">Buy &amp; Download — $9.99</a>
+          <p class="avail-note">Delivered instantly via Gumroad. Print at home (US Letter).</p>
+        </div>
+      </article>
+
+      <!-- Digital 3: Which Shoe Is Wrecking Your Feet? -->
+      <article class="book-card reveal" id="shoe-guide">
+        <div class="book-cover has-image" style="--bcA:#16203C; --bcB:#2B3E68;">
+          <img class="cover-img" src="cover-shoe-guide.jpg" alt="Which Shoe Is Wrecking Your Feet guide cover">
+        </div>
+        <div class="book-body">
+          <h3>Which Shoe Is Wrecking Your Feet?</h3>
+          <p class="subtitle">A Plain-English Guide</p>
+          <p class="desc">A 7-page guide to help you identify which of your shoes are causing your foot pain, and what to look for instead.</p>
+          <div class="meta-row">
+            <span class="chip">Instant PDF</span>
+            <span class="chip">7 pages</span>
+            <span class="chip">$8.99</span>
+          </div>
+          <a class="buy-btn direct" href="https://melonglow0.gumroad.com/l/shoe-guide" target="_blank" rel="noopener">Buy &amp; Download — $8.99</a>
+          <p class="avail-note">Delivered instantly via Gumroad. Print at home (US Letter).</p>
+        </div>
+      </article>
+
+      <!-- Digital 4: The Foot Pain Self-Assessment Guide -->
+      <article class="book-card reveal" id="self-assessment-guide">
+        <div class="book-cover has-image" style="--bcA:#16203C; --bcB:#2B3E68;">
+          <img class="cover-img" src="cover-self-assessment.jpg" alt="The Foot Pain Self-Assessment Guide cover">
+        </div>
+        <div class="book-body">
+          <h3>The Foot Pain Self-Assessment Guide</h3>
+          <p class="subtitle">Know What You're Dealing With</p>
+          <p class="desc">A step-by-step way to figure out what's wrong with your foot pain, and whether to treat it at home or see a doctor.</p>
+          <div class="meta-row">
+            <span class="chip">Instant PDF</span>
+            <span class="chip">9 pages</span>
+            <span class="chip">$7.99</span>
+          </div>
+          <a class="buy-btn direct" href="https://melonglow0.gumroad.com/l/foot-pain-self-assessment" target="_blank" rel="noopener">Buy &amp; Download — $7.99</a>
+          <p class="avail-note">Delivered instantly via Gumroad. Print at home (US Letter).</p>
+        </div>
+      </article>
+
+      <!-- Digital 5: The Athlete's Foot & Ankle Injury Prevention Guide -->
+      <article class="book-card reveal" id="athlete-guide">
+        <div class="book-cover has-image" style="--bcA:#16203C; --bcB:#2B3E68;">
+          <img class="cover-img" src="cover-athlete-guide.jpg" alt="The Athlete's Foot & Ankle Injury Prevention Guide cover">
+        </div>
+        <div class="book-body">
+          <h3>The Athlete's Foot &amp; Ankle Injury Prevention Guide</h3>
+          <p class="subtitle">Train Harder Without Breaking Down</p>
+          <p class="desc">A practical injury-prevention guide for runners, athletes, and gym-goers, covering common injuries, prevention habits, and return-to-play guidelines.</p>
+          <div class="meta-row">
+            <span class="chip">Instant PDF</span>
+            <span class="chip">9 pages</span>
+            <span class="chip">$9.99</span>
+          </div>
+          <a class="buy-btn direct" href="https://melonglow0.gumroad.com/l/athlete-injury-prevention" target="_blank" rel="noopener">Buy &amp; Download — $9.99</a>
+          <p class="avail-note">Delivered instantly via Gumroad. Print at home (US Letter).</p>
+        </div>
+      </article>
+
+      <!-- Digital 6: The Post-Surgical Recovery Tracker Journal -->
+      <article class="book-card reveal" id="post-surgical-tracker">
+        <div class="book-cover has-image" style="--bcA:#16203C; --bcB:#2B3E68;">
+          <img class="cover-img" src="cover-post-surgical-tracker.jpg" alt="The Post-Surgical Recovery Tracker Journal cover">
+        </div>
+        <div class="book-body">
+          <h3>The Post-Surgical Recovery Tracker Journal</h3>
+          <p class="subtitle">A Day-by-Day Guide for Foot &amp; Ankle Surgery Patients</p>
+          <p class="desc">A recovery journal with red-flag warning signs, a phase-by-phase healing timeline, a 14-day daily tracker, and an appointment &amp; medication log.</p>
+          <div class="meta-row">
+            <span class="chip">Instant PDF</span>
+            <span class="chip">10 pages</span>
+            <span class="chip">$9.99</span>
+          </div>
+          <a class="buy-btn direct" href="https://melonglow0.gumroad.com/l/post-surgical-recovery" target="_blank" rel="noopener">Buy &amp; Download — $9.99</a>
+          <p class="avail-note">Delivered instantly via Gumroad. Print at home (US Letter).</p>
+        </div>
+      </article>
+
+      <!-- Digital 7: The Bunion & Hammertoe Decision Guide -->
+      <article class="book-card reveal" id="bunion-hammertoe-guide">
+        <div class="book-cover has-image" style="--bcA:#16203C; --bcB:#2B3E68;">
+          <img class="cover-img" src="cover-bunion-hammertoe.jpg" alt="The Bunion & Hammertoe Decision Guide cover">
+        </div>
+        <div class="book-body">
+          <h3>The Bunion &amp; Hammertoe Decision Guide</h3>
+          <p class="subtitle">Conservative Care vs. Surgery</p>
+          <p class="desc">A decision guide weighing conservative care vs. surgery for bunions and hammertoes, including the shared decision-making process with your surgeon, a side-by-side comparison, and a personal decision worksheet.</p>
+          <div class="meta-row">
+            <span class="chip">Instant PDF</span>
+            <span class="chip">11 pages</span>
+            <span class="chip">$9.99</span>
+          </div>
+          <a class="buy-btn direct" href="https://melonglow0.gumroad.com/l/bunion-hammertoe-decision" target="_blank" rel="noopener">Buy &amp; Download — $9.99</a>
+          <p class="avail-note">Delivered instantly via Gumroad. Print at home (US Letter).</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap">
+    <div class="trust-item reveal">
+      <span class="num">30 yrs</span>
+      Reconstructive foot surgery experience behind every page.
+    </div>
+    <div class="trust-item reveal">
+      <span class="num">5 titles</span>
+      Handbooks, journals &amp; notebooks for patients, caregivers &amp; nurses.
+    </div>
+    <div class="trust-item reveal">
+      <span class="num">Worldwide</span>
+      Available through Amazon, IngramSpark direct, libraries &amp; independent bookstores worldwide.
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Melon Glow Books</div>
+        <p class="avail-note" style="margin-top:6px;">An imprint of Melon Glow Company, LLC</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.melonglowbooks.com">melonglowbooks.com</a>
+        <a href="mailto:Support@melonglowbooks.com">Support@melonglowbooks.com</a>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Melon Glow Company, LLC. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  const items = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window){
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold:.15});
+    items.forEach(el=>io.observe(el));
+  } else {
+    items.forEach(el=>el.classList.add('in'));
+  }
+</script>
+
+</body>
+</html>

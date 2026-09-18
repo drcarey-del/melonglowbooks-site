@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="p:domain_verify" content="948c2d9817219fff61d01d39e4835ea7"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Melon Glow Books</title>
+<meta name="description" content="Melon Glow Books — Pepper the Dog's bedtime adventures and Dr. James Whitfield's plain-English health guides.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1B2440; --cream:#FBF6EC; --gold:#C9A227;
+    --rose:#C0697B; --teal:#5E9690; --slate:#5B6478;
+    --card:#FFFFFF; --line: rgba(27,36,64,0.12); --maxw: 1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; background:var(--cream); color:var(--navy);
+    font-family:'Inter',system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
+
+  header{
+    position:sticky; top:0; z-index:40;
+    background:rgba(251,246,236,0.95);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    max-width:var(--maxw); margin:0 auto; padding:16px 28px;
+    display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;
+  }
+  .brand{ display:flex; align-items:center; gap:10px; font-family:'Poppins', sans-serif; font-weight:700; font-size:1.05rem; text-decoration:none; }
+  .brand img{ width:34px; height:34px; border-radius:50%; }
+  .nav-links{ display:flex; gap:22px; font-size:.92rem; font-weight:500; align-items:center; }
+  .nav-links a{ text-decoration:none; color:var(--slate); }
+  .nav-links a:hover{ color:var(--navy); }
+  .nav-links a.pill{ background:var(--navy); color:var(--cream); padding:9px 18px; border-radius:20px; font-weight:600; }
+  .nav-links a.pill:hover{ background:var(--rose); color:#fff; }
+
+  .hero{
+    text-align:center; padding:56px 28px 44px; background:var(--navy); color:var(--cream);
+  }
+  .hero h1{ font-family:'Poppins', sans-serif; font-weight:800; font-size:clamp(1.7rem,4vw,2.3rem); margin:0 0 10px; letter-spacing:1px; }
+  .hero p{ color:var(--gold); font-style:italic; margin:0; font-size:1.02rem; }
+  .hero .sub{ color:#D8DCEA; font-style:normal; max-width:600px; margin:16px auto 0; font-size:.92rem; line-height:1.5; }
+
+  section.imprint{ padding:60px 0 20px; }
+  .section-head{ text-align:center; margin-bottom:8px; }
+  .section-head .eyebrow{
+    font-family:'IBM Plex Mono', monospace; text-transform:uppercase; letter-spacing:.14em;
+    font-size:.72rem; color:var(--gold); margin:0 0 8px;
+  }
+  .section-head h2{ font-family:'Poppins', sans-serif; font-weight:800; font-size:1.7rem; margin:0 0 6px; }
+  .section-head p{ color:var(--slate); font-style:italic; margin:0 0 36px; }
+
+  .book-grid{
+    display:grid; grid-template-columns:repeat(auto-fill, minmax(190px, 1fr));
+    gap:22px;
+  }
+  .book-card{
+    background:var(--card); border:1px solid var(--line); border-radius:10px;
+    overflow:hidden; text-decoration:none; color:var(--navy);
+    display:flex; flex-direction:column;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .book-card:hover{ transform:translateY(-4px); box-shadow:0 14px 26px rgba(27,36,64,.14); }
+  .book-card .cover-wrap{ aspect-ratio:1/1; overflow:hidden; background:#0e1424; }
+  .book-card .cover-wrap img{ width:100%; height:100%; object-fit:cover; object-position:top center; }
+  .book-card .cover-wrap.placeholder{
+    display:flex; align-items:center; justify-content:center;
+    background:linear-gradient(155deg, var(--bcA,#1B2440), var(--bcB,#2c3a66));
+    padding:14px; text-align:center;
+  }
+  .book-card .cover-wrap.placeholder span{
+    color:#F4EFE2; font-family:'Poppins', sans-serif; font-weight:700; font-size:.95rem; line-height:1.3;
+  }
+  .book-card .info{ padding:14px 14px 16px; flex:1; display:flex; flex-direction:column; }
+  .book-card .badge{
+    font-family:'IBM Plex Mono', monospace; font-size:.66rem; color:var(--gold);
+    text-transform:uppercase; letter-spacing:.06em; margin-bottom:4px;
+  }
+  .book-card h3{ font-family:'Poppins', sans-serif; font-weight:700; font-size:.98rem; margin:0 0 4px; line-height:1.3; }
+  .book-card p{ font-size:.82rem; color:var(--slate); margin:0 0 12px; line-height:1.4; flex:1; }
+  .book-card .view{ font-size:.8rem; font-weight:700; color:var(--navy); }
+  .book-card:hover .view{ color:var(--rose); }
+
+  .divider{ max-width:var(--maxw); margin:56px auto 0; padding:0 28px; }
+  .divider hr{ border:none; border-top:1px solid var(--line); }
+
+  footer{ padding:40px 28px 56px; text-align:center; }
+  footer .brand-line{ font-family:'Poppins', sans-serif; font-weight:700; margin-bottom:8px; }
+  footer a{ color:var(--slate); text-decoration:none; font-size:.85rem; }
+  footer a:hover{ color:var(--navy); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="home.html">
+      <img src="logo.png" alt="Melon Glow Books logo">
+      MELON GLOW BOOKS
+    </a>
+    <nav class="nav-links">
+      <a href="pepper-the-dog.html">Pepper the Dog</a>
+      <a href="melonglowbooks-whitfield-buy-page.html">Dr. James Whitfield</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>MELON GLOW BOOKS</h1>
+  <p>Plain-English health guides &amp; heartfelt stories for little ones</p>
+  <p class="sub">Melon Glow Books is proud to publish both Pepper the Dog's bedtime adventures and Dr. James Whitfield's plain-English health guides for patients, caregivers, and nurses.</p>
+</div>
+
+<!-- ============ CHILDREN'S SECTION ============ -->
+<section class="imprint" id="childrens">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Children's Section</p>
+      <h2>Pepper the Dog</h2>
+      <p>Bedtime picture books, told from six inches above the ground.</p>
+    </div>
+    <div class="book-grid">
+
+      <a class="book-card" href="pepper-the-dog.html#book-6">
+        <div class="cover-wrap"><img src="cover-snowy-christmas-miracle.jpg" alt="A Snowy Christmas Miracle cover"></div>
+        <div class="info">
+          <div class="badge">Holiday Special</div>
+          <h3>A Snowy Christmas Miracle</h3>
+          <p>Pepper's first snow, and a Christmas miracle</p>
+          <div class="view">Shop now →</div>
+        </div>
+      </a>
+
+<a class="book-card" href="pepper-the-dog.html#book-7">
+        <div class="cover-wrap"><img src="cover-pepper-museum-shock.jpg" alt="Pepper's Museum Shock cover"></div>
+        <div class="info">
+          <div class="badge">Available Now</div>
+          <h3>Pepper's Museum Shock</h3>
+          <p>A tale of 28 wonders at the museum</p>
+          <div class="view">Shop now →</div>
+        </div>
+      </a>
+
+<a class="book-card" href="pepper-the-dog.html#book-7-de">
+        <div class="cover-wrap"><img src="cover-peppers-museums-schreck.jpg" alt="Peppers Museums-Schreck Buchcover"></div>
+        <div class="info">
+          <div class="badge">Deutsche Ausgabe</div>
+          <h3>Peppers Museums-Schreck</h3>
+          <p>Die deutsche Ausgabe von Pepper's Museum Shock</p>
+          <div class="view">Mehr erfahren →</div>
+        </div>
+      </a>
+
+<a class="book-card" href="pepper-the-dog.html#book-7-choc-fr">
+        <div class="cover-wrap"><img src="cover-pepper-museum-shock.jpg" alt="Couverture de Le Choc du Musée de Pepper"></div>
+        <div class="info">
+          <div class="badge">Édition Française</div>
+          <h3>Le Choc du Musée de Pepper</h3>
+          <p>Une découverte muséale par un chiot</p>
+          <div class="view">En savoir plus →</div>
+        </div>
+      </a>
+
+<a class="book-card" href="pepper-the-dog.html#book-8">
+        <div class="cover-wrap"><img src="cover-pepper-paris-surprise.jpg" alt="Pepper's Paris Surprise cover"></div>
+        <div class="info">
+          <div class="badge">Available Now</div>
+          <h3>Pepper's Paris Surprise</h3>
+          <p>A tale of 31 wonders across Paris</p>
+          <div class="view">Shop now →</div>
+        </div>
+      </a>
+
+<a class="book-card" href="pepper-the-dog.html#book-9-fr">
+        <div class="cover-wrap"><img src="cover-la-surprise-de-pepper-a-paris.jpg" alt="Couverture de La Surprise de Pepper à Paris"></div>
+        <div class="info">
+          <div class="badge">Édition Française</div>
+          <h3>La Surprise de Pepper à Paris</h3>
+          <p>Un chiot à la découverte de Paris</p>
+          <div class="view">Précommander →</div>
+        </div>
+      </a>
+
+<a class="book-card" href="pepper-the-dog.html#book-1">
+        <div class="cover-wrap"><img src="cover-pepper-book1.jpg" alt="Six Inches Above the Ground cover"></div>
+        <div class="info">
+          <div class="badge">Book 1</div>
+          <h3>Six Inches Above the Ground</h3>
+          <p>A puppy's-eye view of the world</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="pepper-the-dog.html#book-2">
+        <div class="cover-wrap"><img src="cover-pepper-book2.jpg" alt="Four Wheels and a Rumble cover"></div>
+        <div class="info">
+          <div class="badge">Book 2</div>
+          <h3>Four Wheels and a Rumble</h3>
+          <p>Pepper meets a new friend</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="pepper-the-dog.html#book-3">
+        <div class="cover-wrap"><img src="cover-pepper-book3.jpg" alt="Big Boots and a Tiny Tail cover"></div>
+        <div class="info">
+          <div class="badge">Book 3</div>
+          <h3>Big Boots and a Tiny Tail</h3>
+          <p>A funny mix-up at the door</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="pepper-the-dog.html#book-4">
+        <div class="cover-wrap"><img src="cover-pepper-book4.jpg" alt="A Rumble from the Sky cover"></div>
+        <div class="info">
+          <div class="badge">Book 4</div>
+          <h3>A Rumble from the Sky</h3>
+          <p>A storm, and a new friendship</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="pepper-the-dog.html#book-5">
+        <div class="cover-wrap"><img src="cover-pepper-book5.jpg" alt="A Nose Full of Wonder cover"></div>
+        <div class="info">
+          <div class="badge">Book 5</div>
+          <h3>A Nose Full of Wonder</h3>
+          <p>Pepper's biggest adventure yet</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<!-- ============ MEDICAL SECTION ============ -->
+<section class="imprint" id="medical">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Dr. James Whitfield</h2>
+      <p>Plain-English health guides from a reconstructive foot surgeon.</p>
+    </div>
+    <div class="book-grid">
+
+<a class="book-card" href="melonglowbooks-whitfield-buy-page.html#my-feet-are-killin-me">
+        <div class="cover-wrap"><img src="cover-my-feet-are-killin-me.jpg" alt="My Feet Are Killin' Me! cover"></div>
+        <div class="info">
+          <h3>My Feet Are Killin' Me!</h3>
+          <p>A surgeon's field manual for feet</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#morning-heel-pain-no-more">
+        <div class="cover-wrap"><img src="cover-morning-heel-pain.jpg" alt="Morning Heel Pain No More cover"></div>
+        <div class="info">
+          <h3>Morning Heel Pain No More</h3>
+          <p>Why your first steps hurt most</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#handbook-journal">
+        <div class="cover-wrap"><img src="cover-diabetic-handbook.jpg" alt="Diabetic Foot Care Handbook & Journal cover"></div>
+        <div class="info">
+          <h3>The Glass Foot</h3>
+          <p>Diabetic Foot Care Handbook &amp; Journal</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#foot-health-journal">
+        <div class="cover-wrap"><img src="cover-foot-health-journal.jpg" alt="Foot Health Journal & Pain Tracker cover"></div>
+        <div class="info">
+          <h3>Foot Health Journal</h3>
+          <p>Daily tracker for foot pain &amp; symptoms</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#blood-pressure-journal">
+        <div class="cover-wrap"><img src="cover-blood-pressure.jpg" alt="Blood Pressure & Heart Health Journal cover"></div>
+        <div class="info">
+          <h3>Blood Pressure Journal</h3>
+          <p>Daily heart health tracking</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#diabetic-notebook">
+        <div class="cover-wrap"><img src="cover-diabetic-notebook.jpg" alt="Diabetic Foot Care Notebook cover"></div>
+        <div class="info">
+          <h3>Diabetic Foot Care Notebook</h3>
+          <p>A focused companion notebook</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#caregiver-logbook">
+        <div class="cover-wrap"><img src="cover-caregiver.jpg" alt="Caregiver Logbook cover"></div>
+        <div class="info">
+          <h3>Caregiver Logbook</h3>
+          <p>For the person doing the caring</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#foot-surgeon-workbook">
+        <div class="cover-wrap"><img src="cover-foot-surgeon-workbook.jpg" alt="Questions to Ask Your Foot Surgeon workbook cover"></div>
+        <div class="info">
+          <h3>Pre-Appointment Workbook</h3>
+          <p>Instant PDF download · $7.99</p>
+          <div class="view">View guide →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#plantar-fasciitis-guide">
+        <div class="cover-wrap"><img src="cover-plantar-fasciitis.jpg" alt="Plantar Fasciitis Recovery Plan cover"></div>
+        <div class="info">
+          <h3>Plantar Fasciitis Recovery Plan</h3>
+          <p>Instant PDF download · $9.99</p>
+          <div class="view">View guide →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#shoe-guide">
+        <div class="cover-wrap"><img src="cover-shoe-guide.jpg" alt="Which Shoe Is Wrecking Your Feet guide cover"></div>
+        <div class="info">
+          <h3>Which Shoe Is Wrecking Your Feet?</h3>
+          <p>Instant PDF download · $8.99</p>
+          <div class="view">View guide →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#self-assessment-guide">
+        <div class="cover-wrap"><img src="cover-self-assessment.jpg" alt="Foot Pain Self-Assessment Guide cover"></div>
+        <div class="info">
+          <h3>Foot Pain Self-Assessment Guide</h3>
+          <p>Instant PDF download · $7.99</p>
+          <div class="view">View guide →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#athlete-guide">
+        <div class="cover-wrap"><img src="cover-athlete-guide.jpg" alt="Athlete's Foot & Ankle Injury Prevention Guide cover"></div>
+        <div class="info">
+          <h3>Athlete's Injury Prevention Guide</h3>
+          <p>Instant PDF download · $9.99</p>
+          <div class="view">View guide →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#post-surgical-tracker">
+        <div class="cover-wrap"><img src="cover-post-surgical-tracker.jpg" alt="Post-Surgical Recovery Tracker Journal cover"></div>
+        <div class="info">
+          <h3>Post-Surgical Recovery Tracker</h3>
+          <p>Instant PDF download · $9.99</p>
+          <div class="view">View guide →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#bunion-hammertoe-guide">
+        <div class="cover-wrap"><img src="cover-bunion-hammertoe.jpg" alt="The Bunion & Hammertoe Decision Guide cover"></div>
+        <div class="info">
+          <h3>Bunion &amp; Hammertoe Decision Guide</h3>
+          <p>Instant PDF download · $9.99</p>
+          <div class="view">View guide →</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="brand-line">Melon Glow Books</div>
+  <div style="margin-bottom:12px; font-size:.85rem; color:var(--slate);">Sonoma County, California</div>
+  <a href="mailto:Support@melonglowbooks.com">Support@melonglowbooks.com</a>
+</footer>
+
+</body>
+</html>

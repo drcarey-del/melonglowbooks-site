@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="p:domain_verify" content="948c2d9817219fff61d01d39e4835ea7"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pepper the Dog — Melon Glow Books</title>
+<meta name="description" content="Bedtime picture books narrated by Pepper the Dog, told from six inches above the ground.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1B2440;
+    --cream:#FBF6EC;
+    --gold:#C9A227;
+    --rose:#C0697B;
+    --slate:#5B6478;
+    --card:#FFFFFF;
+    --line: rgba(27,36,64,0.12);
+    --maxw: 1120px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--navy);
+    font-family:'Inter',system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
+
+  a:focus-visible, button:focus-visible{
+    outline:3px solid var(--gold);
+    outline-offset:3px;
+  }
+
+  @media (prefers-reduced-motion: no-preference){
+    .reveal{
+      opacity:0;
+      transform:translateY(14px);
+      transition:opacity .7s ease, transform .7s ease;
+    }
+    .reveal.in{opacity:1; transform:none;}
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky; top:0; z-index:40;
+    background:rgba(251,246,236,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    max-width:var(--maxw); margin:0 auto; padding:16px 28px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .brand{
+    display:flex; align-items:center; gap:10px;
+    font-family:'Poppins', sans-serif; font-weight:700; font-size:1.02rem;
+  }
+  .brand .mark{
+    width:30px; height:30px; border-radius:50%;
+    background:var(--navy);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .nav-links{display:flex; gap:24px; font-size:.92rem; font-weight:500;}
+  .nav-links a{text-decoration:none; color:var(--slate);}
+  .nav-links a:hover{color:var(--navy);}
+  .nav-links a.pill{
+    background:var(--navy); color:var(--cream);
+    padding:8px 16px; border-radius:20px;
+  }
+  .nav-links a.pill:hover{background:var(--rose); color:#fff;}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;
+    background:var(--navy);
+    color:var(--cream);
+    overflow:hidden;
+    padding:88px 0 100px;
+  }
+  .paw-svg{
+    position:absolute; inset:0; width:100%; height:100%;
+    opacity:.5;
+    pointer-events:none;
+  }
+  .hero-inner{
+    position:relative; z-index:2;
+    max-width:var(--maxw); margin:0 auto; padding:0 28px;
+    text-align:center;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    text-transform:uppercase; letter-spacing:.14em;
+    font-size:.72rem; color:var(--gold);
+    margin:0 0 18px;
+  }
+  h1{
+    font-family:'Poppins', sans-serif; font-weight:800;
+    font-size:clamp(2.1rem, 4.8vw, 3.4rem);
+    line-height:1.12; margin:0 auto 18px;
+    max-width:18ch;
+  }
+  .hero p.lede{
+    font-size:1.08rem; line-height:1.6; color:#D8DCEA;
+    max-width:48ch; margin:0 auto 30px;
+  }
+  .hero-cta{
+    display:inline-flex; align-items:center; gap:10px;
+    background:var(--gold); color:var(--navy);
+    font-weight:700; font-size:.95rem;
+    padding:13px 24px; border-radius:30px;
+    text-decoration:none;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .hero-cta:hover{transform:translateY(-2px); box-shadow:0 10px 24px rgba(0,0,0,.25);}
+
+  /* ---------- About strip ---------- */
+  .about{
+    padding:52px 0; border-bottom:1px solid var(--line);
+  }
+  .about-grid{
+    display:grid; grid-template-columns:120px 1fr; gap:28px; align-items:start;
+  }
+  .about-grid .label{
+    font-family:'IBM Plex Mono', monospace; font-size:.72rem;
+    text-transform:uppercase; letter-spacing:.12em; color:var(--rose);
+    padding-top:6px;
+  }
+  .about-grid p{
+    font-size:1.02rem; line-height:1.7; color:var(--slate); margin:0 0 14px;
+    max-width:62ch;
+  }
+  .about-grid p:last-child{margin-bottom:0;}
+
+  /* ---------- Books section ---------- */
+  .books{padding:72px 0 40px;}
+  .section-head{
+    margin-bottom:40px;
+  }
+  .section-head h2{
+    font-family:'Poppins', sans-serif; font-weight:800; font-size:1.7rem; margin:0 0 6px;
+  }
+  .section-head .count{
+    font-family:'IBM Plex Mono', monospace; font-size:.78rem; color:var(--slate);
+  }
+
+  .book-grid{
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:24px;
+  }
+  @media (max-width: 960px){ .book-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width: 640px){ .book-grid{grid-template-columns:1fr;} }
+
+  .book-card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:10px;
+    overflow:hidden;
+    display:flex; flex-direction:column;
+  }
+  .book-cover{
+    position:relative;
+    height:170px;
+    display:flex; align-items:center; justify-content:center;
+    background: linear-gradient(155deg, var(--bcA, #1B2440), var(--bcB, #2c3a66));
+    overflow:hidden;
+  }
+  .book-cover.has-image{
+    height:320px;
+    background:#0e1424;
+  }
+  .book-cover img.cover-img{
+    position:absolute; inset:0; z-index:1;
+    width:100%; height:100%;
+    object-fit:cover; object-position:top center;
+  }
+  .book-cover .badge{
+    position:absolute; top:10px; left:10px; z-index:2;
+    background:var(--gold); color:var(--navy);
+    font-family:'IBM Plex Mono', monospace; font-size:.66rem; font-weight:700;
+    padding:4px 9px; border-radius:12px; letter-spacing:.04em;
+  }
+  .book-cover svg.paw{
+    position:absolute; inset:0; width:100%; height:100%; opacity:.45;
+  }
+  .book-cover .spine-title{
+    position:relative; z-index:2;
+    color:#F4EFE2;
+    font-family:'Poppins', sans-serif; font-weight:700;
+    font-size:1.05rem; text-align:center; padding:0 26px; line-height:1.35;
+  }
+  .book-body{
+    padding:20px 22px 22px;
+    display:flex; flex-direction:column; gap:9px; flex:1;
+  }
+  .book-body h3{
+    font-family:'Poppins', sans-serif; font-weight:700; font-size:1.08rem; margin:0;
+    line-height:1.3;
+  }
+  .book-body .subtitle{
+    font-size:.84rem; color:var(--slate); font-style:italic; margin:0;
+  }
+  .book-body .desc{
+    font-size:.9rem; line-height:1.55; color:var(--slate); margin:4px 0 2px;
+    flex:1;
+  }
+  .meta-row{
+    display:flex; gap:8px; flex-wrap:wrap; margin:2px 0 4px;
+  }
+  .chip{
+    font-family:'IBM Plex Mono', monospace; font-size:.66rem;
+    letter-spacing:.03em;
+    border:1px solid var(--line); border-radius:20px;
+    padding:4px 10px; color:var(--slate); background:#FAFAF7;
+  }
+  .buy-row{
+    display:flex; gap:8px; margin-top:6px; flex-wrap:wrap;
+  }
+  .buy-btn{
+    flex:1; min-width:120px;
+    text-align:center;
+    font-size:.84rem; font-weight:600;
+    padding:10px 12px; border-radius:20px;
+    text-decoration:none;
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .buy-btn.primary{ background:var(--navy); color:#fff; }
+  .buy-btn.primary:hover{transform:translateY(-1px); box-shadow:0 8px 18px rgba(27,36,64,.25);}
+  .buy-btn.secondary{ background:transparent; color:var(--navy); border:1px solid var(--navy); }
+  .buy-btn.secondary:hover{background:var(--navy); color:#fff;}
+  .buy-btn.ebook{
+    display:block; width:100%;
+    text-align:center; font-size:.84rem; font-weight:600;
+    padding:10px 12px; border-radius:20px;
+    text-decoration:none; margin-top:2px;
+    background:transparent; color:var(--rose); border:1px solid var(--rose);
+  }
+  .buy-btn.ebook:hover{background:var(--rose); color:#fff;}
+  .buy-btn.direct{
+    display:block; width:100%;
+    text-align:center; font-size:.86rem; font-weight:700;
+    padding:11px 14px; border-radius:20px;
+    text-decoration:none; margin-top:8px;
+    background:var(--gold); color:var(--navy); border:1px solid var(--gold);
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .buy-btn.direct:hover{transform:translateY(-1px); box-shadow:0 8px 18px rgba(201,162,39,.35);}
+  .avail-note{
+    font-size:.74rem; color:var(--slate); margin-top:2px;
+  }
+
+  /* ---------- Coming soon card ---------- */
+  .coming-soon{
+    border-style:dashed;
+    background:repeating-linear-gradient(135deg, #FAFAF7, #FAFAF7 10px, #F3F0E6 10px, #F3F0E6 20px);
+  }
+  .coming-soon .book-cover{ filter:saturate(.6); }
+  .coming-soon .status{
+    font-family:'IBM Plex Mono', monospace; font-size:.7rem; font-weight:700;
+    color:var(--rose); text-transform:uppercase; letter-spacing:.06em;
+    border:1px solid var(--rose); border-radius:20px;
+    padding:6px 12px; text-align:center; margin-top:6px;
+  }
+
+  /* ---------- Series strip ---------- */
+  .series-list{
+    padding:8px 0 64px;
+  }
+  .series-list ol{
+    list-style:none; margin:0; padding:0;
+    display:flex; flex-wrap:wrap; gap:10px;
+  }
+  .series-list li{
+    font-family:'IBM Plex Mono', monospace; font-size:.78rem;
+    background:#fff; border:1px solid var(--line); border-radius:20px;
+    padding:7px 14px; color:var(--slate);
+  }
+  .series-list li.current{ border-color:var(--gold); color:var(--navy); font-weight:600; }
+
+  /* ---------- Publisher strip ---------- */
+  .publisher{
+    background:#F1EADA; border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+    padding:44px 0;
+    text-align:center;
+  }
+  .publisher p{
+    max-width:54ch; margin:0 auto 18px; font-size:1rem; line-height:1.6; color:var(--navy);
+  }
+  .publisher-links{
+    display:flex; gap:14px; justify-content:center; flex-wrap:wrap;
+  }
+  .publisher-links a{
+    font-size:.88rem; font-weight:600; text-decoration:none;
+    padding:9px 18px; border-radius:20px;
+    border:1px solid var(--navy);
+  }
+  .publisher-links a.alt{ background:var(--navy); color:#fff; }
+  .publisher-links a:not(.alt):hover{ background:var(--navy); color:#fff; }
+  .publisher-links a.alt:hover{ background:var(--rose); border-color:var(--rose); }
+
+  /* ---------- Footer ---------- */
+  footer{padding:48px 0 60px;}
+  .footer-grid{
+    display:flex; justify-content:space-between; align-items:flex-start;
+    flex-wrap:wrap; gap:24px;
+    border-top:1px solid var(--line); padding-top:32px;
+  }
+  .footer-brand{font-family:'Poppins', sans-serif; font-weight:700; font-size:1rem;}
+  .footer-links{display:flex; gap:22px; font-size:.86rem; flex-wrap:wrap;}
+  .footer-links a{text-decoration:none; color:var(--slate);}
+  .footer-links a:hover{color:var(--navy);}
+  .copyright{font-size:.78rem; color:var(--slate); margin-top:24px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <span class="mark">
+        <img src="logo.png" alt="" width="30" height="30" style="border-radius:50%;">
+      </span>
+      Pepper the Dog
+    </div>
+    <nav class="nav-links">
+      <a href="#books">Books</a>
+      <a href="#about">About</a>
+      <a href="home.html" class="pill">Melon Glow Books home</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <svg class="paw-svg" viewBox="0 0 1200 500" preserveAspectRatio="none" aria-hidden="true">
+    <g fill="#C9A227" opacity="0.5">
+      <ellipse cx="120" cy="420" rx="10" ry="13"/>
+      <ellipse cx="100" cy="398" rx="4" ry="5"/>
+      <ellipse cx="113" cy="392" rx="4" ry="5"/>
+      <ellipse cx="128" cy="392" rx="4" ry="5"/>
+      <ellipse cx="140" cy="398" rx="4" ry="5"/>
+
+      <ellipse cx="320" cy="360" rx="10" ry="13"/>
+      <ellipse cx="300" cy="338" rx="4" ry="5"/>
+      <ellipse cx="313" cy="332" rx="4" ry="5"/>
+      <ellipse cx="328" cy="332" rx="4" ry="5"/>
+      <ellipse cx="340" cy="338" rx="4" ry="5"/>
+
+      <ellipse cx="540" cy="410" rx="10" ry="13"/>
+      <ellipse cx="520" cy="388" rx="4" ry="5"/>
+      <ellipse cx="533" cy="382" rx="4" ry="5"/>
+      <ellipse cx="548" cy="382" rx="4" ry="5"/>
+      <ellipse cx="560" cy="388" rx="4" ry="5"/>
+
+      <ellipse cx="760" cy="355" rx="10" ry="13"/>
+      <ellipse cx="740" cy="333" rx="4" ry="5"/>
+      <ellipse cx="753" cy="327" rx="4" ry="5"/>
+      <ellipse cx="768" cy="327" rx="4" ry="5"/>
+      <ellipse cx="780" cy="333" rx="4" ry="5"/>
+
+      <ellipse cx="980" cy="415" rx="10" ry="13"/>
+      <ellipse cx="960" cy="393" rx="4" ry="5"/>
+      <ellipse cx="973" cy="387" rx="4" ry="5"/>
+      <ellipse cx="988" cy="387" rx="4" ry="5"/>
+      <ellipse cx="1000" cy="393" rx="4" ry="5"/>
+    </g>
+  </svg>
+  <div class="hero-inner">
+    <p class="eyebrow">A Bedtime Story Series</p>
+    <h1>Life looks different from six inches above the ground.</h1>
+    <p class="lede">Pepper the Dog narrates her own bedtime adventures — a small, scruffy-coated terrier with a nose for trouble and a heart of gold, finding the wonder in ordinary days.</p>
+    <a class="hero-cta" href="#books">
+      Meet the books
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid reveal">
+    <div class="label">About</div>
+    <div>
+      <p>Pepper is a small fluffy terrier-mix who tells her own stories — every adventure narrated from a dog's-eye view, six inches above the ground, where the world looks bigger, stranger, and a little more wonderful.</p>
+      <p>Each book is a gentle bedtime read about curiosity, friendship, and finding courage in small moments — written for toddlers, preschoolers, and early readers who love dogs and bedtime stories.</p>
+    </div>
+  </div>
+</section>
+
+<section class="books" id="books">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>The Books</h2>
+      <span class="count">8-book series · paperback, hardcover &amp; ebook</span>
+    </div>
+
+    <div class="book-grid">
+
+      <!-- Holiday Special - now live and available to order -->
+      <article class="book-card reveal" id="book-6">
+        <div class="book-cover has-image" style="--bcA:#0F1B33; --bcB:#1B2440;">
+          <span class="badge">Holiday Special</span>
+          <img class="cover-img" src="cover-snowy-christmas-miracle.jpg" alt="A Snowy Christmas Miracle cover">
+        </div>
+        <div class="book-body">
+          <h3>A Snowy Christmas Miracle</h3>
+          <p class="subtitle">A Bedtime Story of a Little Puppy's First Snow</p>
+          <p class="desc">Pepper slips out into her very first snowfall and wanders further than she ever meant to — until an unexpected visitor in a big red coat helps her find her way home. A Christmas story about being lost, being found, and the magic of home — a perfect holiday gift.</p>
+          <p class="avail-note" style="font-weight:600; color:#c99b4a;">🏛️ Museum gift shops: a timely seasonal addition alongside Pepper's Museum Shock — click "Look Inside" below to see a video of the finished hardcover.</p>
+          <div class="meta-row">
+            <span class="chip">Paperback</span>
+            <span class="chip">Hardcover</span>
+            <span class="chip">Available Now</span>
+          </div>
+          <div class="buy-row">
+            <a class="buy-btn primary" href="https://buy.stripe.com/00w3cvbgGf0D5W75Te8so00" target="_blank" rel="noopener">Buy Hardcover — $24.99</a>
+          </div>
+          <a class="buy-btn direct" href="mailto:Support@melonglowbooks.com?subject=Order%20-%20A%20Snowy%20Christmas%20Miracle&body=Hi%20Melon%20Glow%20Books%2C%0A%0AI'd%20like%20to%20order%20A%20Snowy%20Christmas%20Miracle%3A%0A%0AQuantity%3A%20%0AFormat%20(Paperback%2FHardcover)%3A%20%0AShipping%20address%3A%20%0A%0AThanks!" target="_blank" rel="noopener">Order 10+ Copies</a>
+          <p class="avail-note direct-note">10+ copies: 20% off &middot; 50+ copies 35% off</p>
+          <p class="avail-note" style="font-weight:600;">📦 Please allow 2-3 business days to print your book, plus 5-7 business days for shipping (7-10 business days total for most U.S. orders).</p>
+          <p class="avail-note">🌍 International orders: add $5 for shipping.</p>
+          <p class="avail-note">Ordering multiple copies? Contact us for a special rate.</p>
+          <p class="avail-note">Hardcover ISBN: 979-8-9969954-6-2 &middot; Paperback ISBN: to be assigned</p>
+          <a class="buy-btn ebook" href="snowy-christmas-miracle-lookinside.html" target="_blank" rel="noopener">Look Inside →</a>
+          <p class="avail-note" style="font-size:0.85em; opacity:0.7;">Wholesale/review buyers: contact us for the full digital review copy.</p>
+        </div>
+      </article>
+
+      <!-- Un Milagro de Navidad Nevada - Spanish Edition -->
+      <article class="book-card reveal" id="book-6-es">
+        <div class="book-cover has-image" style="--bcA:#0F1B33; --bcB:#1B2440;">
+          <span class="badge" style="top:auto; bottom:10px;">Edición en Español</span>
+          <img class="cover-img" src="cover-snowy-christmas-miracle.jpg" alt="Portada de Un Milagro de Navidad Nevada">
+        </div>
+        <div class="book-body">
+          <h3>Un Milagro de Navidad Nevada</h3>
+          <p class="subtitle">Un cuento para dormir sobre la primera nevada de una cachorrita</p>
+          <p class="desc">Pepper se aventura afuera en su primera nevada y se aleja más de lo que pretendía &mdash; hasta que un visitante inesperado con un gran abrigo rojo la ayuda a encontrar el camino a casa. Una historia navideña sobre perderse, ser encontrado y la magia del hogar &mdash; un regalo perfecto para las fiestas.</p>
+          <div class="meta-row">
+            <span class="chip">Tapa Blanda</span>
+            <span class="chip">Tapa Dura</span>
+            <span class="chip">Edición en Español</span>
+          </div>
+          <div class="buy-row">
+            <a class="buy-btn primary" href="https://buy.stripe.com/cNieVddoOf0D3NZepK8so0d" target="_blank" rel="noopener">Comprar Tapa Dura — $24.99</a>
+          </div>
+          <a class="buy-btn direct" href="mailto:Support@melonglowbooks.com?subject=Pedido%20-%20Un%20Milagro%20de%20Navidad%20Nevada&body=Hola%20Melon%20Glow%20Books%2C%0A%0AMe%20gustar%C3%ADa%20pedir%20Un%20Milagro%20de%20Navidad%20Nevada%3A%0A%0ACantidad%3A%20%0AFormato%20(Tapa%20Blanda%2FTapa%20Dura)%3A%20%0ADirecci%C3%B3n%20de%20env%C3%ADo%3A%20%0A%0A%C2%A1Gracias!" target="_blank" rel="noopener">Pedir 10+ Copias</a>
+          <p class="avail-note direct-note">10+ copias: 20% de descuento &middot; 50+ copias 35% de descuento</p>
+          <p class="avail-note">ISBN: 979-8-9973886-6-9</p>
+          <a class="buy-btn ebook" href="snowy-christmas-miracle-lookinside-es.html" target="_blank" rel="noopener">Vista Previa &rarr;</a>
+          <p class="avail-note" style="font-size:0.85em; opacity:0.7;">Compradores mayoristas/revisión: contáctenos para la copia digital completa de revisión.</p>
+        </div>
+      </article>
+
+      <!-- Museum Shock - now open for pre-order -->
+      <article class="book-card reveal" id="book-7">
+        <div class="book-cover has-image" style="--bcA:#0F1B33; --bcB:#1B2440;">
+          <span class="badge" style="top:auto; bottom:10px;">Available Now</span>
+          <img class="cover-img" src="cover-pepper-museum-shock.jpg" alt="Pepper's Museum Shock cover">
+        </div>
+        <div class="book-body">
+          <h3>Pepper's Museum Shock</h3>
+          <p class="subtitle">A Tale of 28 Wonders</p>
+          <p class="desc">When a curious little dog named Pepper steps inside a grand museum, every room holds a brand-new surprise! From towering dinosaur bones and shiny knights to humming engines and sparkling rainbows, Pepper's big museum day is filled with giant discoveries. Includes a fun museum search-and-find activity inside — perfect for curious little explorers ages 3&ndash;7.</p>
+          <div class="meta-row">
+            <span class="chip">Paperback</span>
+            <span class="chip">Hardcover</span>
+            <span class="chip">Available Now</span>
+          </div>
+          <div class="buy-row">
+            <a class="buy-btn primary" href="https://buy.stripe.com/bJedR90C23hVgAL1CY8so02" target="_blank" rel="noopener">Buy Hardcover — $24.99</a>
+          </div>
+          <p class="avail-note direct-note">Want other Pepper titles too? Add them on the order form &mdash; everything ships together.</p>
+          <p class="avail-note direct-note">Standard trade discount available for wholesale accounts</p>
+          <p class="avail-note">ISBN: 979-8-234-15100-1 (Hardback)</p>
+          <a class="buy-btn ebook" href="pepper-museum-shock-lookinside.html" target="_blank" rel="noopener">Look Inside →</a>
+          <p class="avail-note" style="font-size:0.85em; opacity:0.7;">Wholesale/review buyers: contact us for the full digital review copy.</p>
+        </div>
+      </article>
+
+      <!-- Peppers Museums-Schreck - German Edition -->
+      <article class="book-card reveal" id="book-7-de">
+        <div class="book-cover has-image" style="--bcA:#0F1B33; --bcB:#1B2440;">
+          <span class="badge" style="top:auto; bottom:10px;">Deutsche Ausgabe</span>
+          <img class="cover-img" src="cover-peppers-museums-schreck.jpg" alt="Peppers Museums-Schreck Buchcover">
+        </div>
+        <div class="book-body">
+          <h3>Peppers Museums-Schreck</h3>
+          <p class="subtitle">Ein neues Abenteuer für den kleinen Terrier</p>
+          <p class="desc">Als die neugierige kleine Hündin Pepper ein großes Museum betritt, hält jeder Raum eine neue Überraschung bereit! Von gewaltigen Dinosaurierknochen und glänzenden Rittern bis zu summenden Maschinen und funkelnden Edelsteinen — Peppers großer Museumstag steckt voller Wunder. Die deutsche Ausgabe von Pepper's Museum Shock.</p>
+          <div class="meta-row">
+            <span class="chip">Paperback</span>
+            <span class="chip">Hardcover</span>
+            <span class="chip">Deutsche Ausgabe</span>
+          </div>
+          <p class="avail-note" style="font-weight:600;">Preis: $24.99 (Hardcover)</p>
+          <a class="buy-btn direct" href="mailto:Support@melonglowbooks.com?subject=Bestellung%20-%20Peppers%20Museums-Schreck&body=Hallo%20Melon%20Glow%20Books%2C%0A%0AIch%20m%C3%B6chte%20Peppers%20Museums-Schreck%20bestellen%3A%0A%0AAnzahl%3A%20%0AFormat%20(Taschenbuch%2FHardcover)%3A%20%0ALieferadresse%3A%20%0A%0ADanke!" target="_blank" rel="noopener">Bestellung / Großhandel anfragen — $24.99</a>
+          <p class="avail-note direct-note">Standard trade discount available for wholesale accounts</p>
+          <p class="avail-note">ISBN: 979-8-9973886-3-8</p>
+          <a class="buy-btn ebook" href="peppers-museums-schreck-lookinside.html" target="_blank" rel="noopener">Blick ins Buch →</a>
+          <a class="buy-btn ebook" href="pepper-series-sales-sheet-de.pdf" target="_blank" rel="noopener">View Sales Sheet →</a>
+        </div>
+      </article>
+
+      <!-- Le Choc du Musée de Pepper - French Edition -->
+      <article class="book-card reveal" id="book-7-choc-fr">
+        <div class="book-cover has-image" style="--bcA:#0F1B33; --bcB:#1B2440;">
+          <span class="badge" style="top:auto; bottom:10px;">Édition Française</span>
+          <img class="cover-img" src="cover-pepper-museum-shock.jpg" alt="Couverture de Le Choc du Musée de Pepper">
+        </div>
+        <div class="book-body">
+          <h3>Le Choc du Musée de Pepper</h3>
+          <p class="subtitle">Une découverte muséale par un chiot</p>
+          <p class="desc">Quand la petite chienne curieuse Pepper franchit les portes d'un grand musée, chaque salle réserve une nouvelle surprise ! Des ossements de dinosaures aux chevaliers étincelants, en passant par des machines qui ronronnent et des pierres précieuses scintillantes, la grande journée de Pepper au musée est remplie de découvertes immenses. Comprend une chasse au trésor amusante à l'intérieur &mdash; parfait pour les petits explorateurs curieux de 3 à 7 ans.</p>
+          <div class="meta-row">
+            <span class="chip">Broché</span>
+            <span class="chip">Couverture rigide</span>
+            <span class="chip">Édition Française</span>
+          </div>
+          <p class="avail-note" style="font-weight:600;">Prix : $24.99 (couverture rigide)</p>
+          <a class="buy-btn direct" href="mailto:Support@melonglowbooks.com?subject=Commande%20-%20Le%20Choc%20du%20Mus%C3%A9e%20de%20Pepper&body=Bonjour%20Melon%20Glow%20Books%2C%0A%0AJe%20souhaite%20commander%20Le%20Choc%20du%20Mus%C3%A9e%20de%20Pepper%20%3A%0A%0AQuantit%C3%A9%3A%20%0AFormat%20(Broch%C3%A9%2FCouverture%20rigide)%3A%20%0AAdresse%20de%20livraison%3A%20%0A%0AMerci!" target="_blank" rel="noopener">Commander — $24.99 &rarr;</a>
+          <p class="avail-note direct-note">Remise commerciale standard disponible pour les comptes grossistes</p>
+          <p class="avail-note">ISBN : 979-8-9973886-4-5 (Broché)</p>
+          <a class="buy-btn ebook" href="pepper-museum-choc-lookinside-fr.html" target="_blank" rel="noopener">Aperçu du livre &rarr;</a>
+          <a class="buy-btn ebook" href="pepper-sales-sheet-fr.pdf" target="_blank" rel="noopener">Voir la fiche des ventes &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Pepper's Paris Surprise -->
+      <article class="book-card reveal" id="book-8">
+        <div class="book-cover has-image" style="--bcA:#0F1B33; --bcB:#1B2440;">
+          <span class="badge" style="top:auto; bottom:10px;">Available Now</span>
+          <img class="cover-img" src="cover-pepper-paris-surprise.jpg" alt="Pepper's Paris Surprise cover">
+        </div>
+        <div class="book-body">
+          <h3>Pepper's Paris Surprise</h3>
+          <p class="subtitle">A Puppy's Discovery of Paris, Museums and Historic Wonders</p>
+          <p class="desc">Pepper just landed in Paris, and cousin Pop Corn has 31 wonders to show off in one very big day! From the top of the Eiffel Tower to a stained-glass jewel box at Sainte-Chapelle, a croissant-fueled boulangerie stop to a splashy boat ride down the Seine, Pepper and Pop Corn's whirlwind tour ends in the golden gardens of Versailles. A fully-illustrated bilingual-style adventure perfect for curious little explorers ages 3&ndash;7.</p>
+          <div class="meta-row">
+            <span class="chip">Hardcover</span>
+            <span class="chip">Paperback</span>
+            <span class="chip">Available Now</span>
+          </div>
+          <div class="buy-row">
+            <a class="buy-btn primary" href="https://buy.stripe.com/aFa7sL98y6u71FR3L68so04" target="_blank" rel="noopener">Buy Hardcover — $24.99</a>
+          </div>
+          <p class="avail-note direct-note">Want other Pepper titles too? Mention them in your email &mdash; everything ships together.</p>
+          <p class="avail-note direct-note">Standard trade discount available for wholesale accounts</p>
+          <p class="avail-note">ISBN: pending &mdash; expected soon</p>
+          <a class="buy-btn ebook" href="pepper-paris-surprise-lookinside.html" target="_blank" rel="noopener">Look Inside &rarr;</a>
+          <p class="avail-note" style="font-size:0.85em; opacity:0.7;">Wholesale/review buyers: contact us for the full digital review copy.</p>
+        </div>
+      </article>
+
+      <!-- La Surprise de Pepper à Paris - French Edition -->
+      <article class="book-card reveal" id="book-9-fr">
+        <div class="book-cover has-image" style="--bcA:#0F1B33; --bcB:#1B2440;">
+          <span class="badge" style="top:auto; bottom:10px;">Édition Française</span>
+          <img class="cover-img" src="cover-la-surprise-de-pepper-a-paris.jpg" alt="Couverture de La Surprise de Pepper à Paris">
+        </div>
+        <div class="book-body">
+          <h3>La Surprise de Pepper à Paris</h3>
+          <p class="subtitle">Un chiot à la découverte de Paris</p>
+          <p class="desc">Pepper vient d'atterrir à Paris, et son cousin Pop Corn a 31 merveilles à lui montrer en une seule journée ! De la tour Eiffel aux vitraux étincelants de la Sainte-Chapelle, d'une pause croissants à la boulangerie à une balade en bateau sur la Seine, leur tourbillon parisien s'achève dans les jardins dorés de Versailles. L'édition française de Pepper's Paris Surprise &mdash; parfaite pour les petits explorateurs curieux de 3 à 7 ans.</p>
+          <div class="meta-row">
+            <span class="chip">Couverture rigide</span>
+            <span class="chip">Broché</span>
+            <span class="chip">Précommande</span>
+          </div>
+          <p class="avail-note" style="font-weight:600;">Prix : $24.99 (couverture rigide)</p>
+          <a class="buy-btn direct" href="mailto:Support@melonglowbooks.com?subject=Pr%C3%A9commande%20-%20La%20Surprise%20de%20Pepper%20%C3%A0%20Paris&body=Bonjour%20Melon%20Glow%20Books%2C%0A%0AJe%20souhaite%20pr%C3%A9commander%20La%20Surprise%20de%20Pepper%20%C3%A0%20Paris%20%3A%0A%0AQuantit%C3%A9%3A%20%0AFormat%20(Broch%C3%A9%2FCouverture%20rigide)%3A%20%0AAdresse%20de%20livraison%3A%20%0A%0AMerci!" target="_blank" rel="noopener">Précommander — $24.99 &rarr;</a>
+          <p class="avail-note direct-note">Vous souhaitez d'autres titres Pepper ? Mentionnez-les dans votre e-mail &mdash; tout est expédié ensemble.</p>
+          <p class="avail-note direct-note">Remise commerciale standard disponible pour les comptes grossistes</p>
+          <p class="avail-note">ISBN : en attente &mdash; bientôt disponible</p>
+          <a class="buy-btn ebook" href="pepper-paris-surprise-lookinside-fr.html" target="_blank" rel="noopener">Aperçu du livre &rarr;</a>
+          <p class="avail-note" style="font-size:0.85em; opacity:0.7;">Acheteurs grossistes/critiques : contactez-nous pour l'exemplaire numérique complet.</p>
+        </div>
+      </article>
+
+      <!-- Peppers Paris-Ueberraschung - German Edition -->
+      <article class="book-card reveal" id="book-8-de">
+        <div class="book-cover has-image" style="--bcA:#0F1B33; --bcB:#1B2440;">
+          <span class="badge" style="top:auto; bottom:10px;">Deutsche Ausgabe</span>
+          <img class="cover-img" src="cover-peppers-paris-ueberraschung.jpg" alt="Peppers Paris-Ueberraschung Buchcover">
+        </div>
+        <div class="book-body">
+          <h3>Peppers Paris-Überraschung</h3>
+          <p class="subtitle">Ein Welpe entdeckt Paris, Museen und historische Wunder</p>
+          <p class="desc">Pepper ist gerade in Paris gelandet, und Cousin Pop Corn hat an einem einzigen, ereignisreichen Tag 31 Wunder zu zeigen! Von der Spitze des Eiffelturms bis zur funkelnden Glasjuwelenschachtel der Sainte-Chapelle, von einem croissant-geladenen Boulangerie-Stopp bis zu einer spritzigen Bootsfahrt auf der Seine &mdash; Peppers und Pop Corns turbulente Tour endet in den goldenen Gärten von Versailles. Ein vollständig illustriertes Abenteuer im zweisprachigen Stil, perfekt für neugierige kleine Entdecker im Alter von 3 bis 7 Jahren.</p>
+          <div class="meta-row">
+            <span class="chip">Hardcover</span>
+            <span class="chip">Taschenbuch</span>
+            <span class="chip">Vorbestellung</span>
+          </div>
+          <p class="avail-note" style="font-weight:600;">Preis: $24.99 (Hardcover)</p>
+          <a class="buy-btn direct" href="mailto:Support@melonglowbooks.com?subject=Vorbestellung%20-%20Peppers%20Paris-%C3%9Cberraschung&body=Hallo%20Melon%20Glow%20Books%2C%0A%0AIch%20m%C3%B6chte%20Peppers%20Paris-%C3%9Cberraschung%20vorbestellen%3A%0A%0AAnzahl%3A%20%0AFormat%20(Taschenbuch%2FHardcover)%3A%20%0ALieferadresse%3A%20%0A%0ADanke!" target="_blank" rel="noopener">Jetzt vorbestellen — $24.99 &rarr;</a>
+          <p class="avail-note direct-note">Weitere Pepper-Titel gewünscht? Erwähnen Sie diese einfach in Ihrer E-Mail &mdash; alles wird zusammen versendet.</p>
+          <p class="avail-note direct-note">Standard trade discount available for wholesale accounts</p>
+          <p class="avail-note">ISBN: ausstehend &mdash; in Kürze verfügbar</p>
+          <a class="buy-btn ebook" href="pepper-paris-surprise-lookinside-de.html" target="_blank" rel="noopener">Blick ins Buch &rarr;</a>
+          <a class="buy-btn ebook" href="pepper-series-sales-sheet-de.pdf" target="_blank" rel="noopener">View Sales Sheet &rarr;</a>
+          <p class="avail-note" style="font-size:0.85em; opacity:0.7;">Großhändler/Rezensenten: Kontaktieren Sie uns für das vollständige digitale Rezensionsexemplar.</p>
+        </div>
+      </article>
+
+<!-- Boxed Set - Complete 6-Book Collector's Set -->
+      <article class="book-card reveal" id="book-boxed-set">
+        <div class="book-cover has-image" style="--bcA:#0F1B33; --bcB:#1B2440;">
+          <span class="badge">Collector's Set</span>
+          <img class="cover-img" src="cover-pepper-boxed-set.jpg" alt="The Adventures of Pepper & Friends boxed set cover">
+        </div>
+        <div class="book-body">
+          <h3>The Adventures of Pepper &amp; Friends</h3>
+          <p class="subtitle">The Complete 5-Book Collector's Set</p>
+          <p class="desc">Bring home the complete, chronological collection of the heartwarming children's series starring a real dog. This premium, linen-textured navy slipcase features gold foil stamping and houses all five beautifully illustrated adventures by Pepper.</p>
+          <div class="meta-row">
+            <span class="chip">Boxed Set</span>
+            <span class="chip">Hardcover</span>
+            <span class="chip">Wholesale</span>
+          </div>
+          <a class="buy-btn direct" href="mailto:Support@melonglowbooks.com?subject=Wholesale%20Inquiry%20-%20Pepper%20%26%20Friends%20Boxed%20Set" target="_blank" rel="noopener">Order / Wholesale Inquiry</a>
+          <p class="avail-note">MSRP $119.00 &middot; Wholesale $48.00 (60% off)</p>
+          <a class="buy-btn ebook" href="pepper-5book-collectors-set-sales-sheet.pdf" target="_blank" rel="noopener">View Sales Sheet →</a>
+        </div>
+      </article>
+
+<!-- Book 1 -->
+      <article class="book-card reveal" id="book-1">
+        <div class="book-cover has-image" style="--bcA:#1B2440; --bcB:#2C3A66;">
+          <span class="badge">Book 1</span>
+          <img class="cover-img" src="cover-pepper-book1.jpg" alt="Six Inches Above the Ground cover">
+        </div>
+        <div class="book-body">
+          <h3>Six Inches Above the Ground</h3>
+          <p class="subtitle">A Bedtime Story of a Little Puppy</p>
+          <p class="desc">Meet Pepper for the first time — a unique dog's-eye view of daily life, whimsical neighborhood adventures, and the gentle life lessons that come with being small.</p>
+          <div class="meta-row">
+            <span class="chip">Paperback</span>
+            <span class="chip">Hardcover</span>
+          </div>
+          <div class="buy-row">
+            <a class="buy-btn primary" href="https://buy.stripe.com/bJe6oH98y19N4S34Pa8so07" target="_blank" rel="noopener">Buy Hardcover — $24.99</a>
+            <a class="buy-btn secondary" href="mailto:Support@melonglowbooks.com?subject=Paperback%20Order%20-%20Six%20Inches%20Above%20the%20Ground&body=Hi%20Melon%20Glow%20Books%2C%0A%0AI%27d%20like%20to%20order%20the%20paperback%20edition%3A%0A%0ATitle%3A%20Six%20Inches%20Above%20the%20Ground%0AQuantity%3A%20%0AShipping%20address%3A%20%0A%0AThanks%21">Buy Paperback — $14.99</a>
+          </div>          <a class="buy-btn direct" href="mailto:Support@melonglowbooks.com?subject=Direct%20Order%20-%2010%2B%20Copies%20-%20Six%20Inches%20Above%20the%20Ground&body=Hi%20Melon%20Glow%20Books%2C%0A%0AI'd%20like%20to%20order%2010%20or%20more%20copies%3A%0A%0ATitle%3A%20Six%20Inches%20Above%20the%20Ground%0AQuantity%3A%20%0AShipping%20address%3A%20%0A%0AThanks!">10+ Copies (Direct Order)</a>
+          <p class="avail-note direct-note">10+ copies: 20% off &middot; 50+ copies 35% off</p>
+          <p class="avail-note">Hardcover ISBN: 9798996139255. Also available through libraries &amp; independent bookstores worldwide via IngramSpark.</p>
+        </div>
+      </article>
+
+      <!-- Book 2 -->
+      <article class="book-card reveal" id="book-2">
+        <div class="book-cover has-image" style="--bcA:#2C4264; --bcB:#3E6271;">
+          <span class="badge">Book 2</span>
+          <img class="cover-img" src="cover-pepper-book2.jpg" alt="Four Wheels and a Rumble cover">
+        </div>
+        <div class="book-body">
+          <h3>Four Wheels and a Rumble</h3>
+          <p class="subtitle">Another Adventure of Pepper Living Life at Six Inches Above the Ground</p>
+          <p class="desc">A bedtime story about a little puppy's big discovery — Pepper meets a new motorhome, a new friend named Biscuit, and learns there's always room for one more on the adventure.</p>
+          <div class="meta-row">
+            <span class="chip">Paperback</span>
+            <span class="chip">Hardcover</span>
+          </div>
+          <div class="buy-row">
+            <a class="buy-btn primary" href="https://buy.stripe.com/3cIeVdacC3hVesDdlG8so05" target="_blank" rel="noopener">Buy Hardcover — $24.99</a>
+            <a class="buy-btn secondary" href="mailto:Support@melonglowbooks.com?subject=Paperback%20Order%20-%20Four%20Wheels%20and%20a%20Rumble&body=Hi%20Melon%20Glow%20Books%2C%0A%0AI%27d%20like%20to%20order%20the%20paperback%20edition%3A%0A%0ATitle%3A%20Four%20Wheels%20and%20a%20Rumble%0AQuantity%3A%20%0AShipping%20address%3A%20%0A%0AThanks%21">Buy Paperback — $14.99</a>
+          </div>          <p class="avail-note">Also available through libraries &amp; independent bookstores worldwide via IngramSpark.</p>
+        </div>
+      </article>
+
+      <!-- Book 3 -->
+      <article class="book-card reveal" id="book-3">
+        <div class="book-cover has-image" style="--bcA:#3A2A3C; --bcB:#5C4361;">
+          <span class="badge">Book 3</span>
+          <img class="cover-img" src="cover-pepper-book3.jpg" alt="Big Boots and a Tiny Tail cover">
+        </div>
+        <div class="book-body">
+          <h3>Big Boots and a Tiny Tail</h3>
+          <p class="subtitle">Pepper meets Marmalade for the first time</p>
+          <p class="desc">A new friend in big rubber boots changes Pepper's whole afternoon. A story about looking past first impressions — and the start of a friendship that grows through the series.</p>
+          <div class="meta-row">
+            <span class="chip">Paperback</span>
+            <span class="chip">Hardcover</span>
+          </div>
+          <div class="buy-row">
+            <a class="buy-btn primary" href="https://buy.stripe.com/8x214nacC5q384f1CY8so06" target="_blank" rel="noopener">Buy Hardcover — $24.99</a>
+            <a class="buy-btn secondary" href="mailto:Support@melonglowbooks.com?subject=Paperback%20Order%20-%20Big%20Boots%20and%20a%20Tiny%20Tail&body=Hi%20Melon%20Glow%20Books%2C%0A%0AI%27d%20like%20to%20order%20the%20paperback%20edition%3A%0A%0ATitle%3A%20Big%20Boots%20and%20a%20Tiny%20Tail%0AQuantity%3A%20%0AShipping%20address%3A%20%0A%0AThanks%21">Buy Paperback — $14.99</a>
+          </div>          <a class="buy-btn direct" href="mailto:Support@melonglowbooks.com?subject=Direct%20Order%20-%2010%2B%20Copies%20-%20Big%20Boots%20and%20a%20Tiny%20Tail&body=Hi%20Melon%20Glow%20Books%2C%0A%0AI'd%20like%20to%20order%2010%20or%20more%20copies%3A%0A%0ATitle%3A%20Big%20Boots%20and%20a%20Tiny%20Tail%0AQuantity%3A%20%0AShipping%20address%3A%20%0A%0AThanks!">10+ Copies (Direct Order)</a>
+          <p class="avail-note direct-note">10+ copies: 20% off &middot; 50+ copies 35% off</p>
+          <p class="avail-note">Available now in paperback &amp; hardcover. Hardcover ISBN: 9798996995417.</p>
+        </div>
+      </article>
+
+      <!-- Book 4 -->
+      <article class="book-card reveal" id="book-4">
+        <div class="book-cover has-image" style="--bcA:#1B2440; --bcB:#2C3A66;">
+          <span class="badge">Book 4</span>
+          <img class="cover-img" src="cover-pepper-book4.jpg" alt="A Rumble from the Sky cover">
+        </div>
+        <div class="book-body">
+          <h3>A Rumble from the Sky</h3>
+          <p class="subtitle">A Bedtime Story About a Little Puppy and the Big Storm</p>
+          <p class="desc">Pepper is having the best afternoon of her life chasing a butterfly through a sunny meadow — until the sky rumbles, the wind picks up, and the whole world turns dark and loud. Racing for shelter, Pepper ducks into an old barn and discovers she isn't alone. A gentle story about thunder, friendship, and finding warmth when you need it most.</p>
+          <div class="meta-row">
+            <span class="chip">Paperback</span>
+            <span class="chip">Hardcover</span>
+          </div>
+          <div class="buy-row">
+            <a class="buy-btn primary" href="https://buy.stripe.com/dRm00jgB0cSv1FR81m8so03" target="_blank" rel="noopener">Buy Hardcover — $24.99</a>
+            <a class="buy-btn secondary" href="mailto:Support@melonglowbooks.com?subject=Paperback%20Order%20-%20A%20Rumble%20from%20the%20Sky&body=Hi%20Melon%20Glow%20Books%2C%0A%0AI%27d%20like%20to%20order%20the%20paperback%20edition%3A%0A%0ATitle%3A%20A%20Rumble%20from%20the%20Sky%0AQuantity%3A%20%0AShipping%20address%3A%20%0A%0AThanks%21">Buy Paperback — $14.99</a>
+          </div>          <a class="buy-btn direct" href="mailto:Support@melonglowbooks.com?subject=Direct%20Order%20-%2010%2B%20Copies%20-%20A%20Rumble%20from%20the%20Sky&body=Hi%20Melon%20Glow%20Books%2C%0A%0AI'd%20like%20to%20order%2010%20or%20more%20copies%3A%0A%0ATitle%3A%20A%20Rumble%20from%20the%20Sky%0AQuantity%3A%20%0AShipping%20address%3A%20%0A%0AThanks!">10+ Copies (Direct Order)</a>
+          <a class="buy-btn ebook" href="rumble-from-the-sky-preview.html" target="_blank" rel="noopener">Look Inside →</a>
+          <p class="avail-note direct-note">10+ copies: 20% off &middot; 50+ copies 35% off</p>
+          <p class="avail-note">Available now in paperback &amp; hardcover. Hardcover ISBN: 9798996995431.</p>
+        </div>
+      </article>
+
+      <!-- Book 5 -->
+      <article class="book-card reveal" id="book-5">
+        <div class="book-cover has-image" style="--bcA:#3A2A3C; --bcB:#5C4361;">
+          <span class="badge">Book 5</span>
+          <img class="cover-img" src="cover-pepper-book5.jpg" alt="A Nose Full of Wonder cover">
+        </div>
+        <div class="book-body">
+          <h3>A Nose Full of Wonder</h3>
+          <p class="subtitle">Pepper &amp; Marmalade, book five</p>
+          <p class="desc">Pepper's amazing nose leads her on her biggest adventure yet — the final chapter for Pepper, Marmalade, and the rest of the gang.</p>
+          <div class="meta-row">
+            <span class="chip">Paperback</span>
+            <span class="chip">Hardcover</span>
+          </div>
+          <div class="buy-row">
+            <a class="buy-btn primary" href="https://buy.stripe.com/6oUdR970qbOr84f4Pa8so01" target="_blank" rel="noopener">Buy Hardcover — $24.99</a>
+            <a class="buy-btn secondary" href="mailto:Support@melonglowbooks.com?subject=Paperback%20Order%20-%20A%20Nose%20Full%20of%20Wonder&body=Hi%20Melon%20Glow%20Books%2C%0A%0AI%27d%20like%20to%20order%20the%20paperback%20edition%3A%0A%0ATitle%3A%20A%20Nose%20Full%20of%20Wonder%0AQuantity%3A%20%0AShipping%20address%3A%20%0A%0AThanks%21">Buy Paperback — $14.99</a>
+          </div>          <a class="buy-btn direct" href="mailto:Support@melonglowbooks.com?subject=Direct%20Order%20-%2010%2B%20Copies%20-%20A%20Nose%20Full%20of%20Wonder&body=Hi%20Melon%20Glow%20Books%2C%0A%0AI'd%20like%20to%20order%2010%20or%20more%20copies%3A%0A%0ATitle%3A%20A%20Nose%20Full%20of%20Wonder%0AQuantity%3A%20%0AShipping%20address%3A%20%0A%0AThanks!">10+ Copies (Direct Order)</a>
+          <a class="buy-btn ebook" href="nose-full-of-wonder-preview.html" target="_blank" rel="noopener">Look Inside</a>
+          <p class="avail-note direct-note">10+ copies: 20% off &middot; 50+ copies 35% off</p>
+          <p class="avail-note">Available now in paperback &amp; hardcover. Hardcover ISBN: 9798996995455.</p>
+        </div>
+      </article>
+
+
+    </div>
+
+    <div class="series-list reveal" style="margin-top:36px;">
+      <ol>
+        <li class="current">Book 1 · Six Inches Above the Ground</li>
+        <li class="current">Book 2 · Four Wheels and a Rumble</li>
+        <li class="current">Book 3 · Big Boots and a Tiny Tail</li>
+        <li class="current">Book 4 · A Rumble from the Sky</li>
+        <li class="current">Book 5 · A Nose Full of Wonder</li>
+        <li class="current">Holiday Special · A Snowy Christmas Miracle</li>
+        <li class="current">Pepper's Museum Shock · A Tale of 28 Wonders</li>
+        <li class="current">Pepper's Paris Surprise · A Tale of 31 Wonders</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="publisher">
+  <div class="wrap">
+    <p class="reveal">Melon Glow Books is proud to publish both Pepper the Dog's bedtime adventures and Dr. James Whitfield's plain-English health guides for patients, caregivers, and nurses.</p>
+    <div class="publisher-links reveal">
+      <a href="home.html">Melon Glow Books home</a>
+      <a class="alt" href="melonglowbooks-whitfield-buy-page.html">Dr. James Whitfield's books →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Melon Glow Books</div>
+        <p class="avail-note" style="margin-top:6px;">An imprint of Melon Glow Company, LLC</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.melonglowbooks.com">melonglowbooks.com</a>
+        <a href="mailto:Support@melonglowbooks.com">Support@melonglowbooks.com</a>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Melon Glow Company, LLC. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  const items = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window){
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold:.15});
+    items.forEach(el=>io.observe(el));
+  } else {
+    items.forEach(el=>el.classList.add('in'));
+  }
+</script>
+
+</body>
+</html>

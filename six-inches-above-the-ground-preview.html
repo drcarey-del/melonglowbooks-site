@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Six Inches Above the Ground — Look Inside | Melon Glow Books</title>
+<style>
+  :root{
+    --navy:#0d1b33;
+    --navy-deep:#081222;
+    --cream:#f5efe0;
+    --cream-dim:#cbc4b2;
+    --gold:#d4af6a;
+    --gold-soft:#e9d3a3;
+  }
+  *{box-sizing:border-box;}
+  html{ scroll-snap-type:y proximity; }
+  body{
+    margin:0;
+    background:var(--navy);
+    color:var(--cream);
+    font-family:'Georgia', 'Iowan Old Style', serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .eyebrow{
+    font-family:'Trebuchet MS', 'Segoe UI', sans-serif;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    font-size:clamp(.85rem, 1.1vw, 1.05rem);
+    color:var(--gold);
+    font-weight:700;
+  }
+
+  .intro-section{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:60px 24px;
+    scroll-snap-align:start;
+  }
+
+  h1{
+    font-size:clamp(2.4rem, 5.5vw, 5rem);
+    line-height:1.08;
+    margin:.3em 0 .3em;
+    color:var(--cream);
+    font-weight:400;
+  }
+  h1 em{ font-style:italic; color:var(--gold-soft); }
+  .pitch{
+    font-family:'Trebuchet MS', 'Segoe UI', sans-serif;
+    font-style:italic;
+    color:var(--gold-soft);
+    font-size:clamp(1.15rem, 1.7vw, 1.55rem);
+    max-width:760px;
+    margin:0 auto 1.6em;
+    line-height:1.55;
+  }
+  .tagline{
+    font-family:'Trebuchet MS', 'Segoe UI', sans-serif;
+    color:var(--cream-dim);
+    font-size:clamp(1.15rem, 1.7vw, 1.55rem);
+    max-width:800px;
+    margin:0 auto 1.1em;
+    line-height:1.7;
+  }
+  .tagline:last-of-type{ margin-bottom:0; }
+  .scroll-hint{
+    margin-top:44px;
+    font-family:'Trebuchet MS','Segoe UI',sans-serif;
+    font-size:.78rem;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--gold);
+    opacity:.8;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:8px;
+  }
+  .scroll-hint span{
+    width:1px;
+    height:34px;
+    background:linear-gradient(var(--gold), transparent);
+    animation:pulse 1.8s ease-in-out infinite;
+  }
+  @keyframes pulse{
+    0%,100%{ opacity:.3; }
+    50%{ opacity:1; }
+  }
+
+  .page-progress{
+    position:fixed;
+    top:20px;
+    right:20px;
+    font-family:'Trebuchet MS','Segoe UI',sans-serif;
+    font-size:.75rem;
+    letter-spacing:.06em;
+    color:var(--cream-dim);
+    background:rgba(13,27,51,.72);
+    border:1px solid rgba(212,175,106,.3);
+    padding:6px 12px;
+    border-radius:20px;
+    z-index:10;
+    opacity:0;
+    transition:opacity .3s ease;
+  }
+  .page-progress.visible{ opacity:1; }
+
+  .page-section{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px 10px;
+    scroll-snap-align:start;
+  }
+  .page-section img{
+    max-width:98vw;
+    max-height:98vh;
+    height:98vh;
+    width:auto;
+    display:block;
+    border-radius:6px;
+    box-shadow:0 40px 80px -24px rgba(0,0,0,.65), 0 0 0 1px rgba(212,175,106,.2);
+  }
+
+  .cta{
+    max-width:720px;
+    margin:0 auto;
+    text-align:center;
+    padding:80px 28px 70px;
+    border-top:1px solid rgba(212,175,106,.25);
+    scroll-snap-align:start;
+  }
+  .cta h2{
+    font-weight:400;
+    font-size:1.6rem;
+    color:var(--gold-soft);
+    margin:0 0 12px;
+  }
+  .cta p{
+    color:var(--cream-dim);
+    font-family:'Trebuchet MS','Segoe UI',sans-serif;
+    font-size:1rem;
+    line-height:1.7;
+    max-width:520px;
+    margin:0 auto 28px;
+  }
+  .btn-row{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+  .btn{
+    font-family:'Trebuchet MS','Segoe UI',sans-serif;
+    font-weight:700;
+    letter-spacing:.03em;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:3px;
+    font-size:.92rem;
+    display:inline-block;
+  }
+  .btn-primary{ background:var(--gold); color:var(--navy-deep); }
+  .btn-secondary{ border:1px solid var(--gold); color:var(--gold-soft); }
+
+  footer{
+    text-align:center;
+    padding:32px 24px 50px;
+    color:var(--cream-dim);
+    font-family:'Trebuchet MS','Segoe UI',sans-serif;
+    font-size:.85rem;
+  }
+  footer a{ color:var(--gold-soft); }
+</style>
+</head>
+<body>
+
+<div class="page-progress" id="pageProgress">Page 1 of 7</div>
+
+<section class="intro-section">
+  <span class="eyebrow">The One That Started It All</span>
+  <h1>Six Inches <em>Above the Ground</em></h1>
+  <p class="pitch">A gentle bedtime story about a small, scruffy-coated puppy discovering a very big world — one doorway, one squirrel, one new friend at a time.</p>
+  <p class="tagline">Told entirely from six inches above the ground, Pepper's ordinary first day at home turns into her first great adventure.</p>
+  <p class="tagline">From a startling first day home to a backyard party gone sideways, Pepper learns that you don't have to be big to have a big impact.</p>
+  <p class="tagline">Perfect for children ages 3 to 6, this is the story that started the Pepper the Dog series — a puppy's-eye view of a world that's always full of wonder.</p>
+  <div class="scroll-hint"><span></span>Scroll to look inside</div>
+</section>
+
+<section class="page-section cover-section"><img src="six-cover.jpg" alt="Six Inches Above the Ground book cover"></section>
+
+<section class="page-section" data-page="1"><img src="six-01.jpg" alt="Pepper is scooped up in two gentle hands"></section>
+<section class="page-section" data-page="2"><img src="six-02.jpg" alt="Pepper's first day home"></section>
+<section class="page-section" data-page="3"><img src="six-03.jpg" alt="Pepper bounding through tall grass"></section>
+<section class="page-section" data-page="4"><img src="six-04.jpg" alt="Pepper and the orange cat become best friends"></section>
+<section class="page-section" data-page="5"><img src="six-05.jpg" alt="Pepper is scooped up out of harm's way at the party"></section>
+<section class="page-section" data-page="6"><img src="six-06.jpg" alt="A camper van reveal in the garage"></section>
+<section class="page-section" data-page="7"><img src="six-07.jpg" alt="Pepper on a hilltop at sunset, closing spread"></section>
+
+<section class="page-section"><img src="pepper-series-grid-8titles.jpg" alt="Pepper's World Keeps Growing — the eight-book series"></section>
+
+<div class="cta">
+  <div class="btn-row">
+    <a class="btn btn-primary" href="https://melonglowbooks.com/pepper-sales-sheet.pdf">Sales Sheet</a>
+    <a class="btn btn-secondary" href="https://melonglowbooks.com/wholesale-order.html">Request the Order Sheet</a>
+  </div>
+</div>
+
+<footer>
+  Melon Glow Books &middot; Santa Rosa, CA &middot; <a href="mailto:support@melonglowbooks.com">support@melonglowbooks.com</a>
+</footer>
+
+<script>
+(function(){
+  var sections = Array.prototype.slice.call(document.querySelectorAll('.page-section:not(.cover-section)'));
+  var total = 7;
+  var progress = document.getElementById('pageProgress');
+
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting && entry.target.dataset.page){
+        progress.textContent = 'Page ' + entry.target.dataset.page + ' of ' + total;
+        progress.classList.add('visible');
+      }
+    });
+  }, {threshold:0.55});
+
+  sections.forEach(function(s){ observer.observe(s); });
+
+  var introObserver = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting){
+        progress.classList.remove('visible');
+      }
+    });
+  }, {threshold:0.4});
+  introObserver.observe(document.querySelector('.intro-section'));
+})();
+</script>
+
+</body>
+</html>

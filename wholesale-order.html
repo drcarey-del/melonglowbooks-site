@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wholesale Order Form | Melon Glow Books</title>
+<style>
+  body { font-family: 'Georgia', serif; background: #faf6ee; color: #2c3e50; margin: 0; padding: 0; }
+  .wrap { max-width: 800px; margin: 0 auto; padding: 40px 20px 80px; }
+  header { text-align: center; margin-bottom: 20px; }
+  header h1 { font-size: 1.9em; margin-bottom: 6px; color: #2c3e50; }
+  header p { color: #6b6558; font-size: 1.05em; }
+
+  .lang-toggle {
+    display: flex; justify-content: center; gap: 8px; margin-bottom: 30px;
+  }
+  .lang-toggle button {
+    font-family: inherit; font-size: 0.95em; padding: 8px 20px; border-radius: 20px;
+    border: 1px solid #2c3e50; background: #fff; color: #2c3e50; cursor: pointer;
+  }
+  .lang-toggle button.active { background: #2c3e50; color: #fff; }
+
+  .intro-box {
+    background: #fff; border: 1px solid #e5ddcb; border-radius: 8px;
+    padding: 20px 24px; margin-bottom: 30px; line-height: 1.6;
+  }
+  fieldset { border: none; padding: 0; margin: 0 0 30px; }
+  legend { font-size: 1.2em; font-weight: bold; margin-bottom: 12px; color: #2c3e50; }
+  .field { margin-bottom: 16px; }
+  label { display: block; font-weight: bold; margin-bottom: 5px; }
+  input[type=text], input[type=email], textarea {
+    width: 100%; max-width: 420px; padding: 9px 10px; border: 1px solid #cfc7b3;
+    border-radius: 5px; font-size: 1em; font-family: inherit; box-sizing: border-box;
+  }
+  textarea { height: 80px; }
+  .moq-box {
+    background: #f8f9fa; border-left: 4px solid #2c3e50; padding: 12px 16px;
+    margin-bottom: 24px; max-width: 550px; font-size: 0.95em;
+  }
+  table.titles { width: 100%; border-collapse: collapse; margin-bottom: 24px; }
+  table.titles th, table.titles td {
+    border: 1px solid #ddd; padding: 12px; text-align: left; vertical-align: middle;
+  }
+  table.titles th { background: #f8f9fa; }
+  .title-cell { display: flex; align-items: center; gap: 14px; }
+  .title-cell img {
+    width: 70px; height: auto; border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    flex-shrink: 0;
+  }
+  .title-cell .placeholder {
+    width: 70px; height: 88px; background: #eee; border: 1px dashed #bbb; border-radius: 4px;
+    display: flex; align-items: center; justify-content: center; font-size: 0.7em;
+    color: #999; text-align: center; flex-shrink: 0;
+  }
+  .title-cell .info strong { display: block; margin-bottom: 3px; }
+  .title-cell .info span { display: block; font-size: 0.88em; color: #555; }
+  input[type=number] { width: 70px; padding: 6px; border: 1px solid #cfc7b3; border-radius: 5px; }
+  .shipping-note { font-size: 0.9em; color: #555; margin-bottom: 26px; max-width: 600px; }
+  button[type=submit] {
+    background: #2c3e50; color: #fff; padding: 13px 26px; border: none;
+    cursor: pointer; font-size: 1.05em; border-radius: 5px; font-family: inherit;
+  }
+  button[type=submit]:hover { background: #1c2a38; }
+  footer { text-align: center; margin-top: 40px; color: #8a8377; font-size: 0.9em; }
+
+  /* Default: show English, hide German. !important guards against more specific
+     component rules (e.g. .title-cell .info span { display:block }) overriding the toggle. */
+  div[data-de], p[data-de] { display: none !important; }
+  span[data-de] { display: none !important; }
+
+  html.lang-de div[data-en], html.lang-de p[data-en] { display: none !important; }
+  html.lang-de span[data-en] { display: none !important; }
+
+  html.lang-de div[data-de], html.lang-de p[data-de] { display: block !important; }
+  html.lang-de span[data-de] { display: inline !important; }
+
+  /* Title-cell detail lines (ISBN, Format) must stay stacked in either language */
+  html.lang-de .title-cell .info span[data-de] { display: block !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Melon Glow Books</h1>
+    <p data-en>Direct Wholesale &amp; Pro-Forma Invoice Request</p>
+    <p data-de>Direkter Großhandel &amp; Pro-Forma-Rechnungsanfrage</p>
+  </header>
+
+  <div class="lang-toggle">
+    <button type="button" id="btn-en" class="active" onclick="setLang('en')">English</button>
+    <button type="button" id="btn-de" onclick="setLang('de')">Deutsch</button>
+  </div>
+
+  <div class="intro-box">
+    <div data-en>
+      Please complete the details below to request a pro-forma invoice or submit a direct order
+      for our museum and holiday collections. We fulfill locally in both the US and the UK to
+      keep shipping affordable and duty-free, and in Germany/Denmark for European orders.
+      A pro-forma invoice will be sent to you for approval before any payment is due.
+    </div>
+    <div data-de>
+      Bitte füllen Sie die folgenden Angaben aus, um eine Pro-Forma-Rechnung anzufordern oder
+      eine Direktbestellung für unsere Museums- und Feiertagskollektionen aufzugeben. Wir liefern
+      lokal aus den USA, Großbritannien sowie aus Deutschland/Dänemark für europäische
+      Bestellungen, um Versandkosten gering zu halten. Eine Pro-Forma-Rechnung wird Ihnen vor
+      jeder Zahlung zur Freigabe zugesandt.
+    </div>
+  </div>
+
+  <form name="wholesale-orders" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/wholesale-order-thankyou.html">
+    <input type="hidden" name="form-name" value="wholesale-orders">
+    <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+    <fieldset>
+      <legend><span data-en>Retailer / Institution Information</span><span data-de>Händler-/Institutionsangaben</span></legend>
+      <div class="field">
+        <label><span data-en>Company / Museum Name</span><span data-de>Firmen-/Museumsname</span></label>
+        <input type="text" name="company_name" required>
+      </div>
+      <div class="field">
+        <label><span data-en>Buyer Name</span><span data-de>Name des Einkäufers</span></label>
+        <input type="text" name="buyer_name" required>
+      </div>
+      <div class="field">
+        <label><span data-en>Shipping Address (including Country/Postcode)</span><span data-de>Lieferadresse (inkl. Land/Postleitzahl)</span></label>
+        <textarea name="shipping_address" required></textarea>
+      </div>
+      <div class="field">
+        <label><span data-en>Email Address</span><span data-de>E-Mail-Adresse</span></label>
+        <input type="email" name="email" required>
+      </div>
+      <div class="field">
+        <label><span data-en>Tax ID / Reseller ID (if applicable)</span><span data-de>Steuernummer / Wiederverkäufer-ID (falls zutreffend)</span></label>
+        <input type="text" name="tax_id">
+      </div>
+    </fieldset>
+
+    <div class="moq-box">
+      <div data-en>
+        <strong>Wholesale Order Terms:</strong> A minimum order quantity (MOQ) of
+        <strong>10 books total</strong> applies to all direct wholesale requests to protect
+        local shipping margins.
+      </div>
+      <div data-de>
+        <strong>Großhandelsbedingungen:</strong> Für alle direkten Großhandelsanfragen gilt eine
+        Mindestbestellmenge (MOQ) von <strong>insgesamt 10 Büchern</strong>, um die lokalen
+        Versandmargen zu schützen.
+      </div>
+    </div>
+
+    <fieldset>
+      <legend><span data-en>Title Selection &amp; Quantities</span><span data-de>Titelauswahl &amp; Mengen</span></legend>
+      <table class="titles">
+        <tr>
+          <th><span data-en>Book Title &amp; ISBN</span><span data-de>Buchtitel &amp; ISBN</span></th>
+          <th><span data-en>Wholesale Price</span><span data-de>Großhandelspreis</span></th>
+          <th><span data-en>Quantity</span><span data-de>Menge</span></th>
+        </tr>
+        <tr>
+          <td>
+            <div class="title-cell">
+              <img src="cover-pepper-museum-shock.jpg" alt="Pepper's Museum Shock cover">
+              <div class="info">
+                <strong>Pepper's Museum Shock</strong>
+                <span data-en>ISBN: 979-8-234-15100-1</span>
+                <span data-de>ISBN: 979-8-234-15100-1</span>
+                <span data-en>Format: Casebound Hardcover</span>
+                <span data-de>Format: Fester Einband (Hardcover)</span>
+              </div>
+            </div>
+          </td>
+          <td>$12.50 / £10.00</td>
+          <td><input type="number" name="qty_museum_shock" min="0" value="0"></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="title-cell">
+              <img src="cover-peppers-museums-schreck.jpg" alt="Peppers Museums-Schreck Buchcover">
+              <div class="info">
+                <strong>Peppers Museums-Schreck <span data-en>(German Edition)</span><span data-de>(Deutsche Ausgabe)</span></strong>
+                <span data-en>ISBN: 979-8-9973886-3-8</span>
+                <span data-de>ISBN: 979-8-9973886-3-8</span>
+                <span data-en>Format: Casebound Hardcover</span>
+                <span data-de>Format: Fester Einband (Hardcover)</span>
+              </div>
+            </div>
+          </td>
+          <td>$12.50 / €11.00</td>
+          <td><input type="number" name="qty_museums_schreck_de" min="0" value="0"></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="title-cell">
+              <img src="cover-snowy-christmas-miracle.jpg" alt="A Snowy Christmas Miracle cover" onerror="this.outerHTML='&lt;div class=&quot;placeholder&quot;&gt;Cover image&lt;/div&gt;'">
+              <div class="info">
+                <strong>A Snowy Christmas Miracle</strong>
+                <span data-en>ISBN: 979-8-9969954-6-2</span>
+                <span data-de>ISBN: 979-8-9969954-6-2</span>
+                <span data-en>Format: Casebound Hardcover</span>
+                <span data-de>Format: Fester Einband (Hardcover)</span>
+              </div>
+            </div>
+          </td>
+          <td>$12.50 / £10.00</td>
+          <td><input type="number" name="qty_christmas_miracle" min="0" value="0"></td>
+        </tr>
+      </table>
+
+      <div class="field">
+        <label>
+          <span data-en>Other titles or special requests (not listed above)</span>
+          <span data-de>Weitere Titel oder besondere Wünsche (nicht oben aufgeführt)</span>
+        </label>
+        <textarea name="other_titles_notes" id="other-titles-field" placeholder="e.g. full 5-book collector's set, other Pepper titles, quantities, etc."></textarea>
+      </div>
+    </fieldset>
+
+    <div class="shipping-note">
+      <label style="font-weight:normal;">
+        <input type="checkbox" name="shipping_pref" value="Standard B2B Ground / Courier Shipping" checked>
+        <span data-en><strong>Standard B2B Ground / Courier Shipping:</strong> Actual local shipping costs
+        based on destination weight will be calculated and added to your Pro-Forma Invoice
+        for approval prior to payment.</span>
+        <span data-de><strong>Standard-B2B-Versand / Kurierversand:</strong> Die tatsächlichen lokalen
+        Versandkosten werden basierend auf dem Zielgewicht berechnet und Ihrer Pro-Forma-Rechnung
+        zur Freigabe vor der Zahlung hinzugefügt.</span>
+      </label>
+    </div>
+
+    <button type="submit"><span data-en>Submit Pro-Forma Invoice Request</span><span data-de>Pro-Forma-Rechnungsanfrage senden</span></button>
+  </form>
+
+  <footer>
+    www.melonglowbooks.com &nbsp;|&nbsp; support@melonglowbooks.com
+  </footer>
+</div>
+
+<script>
+  var placeholders = {
+    en: 'e.g. full 5-book collector\'s set, other Pepper titles, quantities, etc.',
+    de: 'z. B. komplettes 5-Bücher-Sammlerset, weitere Pepper-Titel, Mengen usw.'
+  };
+  function setLang(lang) {
+    document.documentElement.classList.toggle('lang-de', lang === 'de');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+    document.getElementById('other-titles-field').placeholder = placeholders[lang];
+    try { localStorage.setItem('mgb-wholesale-lang', lang); } catch(e) {}
+  }
+  (function() {
+    var saved = null;
+    try { saved = localStorage.getItem('mgb-wholesale-lang'); } catch(e) {}
+    if (saved === 'de') { setLang('de'); }
+  })();
+</script>
+
+</body>
+</html>
