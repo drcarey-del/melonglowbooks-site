@@ -2,3 +2,13 @@
 # functional on the Free plan. Rules removed 2026-07-26 since they were
 # silently being ignored. Full review copies are kept as unlisted URLs
 # instead (not linked from site nav) rather than true password protection.
+
+# Trade/wholesale material: reachable only by direct link, kept out of search engines.
+/*.pdf
+  X-Robots-Tag: noindex, nofollow
+/wholesale-order*
+  X-Robots-Tag: noindex, nofollow
+/*reviewer*
+  X-Robots-Tag: noindex, nofollow
+/*buyerreview*
+  X-Robots-Tag: noindex, nofollow
