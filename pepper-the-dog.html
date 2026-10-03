@@ -2,10 +2,40 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Pepper the Dog</title>
-<meta http-equiv="refresh" content="0; url=https://cdn.jsdelivr.net/gh/drcarey-del/melonglowbooks-site@de92f1af3a7ba5e462cfedbe509eb52adfc09466/pepper-the-dog.html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pepper the Dog — Melon Glow Books</title>
 </head>
 <body>
-<p><a href="https://cdn.jsdelivr.net/gh/drcarey-del/melonglowbooks-site@de92f1af3a7ba5e462cfedbe509eb52adfc09466/pepper-the-dog.html">Open Pepper the Dog</a></p>
+<p>Loading books…</p>
+<script>
+fetch("https://cdn.jsdelivr.net/gh/drcarey-del/melonglowbooks-site@de92f1af3a7ba5e462cfedbe509eb52adfc09466/pepper-the-dog.html")
+  .then(function(r){ return r.text(); })
+  .then(function(html){
+    document.open(); document.write(html); document.close();
+    var links = {
+      "https://buy.stripe.com/00w3cvbgGf0D5W75Te8so00": ["https://buy.stripe.com/cNi28r2Ka5q3doz0yU8so0u","UK \u2014 \u00a318.99","https://buy.stripe.com/dRmcN54Si7yb70b3L68so0v","Europe \u2014 \u00a334"],
+      "https://buy.stripe.com/cNieVddoOf0D3NZepK8so0d": ["https://buy.stripe.com/dRm28r3Oef0D4S3gxS8so0w","Reino Unido \u2014 \u00a318.99","https://buy.stripe.com/bJe3cvgB0dWz1FRepK8so0x","Europa \u2014 \u00a334"],
+      "https://buy.stripe.com/bJedR90C23hVgAL1CY8so02": ["https://buy.stripe.com/8x2fZh1G6g4H3NZbdy8so0m","UK \u2014 \u00a318.99","https://buy.stripe.com/4gM6oH5Wm9Gj98jgxS8so0n","Europe \u2014 \u00a334"],
+      "https://buy.stripe.com/00w9AT0C2f0D5W73L68so0f": ["https://buy.stripe.com/eVq9AT3Oe5q3ckv6Xi8so0y","Reino Unido \u2014 \u00a318.99","https://buy.stripe.com/bJebJ10C29Gj98jftO8so0z","Europa \u2014 \u00a334"],
+      "https://buy.stripe.com/aFa7sL98y6u71FR3L68so04": ["https://buy.stripe.com/fZu28racC7yb98j95q8so0A","UK \u2014 \u00a318.99","https://buy.stripe.com/7sYdR90C2f0D1FR4Pa8so0B","Europe \u2014 \u00a334"],
+      "https://buy.stripe.com/bJe6oH98y19N4S34Pa8so07": ["https://buy.stripe.com/aFa28rgB07yb84f3L68so0C","UK \u2014 \u00a318.99","https://buy.stripe.com/3cI00jbgGf0DbgrchC8so0D","Europe \u2014 \u00a334"],
+      "https://buy.stripe.com/3cIeVdacC3hVesDdlG8so05": ["https://buy.stripe.com/14AaEXacCdWz84f4Pa8so0E","UK \u2014 \u00a318.99","https://buy.stripe.com/eVq4gz3Oe3hV98jdlG8so0F","Europe \u2014 \u00a334"],
+      "https://buy.stripe.com/8x214nacC5q384f1CY8so06": ["https://buy.stripe.com/14A8wP2Kaf0DesD95q8so0G","UK \u2014 \u00a318.99","https://buy.stripe.com/4gM7sLesS3hV98j3L68so0H","Europe \u2014 \u00a334"],
+      "https://buy.stripe.com/dRm00jgB0cSv1FR81m8so03": ["https://buy.stripe.com/7sY4gzacC2dR1FR3L68so0I","UK \u2014 \u00a318.99","https://buy.stripe.com/bJe9ATbgG3hVdozgxS8so0J","Europe \u2014 \u00a334"],
+      "https://buy.stripe.com/6oUdR970qbOr84f4Pa8so01": ["https://buy.stripe.com/4gM8wPckK6u75W7chC8so0K","UK \u2014 \u00a318.99","https://buy.stripe.com/aFa28rfwW2dResD1CY8so0L","Europe \u2014 \u00a334"]
+    };
+    Object.keys(links).forEach(function(us){
+      var a = document.querySelector('a[href="'+us+'"]');
+      if(!a) return;
+      var pair = links[us];
+      var uk = document.createElement("a");
+      uk.className = "buy-btn"; uk.href = pair[0]; uk.target = "_blank"; uk.rel = "noopener"; uk.textContent = pair[1];
+      var eu = document.createElement("a");
+      eu.className = "buy-btn"; eu.href = pair[2]; eu.target = "_blank"; eu.rel = "noopener"; eu.textContent = pair[3];
+      a.insertAdjacentElement("afterend", eu);
+      a.insertAdjacentElement("afterend", uk);
+    });
+  });
+</script>
 </body>
 </html>
