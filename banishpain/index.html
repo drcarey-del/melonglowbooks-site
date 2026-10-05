@@ -14,7 +14,6 @@ fetch("https://cdn.jsdelivr.net/gh/drcarey-del/melonglowbooks-site@de92f1af3a7ba
     document.open(); document.write(html); document.close();
     var links = {
       "https://buy.stripe.com/7sYfZh4Si6u7fwHftO8so09": ["https://buy.stripe.com/28E3cv5WmbOrckva9u8so0o","UK \u00a312.99","https://buy.stripe.com/cNibJ1acC2dR98j0yU8so0p","Europe \u00a322"],
-      "https://buy.stripe.com/bJefZhbgG2dR84fchC8so0a": ["https://buy.stripe.com/9B6eVd84u4lZdoz6Xi8so0q","UK \u00a316.99","https://buy.stripe.com/aFaaEXacC19N1FR81m8so0r","Europe \u00a330"],
       "https://buy.stripe.com/6oUfZhesSbOr3NZa9u8so0b": ["https://buy.stripe.com/fZu4gz5Wm3hV70b4Pa8so0s","UK \u00a318.99","https://buy.stripe.com/7sY8wP2Ka19N5W7ftO8so0t","Europe \u00a334"]
     };
     Object.keys(links).forEach(function(us){
@@ -28,6 +27,49 @@ fetch("https://cdn.jsdelivr.net/gh/drcarey-del/melonglowbooks-site@de92f1af3a7ba
       a.insertAdjacentElement("afterend", eu);
       a.insertAdjacentElement("afterend", uk);
     });
+    var old = document.querySelector('a[href="https://buy.stripe.com/bJefZhbgG2dR84fchC8so0a"]');
+    if(!old) return;
+    var section = old.closest("section");
+    var h2 = section.querySelector("h2");
+    if(h2) h2.textContent = "Diabetic Foot Care Handbook";
+    var sub = section.querySelector(".sub");
+    if(sub) sub.textContent = "The Glass Foot: A Guide to Healing, Happiness & Relief";
+    var desc = section.querySelector(".desc");
+    if(desc) desc.textContent = "A diagnosis of diabetes is a life-changing event. This book shows where the foot begins to fail, and what to do the same day.";
+    function row(label, buttons){
+      var d = document.createElement("div");
+      d.className = "buy-row";
+      d.style.marginTop = "12px";
+      var price = document.createElement("span");
+      price.className = "price";
+      price.textContent = label;
+      d.appendChild(price);
+      buttons.forEach(function(b, i){
+        var a = document.createElement("a");
+        a.className = "btn";
+        a.href = b[0];
+        a.target = "_blank";
+        a.rel = "noopener";
+        a.textContent = b[1];
+        if(i) a.style.marginLeft = "8px";
+        d.appendChild(a);
+      });
+      return d;
+    }
+    var hardback = row("Hardback", [
+      ["https://book.stripe.com/3cI3cvdoO05JfwHgxS8so0M", "USA $16.99"],
+      ["https://book.stripe.com/5kQ00jckK3hV1FRa9u8so0N", "UK \u00a316.99"],
+      ["https://book.stripe.com/fZu4gzgB019N2JV3L68so0O", "Europe \u20ac19.99"]
+    ]);
+    var paperback = row("Paperback", [
+      ["https://book.stripe.com/8x2aEXckK2dR0BN0yU8so0P", "USA $12.99"],
+      ["https://book.stripe.com/cNicN5gB05q3doz2H28so0Q", "UK \u00a312.99"],
+      ["https://book.stripe.com/fZu14n2KaaKn5W7a9u8so0R", "Europe \u20ac14.99"]
+    ]);
+    var buy = old.closest(".buy-row");
+    buy.insertAdjacentElement("afterend", paperback);
+    buy.insertAdjacentElement("afterend", hardback);
+    buy.remove();
   });
 </script>
 </body>
