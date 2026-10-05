@@ -32,8 +32,35 @@ fetch("https://cdn.jsdelivr.net/gh/drcarey-del/melonglowbooks-site@de92f1af3a7ba
     var section = old.closest("section");
     var h2 = section.querySelector("h2");
     if(h2) h2.textContent = "Diabetic Foot Care Handbook";
-    var img = section.querySelector("img");
-    if(img) img.src = "https://melonglowbooks.com/cover-diabetic-handbook.jpg?v=20261004";
+    var cover = section.querySelector(".cover");
+    if(cover){
+      cover.style.maxWidth = "560px";
+      cover.style.display = "flex";
+      cover.style.gap = "18px";
+      cover.style.alignItems = "flex-start";
+      cover.innerHTML = "";
+      ["Hardback","Paperback"].forEach(function(label){
+        var fig = document.createElement("figure");
+        fig.style.margin = "0";
+        fig.style.flex = "1";
+        var im = document.createElement("img");
+        im.src = "/cover-diabetic-handbook.jpg?v=20261005";
+        im.alt = "Diabetic Foot Care Handbook, " + label;
+        im.style.width = "100%";
+        im.style.height = "auto";
+        im.style.display = "block";
+        var cap = document.createElement("figcaption");
+        cap.textContent = label;
+        cap.style.textAlign = "center";
+        cap.style.marginTop = "8px";
+        cap.style.fontSize = "14px";
+        fig.appendChild(im);
+        fig.appendChild(cap);
+        cover.appendChild(fig);
+      });
+      var wrap = section.querySelector(".wrap");
+      if(wrap && window.innerWidth > 860) wrap.style.gridTemplateColumns = "1fr 560px";
+    }
     var sub = section.querySelector(".sub");
     if(sub) sub.textContent = "The Glass Foot: A Guide to Healing, Happiness & Relief";
     var desc = section.querySelector(".desc");
