@@ -27,6 +27,21 @@ fetch("https://cdn.jsdelivr.net/gh/drcarey-del/melonglowbooks-site@de92f1af3a7ba
       a.insertAdjacentElement("afterend", eu);
       a.insertAdjacentElement("afterend", uk);
     });
+    function openCover(ev){
+      var src = ev.currentTarget.src;
+      var box = document.createElement("div");
+      box.style.cssText = "position:fixed;inset:0;z-index:9999;background:rgba(8,10,16,.88);display:flex;align-items:center;justify-content:center;padding:24px;cursor:zoom-out;";
+      var big = document.createElement("img");
+      big.src = src;
+      big.alt = "Diabetic Foot Care Handbook cover, large";
+      big.style.cssText = "max-width:min(920px,94vw);max-height:94vh;width:auto;height:auto;box-shadow:0 24px 80px rgba(0,0,0,.45);";
+      box.appendChild(big);
+      function close(){ box.remove(); document.removeEventListener("keydown", onKey); }
+      function onKey(e){ if(e.key === "Escape") close(); }
+      box.addEventListener("click", close);
+      document.addEventListener("keydown", onKey);
+      document.body.appendChild(box);
+    }
     var old = document.querySelector('a[href="https://buy.stripe.com/bJefZhbgG2dR84fchC8so0a"]');
     if(!old) return;
     var section = old.closest("section");
@@ -49,8 +64,11 @@ fetch("https://cdn.jsdelivr.net/gh/drcarey-del/melonglowbooks-site@de92f1af3a7ba
         im.style.width = "100%";
         im.style.height = "auto";
         im.style.display = "block";
+        im.style.cursor = "zoom-in";
+        im.title = "Click to enlarge";
+        im.addEventListener("click", openCover);
         var cap = document.createElement("figcaption");
-        cap.textContent = label;
+        cap.textContent = label + " · click to enlarge";
         cap.style.textAlign = "center";
         cap.style.marginTop = "8px";
         cap.style.fontSize = "14px";
