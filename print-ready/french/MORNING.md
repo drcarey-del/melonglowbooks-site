@@ -1,33 +1,12 @@
-# French print files — saved 6 Oct 2026, for the morning
+# French Miss Rowan museum — hardcover
 
-Use these. Do not use the older 35-page “28 wonders” museum translation, and do not use the 66-page Quebec file yet.
+ISBN 979-8-9973886-4-5
 
-## Snowy — Un miracle de Noël enneigé
-
-- Interior, 36 pages, 8-title sales page on pages 4 and 34: `Un-Miracle-de-Noel-Enneige-INTERIEUR-FR.pdf`
-- Case cover, same art as the English BookVault wrap, French words, spine reads top to bottom: `Un-Miracle-de-Noel-Enneige-COUVERTURE-FR.pdf`
-- Spine: Un miracle de Noël enneigé
-- Cover barcode is still the English ISBN 979-8-9969954-6-2. Replace it if the French edition has its own.
-
-## Museum — Le Choc du Musée de Pepper
-
-This is the Miss Rowan story, not the old list of wonders. Pepper goes in with Mademoiselle Rowan, slips past the rope, gets lost, and Rowan finds her. The earring was in Rowan’s pocket.
-
-- Interior, 39 pages, feminine Pepper: `Le-Choc-du-Musee-ROWAN-INTERIEUR-FR.pdf`
-- Full French text: `Le-Choc-du-Musee-ROWAN-TEXTE-FR.txt`
+- Interior, 39 pages: `Le-Choc-du-Musee-ROWAN-INTERIEUR-FR.pdf`
+- Case cover, 210 × 210 mm, 6 mm spine, document 476 × 256 mm: `Le-Choc-du-Musee-ROWAN-COUVERTURE-FR.pdf`
 - Title: Le Choc du Musée de Pepper
-- Subtitle: Une découverte muséale par une petite chienne
-- ISBN printed in the book: 979-8-9969954-0-0 (from the English interior)
+- Spine reads top to bottom: Le Choc du Musée de Pepper
+- Pepper is feminine. Miss Rowan is Mademoiselle Rowan.
+- The 6 mm spine is the same case template as Snowy. Say if BookVault quotes a different spine for these 39 pages.
 
-## Paperback cover — waiting on an ISBN
-
-English paperback wrap is saved as `Pepper-Museum-Shock-PAPERBACK-COVER-EN.pdf`.
-Size: 429 × 216 mm. Front is Pepper held up in the museum. Back headline: “A Tale of Museum Magic.” Ages 3–7.
-The barcode on that file is 9798997388614. Do not use it. A different ISBN is coming in the morning. French paperback cover is not built yet.
-
-## Still open
-
-- French paperback cover, once the new ISBN arrives
-- French hardback case cover for the museum book
-- The “do not enter” sign painted in the hallway picture is still English. It is part of the art.
-- Cover thumbnails on the sales page stay English. They are the printed pictures.
+Paperback ISBN is still to come. Do not use 9798997388614.
