@@ -18,7 +18,7 @@ fetch("https://cdn.jsdelivr.net/gh/drcarey-del/melonglowbooks-site@de92f1af3a7ba
       "https://buy.stripe.com/bJedR90C23hVgAL1CY8so02": ["https://buy.stripe.com/8x2fZh1G6g4H3NZbdy8so0m","UK \u2014 \u00a318.99","https://buy.stripe.com/4gM6oH5Wm9Gj98jgxS8so0n","Europe \u2014 \u00a334"],
       "https://buy.stripe.com/00w9AT0C2f0D5W73L68so0f": ["https://buy.stripe.com/eVq9AT3Oe5q3ckv6Xi8so0y","Reino Unido \u2014 \u00a318.99","https://buy.stripe.com/bJebJ10C29Gj98jftO8so0z","Europa \u2014 \u00a334"],
       "https://buy.stripe.com/aFa7sL98y6u71FR3L68so04": ["https://buy.stripe.com/fZu28racC7yb98j95q8so0A","UK \u2014 \u00a318.99","https://buy.stripe.com/7sYdR90C2f0D1FR4Pa8so0B","Europe \u2014 \u00a334"],
-      "https://buy.stripe.com/bJe6oH98y19N4S34Pa8so07": ["https://buy.stripe.com/aFa28rgB07yb84f3L68so0C","UK \u2014 \u00a318.99","https://buy.stripe.com/3cI00jbgGf0DbgrchC8so0D","Europe \u2014 \u00a334"],
+      "https://buy.stripe.com/bJe6oH98y19N4S34Pa8so07": ["https://book.stripe.com/bJe7sL5WmbOrckvepK8so0T","Hardcover \u2014 UK \u00a312.99","https://book.stripe.com/9B69ATdoO3hV2JVgxS8so0U","Hardcover \u2014 Europe \u20ac14.99"],
       "https://buy.stripe.com/3cIeVdacC3hVesDdlG8so05": ["https://buy.stripe.com/14AaEXacCdWz84f4Pa8so0E","UK \u2014 \u00a318.99","https://buy.stripe.com/eVq4gz3Oe3hV98jdlG8so0F","Europe \u2014 \u00a334"],
       "https://buy.stripe.com/8x214nacC5q384f1CY8so06": ["https://buy.stripe.com/14A8wP2Kaf0DesD95q8so0G","UK \u2014 \u00a318.99","https://buy.stripe.com/4gM7sLesS3hV98j3L68so0H","Europe \u2014 \u00a334"],
       "https://buy.stripe.com/dRm00jgB0cSv1FR81m8so03": ["https://buy.stripe.com/7sY4gzacC2dR1FR3L68so0I","UK \u2014 \u00a318.99","https://buy.stripe.com/bJe9ATbgG3hVdozgxS8so0J","Europe \u2014 \u00a334"],
@@ -35,6 +35,27 @@ fetch("https://cdn.jsdelivr.net/gh/drcarey-del/melonglowbooks-site@de92f1af3a7ba
       a.insertAdjacentElement("afterend", eu);
       a.insertAdjacentElement("afterend", uk);
     });
+    var book = document.getElementById("book-1");
+    if (book) {
+      var hard = book.querySelector('a.buy-btn.primary');
+      if (hard) {
+        hard.href = "https://book.stripe.com/eVq9AT2Ka3hV0BNftO8so0S";
+        hard.textContent = "Hardcover \u2014 USA $16.99";
+      }
+      var mail = book.querySelectorAll('a[href^="mailto:"]');
+      mail.forEach(function(a){
+        if (a.textContent.indexOf("Paperback") === -1) return;
+        function btn(href, label){
+          var n = document.createElement("a");
+          n.className = "buy-btn"; n.href = href; n.target = "_blank"; n.rel = "noopener"; n.textContent = label;
+          return n;
+        }
+        a.insertAdjacentElement("afterend", btn("https://book.stripe.com/dRmaEXacC5q384fftO8so0X","Paperback \u2014 Europe \u20ac8.99"));
+        a.insertAdjacentElement("afterend", btn("https://book.stripe.com/dRm4gzbgGg4H2JVepK8so0W","Paperback \u2014 UK \u00a37.99"));
+        a.insertAdjacentElement("afterend", btn("https://book.stripe.com/3cI3cv2KaaKn1FR4Pa8so0V","Paperback \u2014 USA $12.99"));
+        a.remove();
+      });
+    }
   });
 </script>
 </body>
