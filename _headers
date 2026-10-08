@@ -12,3 +12,7 @@
   X-Robots-Tag: noindex, nofollow
 /*buyerreview*
   X-Robots-Tag: noindex, nofollow
+
+# Faire product images: reachable by direct link only, kept out of search engines.
+/faire-images/*
+  X-Robots-Tag: noindex, nofollow
