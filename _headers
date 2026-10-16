@@ -16,3 +16,9 @@
 # Faire product images: reachable by direct link only, kept out of search engines.
 /faire-images/*
   X-Robots-Tag: noindex, nofollow
+
+# Syncee product feed (stable URL, always fresh)
+/feeds/*
+  Content-Type: text/csv; charset=utf-8
+  Cache-Control: public, max-age=300, must-revalidate
+  Access-Control-Allow-Origin: *
