@@ -812,16 +812,20 @@
 <script>
 (function(){
     var links = {
-      "https://buy.stripe.com/00w3cvbgGf0D5W75Te8so00": ["https://buy.stripe.com/cNi28r2Ka5q3doz0yU8so0u","UK \u2014 \u00a318.99","https://buy.stripe.com/dRmcN54Si7yb70b3L68so0v","Europe \u2014 \u00a334"],
-      "https://buy.stripe.com/cNieVddoOf0D3NZepK8so0d": ["https://buy.stripe.com/dRm28r3Oef0D4S3gxS8so0w","Reino Unido \u2014 \u00a318.99","https://buy.stripe.com/bJe3cvgB0dWz1FRepK8so0x","Europa \u2014 \u00a334"],
-      "https://buy.stripe.com/bJedR90C23hVgAL1CY8so02": ["https://buy.stripe.com/8x2fZh1G6g4H3NZbdy8so0m","UK \u2014 \u00a318.99","https://buy.stripe.com/4gM6oH5Wm9Gj98jgxS8so0n","Europe \u2014 \u00a334"],
-      "https://buy.stripe.com/00w9AT0C2f0D5W73L68so0f": ["https://buy.stripe.com/eVq9AT3Oe5q3ckv6Xi8so0y","Reino Unido \u2014 \u00a318.99","https://buy.stripe.com/bJebJ10C29Gj98jftO8so0z","Europa \u2014 \u00a334"],
-      "https://buy.stripe.com/aFa7sL98y6u71FR3L68so04": ["https://buy.stripe.com/fZu28racC7yb98j95q8so0A","UK \u2014 \u00a318.99","https://buy.stripe.com/7sYdR90C2f0D1FR4Pa8so0B","Europe \u2014 \u00a334"],
-      "https://buy.stripe.com/bJe6oH98y19N4S34Pa8so07": ["https://book.stripe.com/bJe7sL5WmbOrckvepK8so0T","Hardcover \u2014 UK \u00a312.99","https://book.stripe.com/9B69ATdoO3hV2JVgxS8so0U","Hardcover \u2014 Europe \u20ac14.99"],
-      "https://buy.stripe.com/3cIeVdacC3hVesDdlG8so05": ["https://buy.stripe.com/14AaEXacCdWz84f4Pa8so0E","UK \u2014 \u00a318.99","https://buy.stripe.com/eVq4gz3Oe3hV98jdlG8so0F","Europe \u2014 \u00a334"],
-      "https://buy.stripe.com/8x214nacC5q384f1CY8so06": ["https://buy.stripe.com/14A8wP2Kaf0DesD95q8so0G","UK \u2014 \u00a318.99","https://buy.stripe.com/4gM7sLesS3hV98j3L68so0H","Europe \u2014 \u00a334"],
-      "https://buy.stripe.com/dRm00jgB0cSv1FR81m8so03": ["https://buy.stripe.com/7sY4gzacC2dR1FR3L68so0I","UK \u2014 \u00a318.99","https://buy.stripe.com/bJe9ATbgG3hVdozgxS8so0J","Europe \u2014 \u00a334"],
-      "https://buy.stripe.com/6oUdR970qbOr84f4Pa8so01": ["https://buy.stripe.com/4gM8wPckK6u75W7chC8so0K","UK \u2014 \u00a318.99","https://buy.stripe.com/aFa28rfwW2dResD1CY8so0L","Europe \u2014 \u00a334"]
+      "https://buy.stripe.com/00w3cvbgGf0D5W75Te8so00": ["https://buy.stripe.com/9B628r70qbOr0BN5Te8so18","UK \u2014 \u00a316.99","https://buy.stripe.com/dRm5kD98y2dResDa9u8so19","Europe \u2014 \u20ac17.99"],
+      "https://buy.stripe.com/cNieVddoOf0D3NZepK8so0d": ["https://buy.stripe.com/dRmfZh3Oe7yb84f1CY8so1a","Reino Unido \u2014 \u00a316.99","https://buy.stripe.com/3cI00j98y19N5W7dlG8so1b","Europa \u2014 \u20ac17.99"],
+      "https://buy.stripe.com/bJedR90C23hVgAL1CY8so02": ["https://buy.stripe.com/aFa00j3OebOresDbdy8so1c","UK \u2014 \u00a316.99","https://buy.stripe.com/4gMeVdesS7yb2JVgxS8so1d","Europe \u2014 \u20ac17.99"],
+      "https://buy.stripe.com/00w9AT0C2f0D5W73L68so0f": ["https://buy.stripe.com/00waEXesSaKnfwH81m8so1e","Reino Unido \u2014 \u00a316.99","https://buy.stripe.com/cNi4gzgB0dWz70ba9u8so1f","Europa \u2014 \u20ac17.99"],
+      "https://buy.stripe.com/aFa7sL98y6u71FR3L68so04": ["https://buy.stripe.com/cNicN5acC05JfwHdlG8so1g","UK \u2014 \u00a316.99","https://buy.stripe.com/00w9ATckKdWzesDa9u8so1h","Europe \u2014 \u20ac17.99"],
+      "https://buy.stripe.com/bJe6oH98y19N4S34Pa8so07": ["https://book.stripe.com/6oU5kD3OeaKngAL6Xi8so1i","Hardcover \u2014 UK \u00a316.99","https://book.stripe.com/3cIcN5bgG4lZgAL0yU8so1j","Hardcover \u2014 Europe \u20ac17.99"],
+      "https://buy.stripe.com/3cIeVdacC3hVesDdlG8so05": ["https://buy.stripe.com/6oUaEXdoO8CfgAL6Xi8so1k","Hardcover \u2014 UK \u00a316.99","https://buy.stripe.com/aFa9ATesS19N2JV6Xi8so1l","Hardcover \u2014 Europe \u20ac17.99"],
+      "https://buy.stripe.com/28EbJ1gB019N3NZepK8so0Y": ["https://book.stripe.com/4gMeVd1G6aKnbgrbdy8so1u","Paperback \u2014 UK \u00a38.99","https://book.stripe.com/14A5kD0C2bOr0BN5Te8so1v","Paperback \u2014 Europe \u20ac10.99"],
+      "https://buy.stripe.com/8x214nacC5q384f1CY8so06": ["https://buy.stripe.com/6oU3cv1G68CfgALgxS8so1m","Hardcover \u2014 UK \u00a316.99","https://buy.stripe.com/4gMeVddoO8Cf3NZepK8so1n","Hardcover \u2014 Europe \u20ac17.99"],
+      "https://buy.stripe.com/6oU9AT0C2dWz4S32H28so15": ["https://book.stripe.com/bJecN584ug4H4S3dlG8so1w","Paperback \u2014 UK \u00a38.99","https://book.stripe.com/5kQcN5gB019N3NZ0yU8so1x","Paperback \u2014 Europe \u20ac10.99"],
+      "https://buy.stripe.com/dRm00jgB0cSv1FR81m8so03": ["https://buy.stripe.com/00waEXbgG8Cf84fgxS8so1o","Hardcover \u2014 UK \u00a316.99","https://buy.stripe.com/7sYfZh4Si19N3NZ3L68so1p","Hardcover \u2014 Europe \u20ac17.99"],
+      "https://buy.stripe.com/dRm7sL70q4lZ4S3a9u8so16": ["https://book.stripe.com/14A00j84u3hVacnepK8so1y","Paperback \u2014 UK \u00a38.99","https://book.stripe.com/bJe00j70q5q3esDbdy8so1z","Paperback \u2014 Europe \u20ac10.99"],
+      "https://buy.stripe.com/6oUdR970qbOr84f4Pa8so01": ["https://buy.stripe.com/6oU00j4Sig4H98j95q8so1q","Hardcover \u2014 UK \u00a316.99","https://buy.stripe.com/aFa4gz98yaKn84f81m8so1r","Hardcover \u2014 Europe \u20ac17.99"],
+      "https://buy.stripe.com/dRmcN5gB0g4H3NZdlG8so17": ["https://book.stripe.com/fZu3cv70qcSvfwH81m8so1A","Paperback \u2014 UK \u00a38.99","https://book.stripe.com/6oU6oH2Ka5q33NZ95q8so1B","Paperback \u2014 Europe \u20ac10.99"]
     };
     Object.keys(links).forEach(function(us){
       var a = document.querySelector('a[href="'+us+'"]');
@@ -849,8 +853,8 @@
           n.className = "buy-btn"; n.href = href; n.target = "_blank"; n.rel = "noopener"; n.textContent = label;
           return n;
         }
-        a.insertAdjacentElement("afterend", btn("https://book.stripe.com/dRmaEXacC5q384fftO8so0X","Paperback \u2014 Europe \u20ac8.99"));
-        a.insertAdjacentElement("afterend", btn("https://book.stripe.com/dRm4gzbgGg4H2JVepK8so0W","Paperback \u2014 UK \u00a37.99"));
+        a.insertAdjacentElement("afterend", btn("https://book.stripe.com/aFabJ1ckKaKngAL2H28so1t","Paperback \u2014 Europe \u20ac10.99"));
+        a.insertAdjacentElement("afterend", btn("https://book.stripe.com/4gMbJ1acCg4H3NZ0yU8so1s","Paperback \u2014 UK \u00a38.99"));
         a.insertAdjacentElement("afterend", btn("https://buy.stripe.com/28E28rfwWcSv1FRepK8so13","Paperback \u2014 USA $16.99"));
         a.remove();
       });
