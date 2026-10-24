@@ -4,132 +4,499 @@
 <meta name="p:domain_verify" content="948c2d9817219fff61d01d39e4835ea7"/>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Melon Glow Books</title>
-<meta name="description" content="Step inside Melon Glow Books — bedtime stories and plain-English health guides.">
+<title>Adorable Greeting Cards — Wholesale on Faire | Melon Glow Books</title>
+<meta name="description" content="Adorable Greeting Cards: 5x7 puppy greeting cards on heavy 100 lb matte card stock, blank inside with envelopes, printed in the USA. Shop wholesale on Faire. Plus children's picture books from Melon Glow Books.">
+<link rel="canonical" href="https://melonglowbooks.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Adorable Greeting Cards — Wholesale on Faire">
+<meta property="og:description" content="61 Adorable Puppy designs plus general designs. 5x7 folded cards, printed in the USA. $3 wholesale per card on Faire.">
+<meta property="og:image" content="https://melonglowbooks.com/images/cards/mockups/Adorable-Card-Mockup-Set-Sample-6-Designs.jpg">
+<meta property="og:url" content="https://melonglowbooks.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,500&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
+  :root{
+    --navy:#1B2440; --cream:#FBF6EC; --gold:#C9A227;
+    --rose:#C0697B; --teal:#5E9690; --slate:#5B6478;
+    --card:#FFFFFF; --line: rgba(27,36,64,0.12); --maxw: 1180px;
+  }
   *{box-sizing:border-box;}
-  html,body{margin:0; height:100%; background:#0c0a06; overflow:hidden;}
-  a{text-decoration:none;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; background:var(--cream); color:var(--navy);
+    font-family:'Inter',system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
 
-  .stage{
-    position:relative;
-    width:100%; height:100vh;
-    overflow:hidden;
+  header{
+    position:sticky; top:0; z-index:40;
+    background:rgba(251,246,236,0.95);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
   }
-  .stage img.bg{
-    position:absolute; inset:0;
-    width:100%; height:100%;
-    object-fit:cover;
-    object-position:center 38%;
-    filter:saturate(1.05);
+  .nav{
+    max-width:var(--maxw); margin:0 auto; padding:16px 28px;
+    display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;
   }
-  .vignette{
-    position:absolute; inset:0;
-    background:radial-gradient(ellipse at 50% 62%, rgba(0,0,0,0) 18%, rgba(8,6,2,0.55) 78%);
-    pointer-events:none;
-  }
-  .topfade{
-    position:absolute; top:0; left:0; right:0; height:160px;
-    background:linear-gradient(to bottom, rgba(8,6,2,0.65), rgba(8,6,2,0));
-    pointer-events:none;
-  }
+  .brand{ display:flex; align-items:center; gap:10px; font-family:'Poppins', sans-serif; font-weight:700; font-size:1.05rem; text-decoration:none; }
+  .brand img{ width:34px; height:34px; border-radius:50%; }
+  .nav-links{ display:flex; gap:22px; font-size:.92rem; font-weight:500; align-items:center; }
+  .nav-links a{ text-decoration:none; color:var(--slate); }
+  .nav-links a:hover{ color:var(--navy); }
+  .nav-links a.pill{ background:var(--navy); color:var(--cream); padding:9px 18px; border-radius:20px; font-weight:600; }
+  .nav-links a.pill:hover{ background:var(--rose); color:#fff; }
 
-  .heading{
-    position:absolute; top:34px; left:0; right:0;
-    text-align:center; z-index:5; pointer-events:none;
+  .hero{
+    text-align:center; padding:56px 28px 44px; background:var(--navy); color:var(--cream);
   }
-  .heading .eyebrow{
-    font-family:'IBM Plex Mono', monospace; font-size:.7rem;
-    letter-spacing:.18em; text-transform:uppercase; color:#C9A227;
-    margin:0;
-  }
-  .heading h1{
-    font-family:'Lora', serif; font-weight:600; color:#FBF6EC;
-    font-size:clamp(1.3rem, 3vw, 1.9rem);
-    margin:6px 0 0;
-    text-shadow:0 2px 10px rgba(0,0,0,.5);
-  }
+  .hero h1{ font-family:'Poppins', sans-serif; font-weight:800; font-size:clamp(1.7rem,4vw,2.3rem); margin:0 0 10px; letter-spacing:1px; }
+  .hero p{ color:var(--gold); font-style:italic; margin:0; font-size:1.02rem; }
+  .hero .sub{ color:#D8DCEA; font-style:normal; max-width:600px; margin:16px auto 0; font-size:.92rem; line-height:1.5; }
 
-  .hotspot{
-    position:absolute;
-    left:50%; top:67%;
-    width:min(34vw, 320px); height:min(25vw, 230px);
-    transform:translate(-50%,-50%);
-    border-radius:14px;
-    cursor:pointer;
-    display:flex; align-items:flex-end; justify-content:center;
-    z-index:6;
+  section.imprint{ padding:60px 0 20px; }
+  .section-head{ text-align:center; margin-bottom:8px; }
+  .section-head .eyebrow{
+    font-family:'IBM Plex Mono', monospace; text-transform:uppercase; letter-spacing:.14em;
+    font-size:.72rem; color:var(--gold); margin:0 0 8px;
   }
-  .hotspot .ring{
-    position:absolute; inset:-6px;
-    border-radius:18px;
-    border:2px solid rgba(201,162,39,0.0);
-    box-shadow:0 0 0 0 rgba(201,162,39,0.0);
-    transition:border-color .25s ease, box-shadow .25s ease;
-  }
-  .hotspot:hover .ring, .hotspot:focus-visible .ring{
-    border-color:rgba(201,162,39,0.85);
-    box-shadow:0 0 38px 6px rgba(201,162,39,0.35);
-  }
-  .hotspot:focus-visible{ outline:none; }
+  .section-head h2{ font-family:'Poppins', sans-serif; font-weight:800; font-size:1.7rem; margin:0 0 6px; }
+  .section-head p{ color:var(--slate); font-style:italic; margin:0 0 36px; }
+  .section-head p.series-tagline{ color:var(--rose); font-size:.95rem; margin:0 0 6px; }
 
-  @media (prefers-reduced-motion: no-preference){
-    .hotspot .ring{ animation:pulse 2.6s ease-in-out infinite; }
+  .book-grid{
+    display:grid; grid-template-columns:repeat(auto-fill, minmax(190px, 1fr));
+    gap:22px;
   }
-  @keyframes pulse{
-    0%, 100%{ box-shadow:0 0 16px 2px rgba(201,162,39,0.18); border-color:rgba(201,162,39,0.35); }
-    50%{ box-shadow:0 0 30px 5px rgba(201,162,39,0.3); border-color:rgba(201,162,39,0.6); }
+  .book-card{
+    background:var(--card); border:1px solid var(--line); border-radius:10px;
+    overflow:hidden; text-decoration:none; color:var(--navy);
+    display:flex; flex-direction:column;
+    transition:transform .15s ease, box-shadow .15s ease;
   }
+  .book-card:hover{ transform:translateY(-4px); box-shadow:0 14px 26px rgba(27,36,64,.14); }
+  .book-card .cover-wrap{ aspect-ratio:1/1; overflow:hidden; background:#0e1424; }
+  .book-card .cover-wrap img{ width:100%; height:100%; object-fit:cover; object-position:top center; }
+  .book-card .cover-wrap.placeholder{
+    display:flex; align-items:center; justify-content:center;
+    background:linear-gradient(155deg, var(--bcA,#1B2440), var(--bcB,#2c3a66));
+    padding:14px; text-align:center;
+  }
+  .book-card .cover-wrap.placeholder span{
+    color:#F4EFE2; font-family:'Poppins', sans-serif; font-weight:700; font-size:.95rem; line-height:1.3;
+  }
+  .book-card .info{ padding:14px 14px 16px; flex:1; display:flex; flex-direction:column; }
+  .book-card .badge{
+    font-family:'IBM Plex Mono', monospace; font-size:.66rem; color:var(--gold);
+    text-transform:uppercase; letter-spacing:.06em; margin-bottom:4px;
+  }
+  .book-card h3{ font-family:'Poppins', sans-serif; font-weight:700; font-size:.98rem; margin:0 0 4px; line-height:1.3; }
+  .book-card p{ font-size:.82rem; color:var(--slate); margin:0 0 12px; line-height:1.4; flex:1; }
+  .book-card .view{ font-size:.8rem; font-weight:700; color:var(--navy); }
+  .book-card:hover .view{ color:var(--rose); }
 
-  .enter-label{
-    position:relative; z-index:7;
-    margin-bottom:-34px;
-    font-family:'IBM Plex Mono', monospace; font-size:.7rem;
-    letter-spacing:.12em; text-transform:uppercase;
-    color:#FBF6EC; background:rgba(20,16,8,0.55);
-    padding:7px 16px; border-radius:20px;
-    border:1px solid rgba(201,162,39,0.5);
-    opacity:0; transform:translateY(6px);
-    transition:opacity .2s ease, transform .2s ease;
-    white-space:nowrap;
-  }
-  .hotspot:hover .enter-label, .hotspot:focus-visible .enter-label{
-    opacity:1; transform:translateY(0);
-  }
+  .divider{ max-width:var(--maxw); margin:56px auto 0; padding:0 28px; }
+  .divider hr{ border:none; border-top:1px solid var(--line); }
 
-  .skip{
-    position:absolute; bottom:22px; right:22px; z-index:6;
-    font-family:'IBM Plex Mono', monospace; font-size:.7rem;
-    letter-spacing:.08em; color:#D8DCEA;
-    background:rgba(20,16,8,0.45);
-    padding:8px 14px; border-radius:20px;
-    border:1px solid rgba(255,255,255,0.18);
-  }
-  .skip:hover{ border-color:rgba(201,162,39,0.6); color:#FBF6EC; }
+  footer{ padding:40px 28px 56px; text-align:center; }
+  footer .brand-line{ font-family:'Poppins', sans-serif; font-weight:700; margin-bottom:8px; }
+  footer a{ color:var(--slate); text-decoration:none; font-size:.85rem; }
+  footer a.btn{ font-size:.92rem; }
+  footer a:hover{ color:var(--navy); }
+
+  /* ---- Adorable Greeting Cards hero ---- */
+  .hero.cards-hero{ text-align:left; padding:56px 0 60px; }
+  .cards-hero .hero-grid{ max-width:var(--maxw); margin:0 auto; padding:0 28px; display:grid; grid-template-columns:1.05fr .95fr; gap:44px; align-items:center; }
+  @media (max-width:860px){ .cards-hero .hero-grid{ grid-template-columns:1fr; gap:28px; } .cards-hero{ text-align:center; } }
+  .cards-hero .eyebrow{ font-family:'IBM Plex Mono', monospace; text-transform:uppercase; letter-spacing:.14em; font-size:.72rem; color:var(--gold); margin:0 0 14px; font-style:normal; }
+  .cards-hero h1{ font-size:clamp(2rem,4.6vw,3.1rem); line-height:1.1; margin:0 0 16px; letter-spacing:0; }
+  .cards-hero .lede{ color:#D8DCEA; font-style:normal; font-size:1.05rem; line-height:1.6; margin:0 0 26px; max-width:52ch; }
+  @media (max-width:860px){ .cards-hero .lede{ margin-left:auto; margin-right:auto; } }
+  .cards-hero .hero-img{ border-radius:14px; overflow:hidden; box-shadow:0 22px 48px rgba(0,0,0,.35); }
+  .cta-row{ display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+  @media (max-width:860px){ .cta-row{ justify-content:center; } }
+  .btn{ display:inline-block; font-family:'Poppins',sans-serif; font-weight:700; font-size:1rem; padding:14px 26px; border-radius:28px; text-decoration:none; transition:transform .12s ease, box-shadow .12s ease, background .12s ease; }
+  .btn:hover{ transform:translateY(-1px); box-shadow:0 8px 18px rgba(0,0,0,.25); }
+  .btn-faire{ background:var(--gold); color:var(--navy); }
+  .btn-faire:hover{ background:#d8b23a; }
+  .btn-ghost{ border:2px solid rgba(251,246,236,.55); color:var(--cream); padding:12px 24px; }
+  .btn-ghost:hover{ border-color:var(--cream); }
+  .btn-dark{ background:var(--navy); color:var(--cream); }
+  .btn-dark:hover{ background:var(--rose); color:#fff; }
+  .offer-note{ color:#F3E3B0 !important; font-style:normal !important; font-size:.88rem !important; margin:14px 0 0 !important; line-height:1.5; max-width:52ch; }
+  .offer-note small{ color:#B9BFD3; font-size:.78rem; }
+  .facts{ display:flex; flex-wrap:wrap; gap:8px 18px; margin:22px 0 0; padding:0; list-style:none; font-size:.84rem; color:#D8DCEA; font-style:normal; }
+  @media (max-width:860px){ .facts{ justify-content:center; } }
+  .facts li::before{ content:"\2022"; color:var(--gold); margin-right:7px; }
+
+  section.cards-teaser{ padding:56px 0 12px; }
+  .teaser-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+  @media (max-width:900px){ .teaser-grid{ grid-template-columns:repeat(2,1fr); gap:14px; } }
+  .teaser{ background:var(--card); border:1px solid var(--line); border-radius:10px; overflow:hidden; text-decoration:none; color:var(--navy); display:flex; flex-direction:column; transition:transform .15s ease, box-shadow .15s ease; }
+  .teaser:hover{ transform:translateY(-4px); box-shadow:0 14px 26px rgba(27,36,64,.14); }
+  .teaser img{ aspect-ratio:1/1; object-fit:cover; width:100%; }
+  .teaser .t-info{ padding:12px 14px 14px; }
+  .teaser h3{ font-family:'Poppins',sans-serif; font-size:.95rem; margin:0 0 2px; }
+  .teaser p{ margin:0; font-size:.8rem; color:var(--slate); }
+  .center-cta{ text-align:center; margin-top:28px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+
+  .footer-faire{ margin:0 auto 18px; }
+  .footer-faire .btn{ font-size:.92rem; padding:11px 22px; }
+  .footer-faire p{ font-size:.8rem; color:var(--slate); margin:8px 0 0; }
+  .footer-links{ display:flex; gap:18px; justify-content:center; flex-wrap:wrap; margin:14px 0 10px; }
+  .cards-hero .hero-img img, .teaser img{ width:100%; height:auto; }
+  .nav-links{ flex-wrap:wrap; }
+  @media (max-width:640px){ .nav{ padding:12px 16px; } .nav-links{ width:100%; gap:10px 14px; font-size:.86rem; } }
 </style>
 </head>
 <body>
 
-<div class="stage">
-  <img class="bg" src="library.jpg" alt="A grand library, with an open book reading Melon Glow Books at its center.">
-  <div class="topfade"></div>
-  <div class="vignette"></div>
-
-  <div class="heading">
-    <p class="eyebrow">Melon Glow Books</p>
-    <h1>Step inside.</h1>
+<header>
+  <div class="nav">
+    <a class="brand" href="home.html">
+      <img src="logo.png" alt="Melon Glow Books logo">
+      MELON GLOW BOOKS
+    </a>
+    <nav class="nav-links">
+      <a href="greeting-cards.html">Adorable Greeting Cards</a>
+      <a href="cards/">Wholesale Cards</a>
+      <a href="pepper-the-dog.html">Pepper the Dog</a>
+      <a href="melonglowbooks-whitfield-buy-page.html">Dr. James Whitfield</a>
+      <a class="pill" href="https://faire.com/direct/melonglowbooks" target="_blank" rel="noopener">Shop Wholesale on Faire</a>
+    </nav>
   </div>
+</header>
 
-  <a class="hotspot" href="home.html" aria-label="Enter Melon Glow Books">
-    <span class="ring" aria-hidden="true"></span>
-    <span class="enter-label">Open the book</span>
-  </a>
-
-  <a class="skip" href="home.html">Skip intro →</a>
+<!-- ============ ADORABLE GREETING CARDS (HERO) ============ -->
+<div class="hero cards-hero">
+  <div class="hero-grid">
+    <div>
+      <p class="eyebrow">New from Melon Glow Company, LLC</p>
+      <h1>Adorable Greeting Cards</h1>
+      <p class="lede">Sweet, full-color greeting cards your customers will want to pick up. 61 Adorable Puppy designs plus general designs, for birthdays, holidays, thank yous and every day in between.</p>
+      <div class="cta-row">
+        <a class="btn btn-faire" href="https://faire.com/direct/melonglowbooks" target="_blank" rel="noopener">Shop Wholesale on Faire</a>
+        <a class="btn btn-ghost" href="cards/#designs">See all designs</a>
+      </div>
+      <p class="offer-note">New shops get 50% off their first order and free shipping when they order through this link.<br><small>Faire&rsquo;s offer for shops new to Faire: up to $150 off, plus a year of free shipping on our line.</small></p>
+      <ul class="facts">
+        <li>$3 wholesale &middot; $5.95 retail</li>
+        <li>5&times;7 folded, blank inside</li>
+        <li>Printed in the USA</li>
+      </ul>
+    </div>
+    <div class="hero-img">
+      <img src="images/cards/mockups/Adorable-Card-Mockup-Set-Sample-6-Designs.jpg" alt="Six Adorable Greeting Cards with white envelopes: Paris, nose to nose, snow globe, Sweet Dreams Baby, Puppy Love and You're Pawsome designs" width="1200" height="1200" fetchpriority="high">
+    </div>
+  </div>
 </div>
+
+<section class="cards-teaser" id="cards">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Wholesale Greeting Cards</p>
+      <h2>Ready-made assortments for your card rack</h2>
+      <p>30-card assortments, 6-card sets of any single design, and a 5-card sampler to try the line.</p>
+    </div>
+    <div class="teaser-grid">
+      <a class="teaser" href="cards/#assortments"><img src="images/cards/mockups/600/Adorable-Card-Mockup-Set-AD-ASST-BDAY-30.jpg" alt="Birthday Assortment, 30 Adorable Greeting Cards" width="600" height="600" loading="lazy"><div class="t-info"><h3>Birthday Assortment</h3><p>30 cards &middot; 5 designs &times; 6</p></div></a>
+      <a class="teaser" href="cards/#assortments"><img src="images/cards/mockups/600/Adorable-Card-Mockup-Set-AD-ASST-EVERYDAY-30.jpg" alt="Everyday Assortment, 30 Adorable Greeting Cards" width="600" height="600" loading="lazy"><div class="t-info"><h3>Everyday Assortment</h3><p>30 cards &middot; 5 designs &times; 6</p></div></a>
+      <a class="teaser" href="cards/#assortments"><img src="images/cards/mockups/600/Adorable-Card-Mockup-Set-AD-ASST-XMAS-30.jpg" alt="Christmas Assortment, 30 Adorable Greeting Cards" width="600" height="600" loading="lazy"><div class="t-info"><h3>Christmas Assortment</h3><p>30 cards &middot; 5 designs &times; 6</p></div></a>
+      <a class="teaser" href="cards/#sampler"><img src="images/cards/mockups/600/Adorable-Card-Mockup-Set-AD-SAMPLER-5.jpg" alt="Adorable Puppy card sampler, 5 assorted cards" width="600" height="600" loading="lazy"><div class="t-info"><h3>5-Card Sampler</h3><p>One each of 5 bestsellers</p></div></a>
+    </div>
+    <div class="center-cta">
+      <a class="btn btn-dark" href="cards/">See all designs &amp; wholesale info</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<!-- ============ CHILDREN'S SECTION ============ -->
+<section class="imprint" id="childrens">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Children's Section</p>
+      <h2>Children's Picture Books</h2>
+      <p class="series-tagline">Pepper the Dog &middot; Sweet Stories for Little Dreamers</p>
+      <p>Bedtime picture books, told from six inches above the ground.</p>
+    </div>
+    <div class="book-grid">
+
+      <a class="book-card" href="pepper-the-dog.html#book-6">
+        <div class="cover-wrap"><img src="cover-snowy-christmas-miracle.jpg" alt="A Snowy Christmas Miracle cover"></div>
+        <div class="info">
+          <div class="badge">Holiday Special</div>
+          <h3>A Snowy Christmas Miracle</h3>
+          <p>Pepper's first snow, and a Christmas miracle</p>
+          <div class="view">Shop now →</div>
+        </div>
+      </a>
+
+<a class="book-card" href="pepper-the-dog.html#book-7">
+        <div class="cover-wrap"><img src="cover-pepper-museum-shock.jpg" alt="Pepper's Museum Shock cover"></div>
+        <div class="info">
+          <div class="badge">Available Now</div>
+          <h3>Pepper's Museum Shock</h3>
+          <p>A tale of 28 wonders at the museum</p>
+          <div class="view">Shop now →</div>
+        </div>
+      </a>
+
+<a class="book-card" href="pepper-the-dog.html#book-7-de">
+        <div class="cover-wrap"><img src="cover-peppers-museums-schreck.jpg" alt="Peppers Museums-Schreck Buchcover"></div>
+        <div class="info">
+          <div class="badge">Deutsche Ausgabe</div>
+          <h3>Peppers Museums-Schreck</h3>
+          <p>Die deutsche Ausgabe von Pepper's Museum Shock</p>
+          <div class="view">Mehr erfahren →</div>
+        </div>
+      </a>
+
+<a class="book-card" href="pepper-the-dog.html#book-7-choc-fr">
+        <div class="cover-wrap"><img src="cover-pepper-museum-shock.jpg" alt="Couverture de Le Choc du Musée de Pepper"></div>
+        <div class="info">
+          <div class="badge">Édition Française</div>
+          <h3>Le Choc du Musée de Pepper</h3>
+          <p>Une découverte muséale par un chiot</p>
+          <div class="view">En savoir plus →</div>
+        </div>
+      </a>
+
+<a class="book-card" href="pepper-the-dog.html#book-8">
+        <div class="cover-wrap"><img src="cover-pepper-paris-surprise.jpg" alt="Pepper's Paris Surprise cover"></div>
+        <div class="info">
+          <div class="badge">Available Now</div>
+          <h3>Pepper's Paris Surprise</h3>
+          <p>A tale of 31 wonders across Paris</p>
+          <div class="view">Shop now →</div>
+        </div>
+      </a>
+
+<a class="book-card" href="pepper-the-dog.html#book-9-fr">
+        <div class="cover-wrap"><img src="cover-la-surprise-de-pepper-a-paris.jpg" alt="Couverture de La Surprise de Pepper à Paris"></div>
+        <div class="info">
+          <div class="badge">Édition Française</div>
+          <h3>La Surprise de Pepper à Paris</h3>
+          <p>Un chiot à la découverte de Paris</p>
+          <div class="view">Précommander →</div>
+        </div>
+      </a>
+
+<a class="book-card" href="pepper-the-dog.html#book-1">
+        <div class="cover-wrap"><img src="cover-pepper-book1.jpg" alt="Six Inches Above the Ground cover"></div>
+        <div class="info">
+          <div class="badge">Book 1</div>
+          <h3>Six Inches Above the Ground</h3>
+          <p>A puppy's-eye view of the world</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="pepper-the-dog.html#book-2">
+        <div class="cover-wrap"><img src="cover-pepper-book2.jpg" alt="Four Wheels and a Rumble cover"></div>
+        <div class="info">
+          <div class="badge">Book 2</div>
+          <h3>Four Wheels and a Rumble</h3>
+          <p>Pepper meets a new friend</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="pepper-the-dog.html#book-3">
+        <div class="cover-wrap"><img src="cover-pepper-book3.jpg" alt="Big Boots and a Tiny Tail cover"></div>
+        <div class="info">
+          <div class="badge">Book 3</div>
+          <h3>Big Boots and a Tiny Tail</h3>
+          <p>A funny mix-up at the door</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="pepper-the-dog.html#book-4">
+        <div class="cover-wrap"><img src="cover-pepper-book4.jpg" alt="A Rumble from the Sky cover"></div>
+        <div class="info">
+          <div class="badge">Book 4</div>
+          <h3>A Rumble from the Sky</h3>
+          <p>The sky turns grey, the clouds go BOOM, and Pepper dashes into the old red barn - where Bessie the cow has some gentle advice.</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="pepper-the-dog.html#book-5">
+        <div class="cover-wrap"><img src="cover-pepper-book5.jpg" alt="A Nose Full of Wonder cover"></div>
+        <div class="info">
+          <div class="badge">Book 5</div>
+          <h3>A Nose Full of Wonder</h3>
+          <p>Pepper's biggest adventure yet</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<!-- ============ MEDICAL SECTION ============ -->
+<section class="imprint" id="medical">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Dr. James Whitfield</h2>
+      <p>Plain-English health guides from a reconstructive foot surgeon.</p>
+    </div>
+    <div class="book-grid">
+
+<a class="book-card" href="melonglowbooks-whitfield-buy-page.html#my-feet-are-killin-me">
+        <div class="cover-wrap"><img src="cover-my-feet-are-killin-me.jpg" alt="My Feet Are Killin' Me! cover"></div>
+        <div class="info">
+          <h3>My Feet Are Killin' Me!</h3>
+          <p>A surgeon's field manual for feet</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#morning-heel-pain-no-more">
+        <div class="cover-wrap"><img src="cover-morning-heel-pain.jpg" alt="Morning Heel Pain No More cover"></div>
+        <div class="info">
+          <h3>Morning Heel Pain No More</h3>
+          <p>Why your first steps hurt most</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#handbook-journal">
+        <div class="cover-wrap"><img src="cover-diabetic-handbook.jpg?v=20261004" alt="Diabetic Foot Care Handbook cover"></div>
+        <div class="info">
+          <h3>The Glass Foot</h3>
+          <p>Diabetic Foot Care Handbook &amp; Journal</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#foot-health-journal">
+        <div class="cover-wrap"><img src="cover-foot-health-journal.jpg" alt="Foot Health Journal & Pain Tracker cover"></div>
+        <div class="info">
+          <h3>Foot Health Journal</h3>
+          <p>Daily tracker for foot pain &amp; symptoms</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#blood-pressure-journal">
+        <div class="cover-wrap"><img src="cover-blood-pressure.jpg" alt="Blood Pressure & Heart Health Journal cover"></div>
+        <div class="info">
+          <h3>Blood Pressure Journal</h3>
+          <p>Daily heart health tracking</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#diabetic-notebook">
+        <div class="cover-wrap"><img src="cover-diabetic-notebook.jpg" alt="Diabetic Foot Care Notebook cover"></div>
+        <div class="info">
+          <h3>Diabetic Foot Care Notebook</h3>
+          <p>A focused companion notebook</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#caregiver-logbook">
+        <div class="cover-wrap"><img src="cover-caregiver.jpg" alt="Caregiver Logbook cover"></div>
+        <div class="info">
+          <h3>Caregiver Logbook</h3>
+          <p>For the person doing the caring</p>
+          <div class="view">View book →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#foot-surgeon-workbook">
+        <div class="cover-wrap"><img src="cover-foot-surgeon-workbook.jpg" alt="Questions to Ask Your Foot Surgeon workbook cover"></div>
+        <div class="info">
+          <h3>Pre-Appointment Workbook</h3>
+          <p>Instant PDF download · $7.99</p>
+          <div class="view">View guide →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#plantar-fasciitis-guide">
+        <div class="cover-wrap"><img src="cover-plantar-fasciitis.jpg" alt="Plantar Fasciitis Recovery Plan cover"></div>
+        <div class="info">
+          <h3>Plantar Fasciitis Recovery Plan</h3>
+          <p>Instant PDF download · $9.99</p>
+          <div class="view">View guide →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#shoe-guide">
+        <div class="cover-wrap"><img src="cover-shoe-guide.jpg" alt="Which Shoe Is Wrecking Your Feet guide cover"></div>
+        <div class="info">
+          <h3>Which Shoe Is Wrecking Your Feet?</h3>
+          <p>Instant PDF download · $8.99</p>
+          <div class="view">View guide →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#self-assessment-guide">
+        <div class="cover-wrap"><img src="cover-self-assessment.jpg" alt="Foot Pain Self-Assessment Guide cover"></div>
+        <div class="info">
+          <h3>Foot Pain Self-Assessment Guide</h3>
+          <p>Instant PDF download · $7.99</p>
+          <div class="view">View guide →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#athlete-guide">
+        <div class="cover-wrap"><img src="cover-athlete-guide.jpg" alt="Athlete's Foot & Ankle Injury Prevention Guide cover"></div>
+        <div class="info">
+          <h3>Athlete's Injury Prevention Guide</h3>
+          <p>Instant PDF download · $9.99</p>
+          <div class="view">View guide →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#post-surgical-tracker">
+        <div class="cover-wrap"><img src="cover-post-surgical-tracker.jpg" alt="Post-Surgical Recovery Tracker Journal cover"></div>
+        <div class="info">
+          <h3>Post-Surgical Recovery Tracker</h3>
+          <p>Instant PDF download · $9.99</p>
+          <div class="view">View guide →</div>
+        </div>
+      </a>
+
+      <a class="book-card" href="melonglowbooks-whitfield-buy-page.html#bunion-hammertoe-guide">
+        <div class="cover-wrap"><img src="cover-bunion-hammertoe.jpg" alt="The Bunion & Hammertoe Decision Guide cover"></div>
+        <div class="info">
+          <h3>Bunion &amp; Hammertoe Decision Guide</h3>
+          <p>Instant PDF download · $9.99</p>
+          <div class="view">View guide →</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-faire">
+    <a class="btn btn-faire" href="https://faire.com/direct/melonglowbooks" target="_blank" rel="noopener">Shop Wholesale on Faire</a>
+    <p>New shops get 50% off their first order and free shipping when they order through this link.</p>
+  </div>
+  <div class="brand-line">Melon Glow Books</div>
+  <div style="margin-bottom:4px; font-size:.85rem; color:var(--slate);">Melon Glow Company, LLC &middot; Santa Rosa, California</div>
+  <div style="font-size:.8rem; color:var(--slate);">Adorable Greeting Cards is a division of Melon Glow Company, LLC.</div>
+  <div class="footer-links">
+    <a href="cards/">Wholesale Cards</a>
+    <a href="greeting-cards.html">Adorable Greeting Cards</a>
+    <a href="pepper-the-dog.html">Pepper the Dog</a>
+    <a href="melonglowbooks-whitfield-buy-page.html">Dr. James Whitfield</a>
+  </div>
+  <a href="mailto:Support@melonglowbooks.com">Support@melonglowbooks.com</a>
+</footer>
 
 </body>
 </html>

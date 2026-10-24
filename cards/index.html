@@ -1,130 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="p:domain_verify" content="948c2d9817219fff61d01d39e4835ea7"/>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Adorable Greeting Cards &mdash; Wholesale | Adorable Greetings</title>
-<meta name="description" content="Adorable Greeting Cards: embossed greeting cards, each with a 4x6 art print of a sweet golden puppy. Packs of 6 and 30-card assortments, available wholesale on Faire.">
+<title>Adorable Greeting Cards — Wholesale Designs, Sets &amp; Pricing | Melon Glow Books</title>
+<meta name="description" content="Wholesale Adorable Greeting Cards on Faire: 61 Adorable Puppy designs plus general designs. 5x7 folded cards on 100 lb matte card stock with A7 envelopes, printed in the USA. $3 wholesale, $5.95 retail.">
+<link rel="canonical" href="https://melonglowbooks.com/cards/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Adorable Greeting Cards — Wholesale on Faire">
+<meta property="og:description" content="61 Adorable Puppy designs plus general designs. $3 wholesale per card, printed in the USA.">
+<meta property="og:image" content="https://melonglowbooks.com/images/cards/mockups/Adorable-Card-Mockup-Set-AD-ASST-BDAY-30.jpg">
+<meta property="og:url" content="https://melonglowbooks.com/cards/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
-  :root{ --navy:#1B2440; --cream:#FBF6EC; --gold:#C9A227; --rose:#C0697B; --slate:#5B6478; --card:#FFFFFF; --line:rgba(27,36,64,0.12); --maxw:1120px; }
+  :root{ --navy:#1B2440; --cream:#FBF6EC; --gold:#C9A227; --rose:#C0697B; --slate:#5B6478; --card:#FFFFFF; --line:rgba(27,36,64,0.12); --maxw:1180px; }
   *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
   body{margin:0; background:var(--cream); color:var(--navy); font-family:'Inter',system-ui,sans-serif; -webkit-font-smoothing:antialiased;}
   img{max-width:100%; display:block; height:auto;}
   a{color:inherit;}
   a:focus-visible{outline:3px solid var(--gold); outline-offset:3px;}
   .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
   @media (max-width:640px){ .wrap{padding:0 16px;} }
-  header{position:sticky; top:0; z-index:40; background:rgba(251,246,236,0.92); backdrop-filter:blur(6px); border-bottom:1px solid var(--line);}
-  .nav{max-width:var(--maxw); margin:0 auto; padding:14px 28px; display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;}
-  .brand{display:flex; align-items:center; gap:10px; font-family:'Poppins',sans-serif; font-weight:700; font-size:1.02rem; text-decoration:none;}
-  .brand img{width:30px; height:30px; border-radius:50%;}
-  .nav-links{display:flex; gap:20px; font-size:.92rem; font-weight:500; align-items:center; flex-wrap:wrap;}
+  header{position:sticky; top:0; z-index:40; background:rgba(251,246,236,0.95); backdrop-filter:blur(6px); border-bottom:1px solid var(--line);}
+  .nav{max-width:var(--maxw); margin:0 auto; padding:16px 28px; display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;}
+  .brand{display:flex; align-items:center; gap:10px; font-family:'Poppins',sans-serif; font-weight:700; font-size:1.05rem; text-decoration:none;}
+  .brand img{width:34px; height:34px; border-radius:50%;}
+  .nav-links{display:flex; gap:22px; font-size:.92rem; font-weight:500; align-items:center; flex-wrap:wrap;}
   .nav-links a{text-decoration:none; color:var(--slate);}
-  .nav-links a:hover{color:var(--navy);}
-  .nav-links a.pill{background:var(--navy); color:var(--cream); padding:8px 16px; border-radius:20px;}
+  .nav-links a:hover, .nav-links a[aria-current]{color:var(--navy);}
+  .nav-links a.pill{background:var(--navy); color:var(--cream); padding:9px 18px; border-radius:20px; font-weight:600;}
   .nav-links a.pill:hover{background:var(--rose); color:#fff;}
-  @media (max-width:640px){ .nav{padding:12px 16px;} .nav-links{gap:14px; font-size:.86rem;} }
-  .hero{background:var(--navy); color:var(--cream); padding:64px 0 72px; text-align:center;}
-  .eyebrow{font-family:'IBM Plex Mono',monospace; text-transform:uppercase; letter-spacing:.14em; font-size:.72rem; color:var(--gold); margin:0 0 16px;}
-  h1{font-family:'Poppins',sans-serif; font-weight:800; font-size:clamp(2rem,4.6vw,3.2rem); line-height:1.12; margin:0 auto 16px; max-width:20ch;}
-  .lede{font-size:1.06rem; line-height:1.6; color:#D8DCEA; max-width:56ch; margin:0 auto 28px;}
-  .faire-btn{display:inline-block; background:var(--gold); color:var(--navy); font-family:'Poppins',sans-serif; font-weight:700; font-size:1.05rem; padding:14px 28px; border-radius:28px; text-decoration:none; transition:transform .12s ease, box-shadow .12s ease;}
-  .faire-btn:hover{transform:translateY(-1px); box-shadow:0 8px 18px rgba(0,0,0,.25);}
-  section.block{padding:52px 0 8px;}
+  @media (max-width:640px){ .nav{padding:12px 16px;} .nav-links{width:100%; gap:10px 14px; font-size:.86rem;} }
+
+  .hero{background:var(--navy); color:var(--cream); padding:56px 0 60px;}
+  .hero-grid{display:grid; grid-template-columns:1.05fr .95fr; gap:44px; align-items:center;}
+  @media (max-width:860px){ .hero-grid{grid-template-columns:1fr; gap:28px; text-align:center;} }
+  .eyebrow{font-family:'IBM Plex Mono',monospace; text-transform:uppercase; letter-spacing:.14em; font-size:.72rem; color:var(--gold); margin:0 0 14px;}
+  h1{font-family:'Poppins',sans-serif; font-weight:800; font-size:clamp(2rem,4.6vw,3.1rem); line-height:1.1; margin:0 0 16px;}
+  .lede{font-size:1.05rem; line-height:1.6; color:#D8DCEA; max-width:52ch; margin:0 0 26px;}
+  @media (max-width:860px){ .lede{margin-left:auto; margin-right:auto;} }
+  .hero-img{border-radius:14px; overflow:hidden; box-shadow:0 22px 48px rgba(0,0,0,.35);}
+  .cta-row{display:flex; flex-wrap:wrap; gap:12px; align-items:center;}
+  @media (max-width:860px){ .cta-row{justify-content:center;} }
+  .btn{display:inline-block; font-family:'Poppins',sans-serif; font-weight:700; font-size:1rem; padding:14px 26px; border-radius:28px; text-decoration:none; transition:transform .12s ease, box-shadow .12s ease, background .12s ease;}
+  .btn:hover{transform:translateY(-1px); box-shadow:0 8px 18px rgba(0,0,0,.25);}
+  .btn-faire{background:var(--gold); color:var(--navy);}
+  .btn-faire:hover{background:#d8b23a;}
+  .btn-ghost{border:2px solid rgba(251,246,236,.55); color:var(--cream); padding:12px 24px;}
+  .btn-ghost:hover{border-color:var(--cream);}
+  .offer-note{color:#F3E3B0; font-size:.88rem; margin:14px 0 0; line-height:1.5; max-width:52ch;}
+  @media (max-width:860px){ .offer-note{margin-left:auto; margin-right:auto;} }
+  .offer-note small{color:#B9BFD3; font-size:.78rem;}
+
+  section.block{padding:56px 0 8px;}
   h2{font-family:'Poppins',sans-serif; font-weight:800; font-size:1.6rem; margin:0 0 6px;}
-  .sub{color:var(--slate); margin:0 0 24px; line-height:1.6; max-width:62ch;}
-  .offer{display:grid; grid-template-columns:2fr 1fr; gap:20px;}
-  @media (max-width:760px){ .offer{grid-template-columns:1fr;} }
+  .sub{color:var(--slate); margin:0 0 26px; line-height:1.6; max-width:64ch;}
+  .facts-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:18px;}
+  @media (max-width:900px){ .facts-grid{grid-template-columns:repeat(2,1fr);} }
+  .fact{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px;}
+  .fact .big{font-family:'Poppins',sans-serif; font-weight:800; font-size:1.6rem; margin:0;}
+  .fact p{margin:4px 0 0; color:var(--slate); font-size:.88rem; line-height:1.5;}
+  .two{display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:20px;}
+  @media (max-width:760px){ .two{grid-template-columns:1fr;} }
   .box{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:24px;}
-  .box h3{font-family:'Poppins',sans-serif; font-size:1.1rem; margin:0 0 4px;}
-  .box .meta{font-family:'IBM Plex Mono',monospace; font-size:.76rem; color:var(--rose); margin:0 0 14px;}
-  .box ul{margin:0; padding:0; list-style:none; display:grid; grid-template-columns:repeat(2,1fr); gap:8px 16px;}
-  .box li::before{content:"\2022"; color:var(--gold); margin-right:8px;}
-  .box p{margin:0; color:var(--slate); line-height:1.6;}
-  .gallery{display:grid; grid-template-columns:repeat(4,1fr); gap:18px;}
-  @media (max-width:900px){ .gallery{grid-template-columns:repeat(3,1fr);} }
-  @media (max-width:600px){ .gallery{grid-template-columns:repeat(2,1fr); gap:12px;} }
-  .card{margin:0; background:var(--card); border:1px solid var(--line); border-radius:10px; overflow:hidden;}
-  .card figcaption{padding:10px 12px; font-family:'Poppins',sans-serif; font-weight:600; font-size:.92rem; text-align:center;}
-  .cta{background:var(--navy); color:var(--cream); text-align:center; padding:44px 0; margin-top:52px;}
-  .cta p{max-width:54ch; margin:0 auto 18px; line-height:1.6; color:#D8DCEA;}
+  .box h3{font-family:'Poppins',sans-serif; font-size:1.1rem; margin:0 0 10px;}
+  .box ul{margin:0; padding:0; list-style:none; display:grid; gap:8px;}
+  .box li{line-height:1.5; font-size:.94rem;}
+  .box li::before, .set li::before{content:"\2022"; color:var(--gold); margin-right:8px;}
+  table.price{width:100%; border-collapse:collapse; font-size:.92rem;}
+  table.price th, table.price td{text-align:left; padding:8px 6px; border-bottom:1px solid var(--line);}
+  table.price th{font-family:'IBM Plex Mono',monospace; font-size:.7rem; text-transform:uppercase; letter-spacing:.08em; color:var(--slate); font-weight:500;}
+
+  .sets{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+  @media (max-width:980px){ .sets{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:620px){ .sets{grid-template-columns:1fr;} }
+  .set{background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden; display:flex; flex-direction:column;}
+  .set img{aspect-ratio:1/1; object-fit:cover; width:100%;}
+  .set-body{padding:16px 18px 18px;}
+  .set h3{font-family:'Poppins',sans-serif; font-size:1.05rem; margin:0 0 2px;}
+  .set .meta{font-family:'IBM Plex Mono',monospace; font-size:.7rem; color:var(--rose); margin:0 0 10px;}
+  .set ul{margin:0; padding:0; list-style:none; display:grid; gap:4px; font-size:.86rem; color:var(--slate);}
+  .feature{display:grid; grid-template-columns:320px 1fr; gap:24px; align-items:center; background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden; margin-top:20px;}
+  @media (max-width:760px){ .feature{grid-template-columns:1fr;} }
+  .feature .set-body{padding:22px 24px;}
+  .feature p{color:var(--slate); line-height:1.6; margin:0 0 8px;}
+
+  .group-title{font-family:'IBM Plex Mono',monospace; text-transform:uppercase; letter-spacing:.12em; font-size:.74rem; color:var(--rose); margin:36px 0 14px; font-weight:500;}
+  .gallery{display:grid; grid-template-columns:repeat(5,1fr); gap:16px;}
+  @media (max-width:1000px){ .gallery{grid-template-columns:repeat(4,1fr);} }
+  @media (max-width:760px){ .gallery{grid-template-columns:repeat(3,1fr);} }
+  @media (max-width:520px){ .gallery{grid-template-columns:repeat(2,1fr); gap:12px;} }
+  .card{margin:0; background:var(--card); border:1px solid var(--line); border-radius:10px; overflow:hidden; transition:transform .15s ease, box-shadow .15s ease;}
+  .card:hover{transform:translateY(-3px); box-shadow:0 12px 22px rgba(27,36,64,.12);}
+  .card img{aspect-ratio:1/1; object-fit:cover; width:100%; background:#F3EFE6;}
+  .card figcaption{padding:9px 10px 11px; font-family:'Poppins',sans-serif; font-weight:600; font-size:.86rem; text-align:center; line-height:1.3;}
+  .card figcaption span{display:block; font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:.64rem; color:var(--slate); margin-top:3px;}
+
+  .cta{background:var(--navy); color:var(--cream); text-align:center; padding:48px 0; margin-top:56px;}
+  .cta h2{color:var(--cream);}
+  .cta p{max-width:56ch; margin:0 auto 18px; line-height:1.6; color:#D8DCEA;}
+  .cta .offer-note{margin:14px auto 0;}
   .cta a.mail{color:var(--gold);}
-  footer{padding:32px 0 48px; text-align:center; font-size:.85rem; color:var(--slate);}
-  footer a{color:var(--slate);}
+  footer{padding:40px 28px 56px; text-align:center;}
+  footer .brand-line{font-family:'Poppins',sans-serif; font-weight:700; margin-bottom:6px;}
+  footer .small{font-size:.82rem; color:var(--slate); margin:2px 0;}
+  footer a{color:var(--slate); text-decoration:none; font-size:.85rem;}
+  footer a:hover{color:var(--navy);}
+  .footer-faire{margin:0 auto 22px;}
+  .footer-faire .btn{font-size:.92rem; padding:11px 22px; color:var(--navy);}
+  .footer-faire p{font-size:.8rem; color:var(--slate); margin:8px 0 0;}
+  .footer-links{display:flex; gap:18px; justify-content:center; flex-wrap:wrap; margin:14px 0 10px;}
 </style>
 </head>
 <body>
 
 <header>
   <div class="nav">
-    <a class="brand" href="../home.html"><img src="../logo.png" alt="">Adorable Greetings</a>
+    <a class="brand" href="/home.html"><img src="/logo.png" alt="Melon Glow Books logo">MELON GLOW BOOKS</a>
     <nav class="nav-links">
-      <a href="../greeting-cards.html">Greeting Cards</a>
-      <a href="../home.html">Melon Glow Books</a>
-      <a href="https://melonglowbooks.faire.com" class="pill" target="_blank" rel="noopener">Shop on Faire</a>
+      <a href="/greeting-cards.html">Adorable Greeting Cards</a>
+      <a href="/cards/" aria-current="page">Wholesale Cards</a>
+      <a href="/pepper-the-dog.html">Pepper the Dog</a>
+      <a href="/melonglowbooks-whitfield-buy-page.html">Dr. James Whitfield</a>
+      <a class="pill" href="https://faire.com/direct/melonglowbooks" target="_blank" rel="noopener">Shop Wholesale on Faire</a>
     </nav>
   </div>
 </header>
 
 <section class="hero">
-  <div class="wrap">
-    <p class="eyebrow">Adorable Greetings &middot; Wholesale</p>
-    <h1>Adorable Greeting Cards</h1>
-    <p class="lede">Embossed greeting cards, each with a 4&times;6 art print of a sweet golden puppy in an original painted scene. Blank inside, with envelopes. Available wholesale to shops on Faire.</p>
-    <a class="faire-btn" href="https://melonglowbooks.faire.com" target="_blank" rel="noopener">Shop wholesale on Faire</a>
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Wholesale &middot; A division of Melon Glow Company, LLC</p>
+      <h1>Adorable Greeting Cards</h1>
+      <p class="lede">Full-color 5&times;7 cards with sweet golden puppies in painted scenes: 61 Adorable Puppy designs plus general designs. Sold to shops on Faire in 6-card sets, 30-card assortments and a 5-card sampler.</p>
+      <div class="cta-row">
+        <a class="btn btn-faire" href="https://faire.com/direct/melonglowbooks" target="_blank" rel="noopener">Shop Wholesale on Faire</a>
+        <a class="btn btn-ghost" href="#designs">See all designs</a>
+      </div>
+      <p class="offer-note">New shops get 50% off their first order and free shipping when they order through this link.<br><small>Faire&rsquo;s offer for shops new to Faire: up to $150 off, plus a year of free shipping on our line.</small></p>
+    </div>
+    <div class="hero-img">
+      <img src="/images/cards/mockups/Adorable-Card-Mockup-Set-AD-ASST-BDAY-30.jpg" alt="Birthday Assortment of Adorable Greeting Cards with envelopes" width="1200" height="1200" fetchpriority="high">
+    </div>
   </div>
 </section>
 
-<section class="block">
+<section class="block" id="wholesale">
   <div class="wrap">
-    <h2>What&rsquo;s offered</h2>
-    <p class="sub">Two simple ways to stock the line.</p>
-    <div class="offer">
-      <div class="box">
-        <h3>30-card assortments</h3>
-        <p class="meta">5 designs &times; 6 each</p>
+    <h2>Wholesale at a glance</h2>
+    <p class="sub">Ordering, payment and shipping are all handled through Faire.</p>
+    <div class="facts-grid">
+      <div class="fact"><p class="big">$3.00</p><p>wholesale per card</p></div>
+      <div class="fact"><p class="big">$5.95</p><p>suggested retail per card</p></div>
+      <div class="fact"><p class="big">$100</p><p>first-order minimum on Faire</p></div>
+      <div class="fact"><p class="big">USA</p><p>printed in the USA</p></div>
+    </div>
+    <div class="two">
+      <div class="box" id="specs">
+        <h3>Card specs</h3>
         <ul>
-        <li>Birthday Assortment</li>
-        <li>Everyday Assortment</li>
-        <li>Christmas Assortment</li>
+          <li>5&times;7 folded card</li>
+          <li>Printed in full color on heavy 100 lb matte card stock</li>
+          <li>Blank inside for any message</li>
+          <li>White A7 envelope</li>
+          <li>Packed in a clear protective sleeve</li>
+          <li>Printed in the USA</li>
         </ul>
       </div>
       <div class="box">
-        <h3>Packs of 6</h3>
-        <p class="meta">6 cards of one design</p>
-        <p>Choose from 26 designs: 16 everyday cards and 10 Christmas cards.</p>
+        <h3>Pricing</h3>
+        <table class="price">
+          <tr><th>Item</th><th>Wholesale</th><th>Retail</th></tr>
+          <tr><td>Single card</td><td>$3.00</td><td>$5.95</td></tr>
+          <tr><td>6-card set (one design)</td><td>$18.00</td><td>$35.70</td></tr>
+          <tr><td>30-card assortment</td><td>$90.00</td><td>$178.50</td></tr>
+          <tr><td>5-card sampler</td><td>$15.00</td><td>$29.75</td></tr>
+        </table>
+        <p style="color:var(--slate); font-size:.84rem; margin:12px 0 0; line-height:1.5;">$100 minimum on your first Faire order.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="block">
+<section class="block" id="sets">
   <div class="wrap">
-    <h2>The Birthday Assortment</h2>
-    <p class="sub">Our newest designs.</p>
+    <h2>Sets &amp; assortments</h2>
+    <p class="sub"><strong>6-card sets:</strong> every design is sold as a set of 6 cards of that one design, each with its envelope. Mix and match any designs below to build your rack.</p>
+    <h3 class="group-title" id="assortments">30-card assortments &middot; 6 each of 5 designs</h3>
+    <div class="sets">
+      <article class="set">
+        <img src="/images/cards/mockups/600/Adorable-Card-Mockup-Set-AD-ASST-BDAY-30.jpg" alt="Birthday Assortment: 30 Adorable Greeting Cards" width="600" height="600" loading="lazy" decoding="async">
+        <div class="set-body">
+          <h3>Birthday Assortment</h3>
+          <p class="meta">30 cards &middot; 6 each of 5 designs &middot; AD-ASST-BDAY-30</p>
+          <ul><li>Happy Birthday</li><li>Let&#x27;s Party</li><li>Make a Wish</li><li>Happy Birthday Grandma</li><li>Belated Birthday Wishes</li></ul>
+        </div>
+      </article>
+      <article class="set">
+        <img src="/images/cards/mockups/600/Adorable-Card-Mockup-Set-AD-ASST-EVERYDAY-30.jpg" alt="Everyday Assortment: 30 Adorable Greeting Cards" width="600" height="600" loading="lazy" decoding="async">
+        <div class="set-body">
+          <h3>Everyday Assortment</h3>
+          <p class="meta">30 cards &middot; 6 each of 5 designs &middot; AD-ASST-EVERYDAY-30</p>
+          <ul><li>Missing You</li><li>Nose to Nose</li><li>Smiling Grandpa</li><li>Detective Pepper</li><li>Famous Smile</li></ul>
+        </div>
+      </article>
+      <article class="set">
+        <img src="/images/cards/mockups/600/Adorable-Card-Mockup-Set-AD-ASST-XMAS-30.jpg" alt="Christmas Assortment: 30 Adorable Greeting Cards" width="600" height="600" loading="lazy" decoding="async">
+        <div class="set-body">
+          <h3>Christmas Assortment</h3>
+          <p class="meta">30 cards &middot; 6 each of 5 designs &middot; AD-ASST-XMAS-30</p>
+          <ul><li>Snow Globe</li><li>Christmas Stocking</li><li>Sleigh Ride</li><li>Christmas Ornament</li><li>Warmest Holiday Greetings</li></ul>
+        </div>
+      </article>
+      <article class="set">
+        <img src="/images/cards/mockups/600/Adorable-Card-Mockup-Set-AD-ASST-CONGRATS-30.jpg" alt="Congratulations Pack: 30 Adorable Greeting Cards" width="600" height="600" loading="lazy" decoding="async">
+        <div class="set-body">
+          <h3>Congratulations Pack</h3>
+          <p class="meta">30 cards &middot; 6 each of 5 designs &middot; AD-ASST-CONGRATS-30</p>
+          <ul><li>Congratulations!</li><li>Hooray Graduate!</li><li>You Did It!</li><li>Happy New Home!</li><li>Congratulations on Your Wedding</li></ul>
+        </div>
+      </article>
+      <article class="set">
+        <img src="/images/cards/mockups/600/Adorable-Card-Mockup-Set-AD-ASST-GETWELL-30.jpg" alt="Get Well Pack: 30 Adorable Greeting Cards" width="600" height="600" loading="lazy" decoding="async">
+        <div class="set-body">
+          <h3>Get Well Pack</h3>
+          <p class="meta">30 cards &middot; 6 each of 5 designs &middot; AD-ASST-GETWELL-30</p>
+          <ul><li>Get Well Soon</li><li>Feel Better Soon</li><li>Sending Hugs</li><li>Thinking of You</li><li>Here for You</li></ul>
+        </div>
+      </article>
+      <article class="set">
+        <img src="/images/cards/mockups/600/Adorable-Card-Mockup-Set-AD-ASST-BABY-30.jpg" alt="New Baby Pack: 30 Adorable Greeting Cards" width="600" height="600" loading="lazy" decoding="async">
+        <div class="set-body">
+          <h3>New Baby Pack</h3>
+          <p class="meta">30 cards &middot; 6 each of 5 designs &middot; AD-ASST-BABY-30</p>
+          <ul><li>Welcome</li><li>Congratulations on Your New Arrival</li><li>Sweet Dreams Baby</li><li>A Special Delivery</li><li>Welcome Little One</li></ul>
+        </div>
+      </article>
+      <article class="set">
+        <img src="/images/cards/mockups/600/Adorable-Card-Mockup-Set-AD-ASST-SYMPATHY-30.jpg" alt="Sympathy Pack: 30 Adorable Greeting Cards" width="600" height="600" loading="lazy" decoding="async">
+        <div class="set-body">
+          <h3>Sympathy Pack</h3>
+          <p class="meta">30 cards &middot; 6 each of 5 designs &middot; AD-ASST-SYMPATHY-30</p>
+          <ul><li>With Deepest Sympathy</li><li>Wishing You Peace and Comfort</li><li>Forever in Our Hearts</li><li>Thinking of You (Sympathy)</li><li>Sorry for Your Loss</li></ul>
+        </div>
+      </article>
+      <article class="set">
+        <img src="/images/cards/mockups/600/Adorable-Card-Mockup-Set-AD-ASST-THANKS-30.jpg" alt="Thank You Pack: 30 Adorable Greeting Cards" width="600" height="600" loading="lazy" decoding="async">
+        <div class="set-body">
+          <h3>Thank You Pack</h3>
+          <p class="meta">30 cards &middot; 6 each of 5 designs &middot; AD-ASST-THANKS-30</p>
+          <ul><li>Lantern in the Forest</li><li>Messenger Bag</li><li>First Class Stamps</li><li>Meadow Thank You Sign</li><li>Teacup</li></ul>
+        </div>
+      </article>
+      <article class="set">
+        <img src="/images/cards/mockups/600/Adorable-Card-Mockup-Set-AD-ASST-VALENTINE-30.jpg" alt="Valentine&rsquo;s Day Pack: 30 Adorable Greeting Cards" width="600" height="600" loading="lazy" decoding="async">
+        <div class="set-body">
+          <h3>Valentine&rsquo;s Day Pack</h3>
+          <p class="meta">30 cards &middot; 6 each of 5 designs &middot; AD-ASST-VALENTINE-30</p>
+          <ul><li>Be Mine</li><li>Puppy Love</li><li>Sending You Love</li><li>You&#x27;re Pawsome</li><li>Happy Valentine&#x27;s Day</li></ul>
+        </div>
+      </article>
+    </div>
+    <div class="feature" id="sampler">
+      <img src="/images/cards/mockups/600/Adorable-Card-Mockup-Set-AD-SAMPLER-5.jpg" alt="Adorable Puppy greeting card sampler with 5 assorted cards" width="600" height="600" loading="lazy" decoding="async">
+      <div class="set-body">
+        <h3>5-Card Sampler</h3>
+        <p class="meta" style="font-family:'IBM Plex Mono',monospace; font-size:.7rem; color:var(--rose);">5 cards &middot; AD-SAMPLER-5 &middot; $15 wholesale</p>
+        <p>One each of 5 bestselling designs across birthday, thank you, congratulations, get well and new baby. An easy way to try the line in your shop before ordering full assortments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="designs">
+  <div class="wrap">
+    <h2>All designs</h2>
+    <p class="sub">61 Adorable Puppy designs plus general designs. Each is available as a 6-card set. Tap a card to see it larger.</p>
+    <h3 class="group-title">Everyday &middot; 16 designs</h3>
     <div class="gallery">
-      <figure class="card"><img src="adorable-happy-birthday.jpg" alt="Happy Birthday greeting card by Adorable Greetings" width="600" height="900" loading="lazy"><figcaption>Happy Birthday</figcaption></figure>
-      <figure class="card"><img src="adorable-lets-party.jpg" alt="Let&rsquo;s Party greeting card by Adorable Greetings" width="600" height="900" loading="lazy"><figcaption>Let&rsquo;s Party</figcaption></figure>
-      <figure class="card"><img src="adorable-make-a-wish.jpg" alt="Make a Wish greeting card by Adorable Greetings" width="600" height="900" loading="lazy"><figcaption>Make a Wish</figcaption></figure>
-      <figure class="card"><img src="adorable-happy-birthday-grandma.jpg" alt="Happy Birthday, Grandma greeting card by Adorable Greetings" width="600" height="900" loading="lazy"><figcaption>Happy Birthday, Grandma</figcaption></figure>
-      <figure class="card"><img src="adorable-belated-birthday-wishes.jpg" alt="Belated Birthday Wishes greeting card by Adorable Greetings" width="600" height="900" loading="lazy"><figcaption>Belated Birthday Wishes</figcaption></figure>
+      <figure class="card" id="ad-pup-01"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-01-carousel.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-01-carousel.jpg" alt="Carousel greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Carousel<span>AD-PUP-01</span></figcaption></figure>
+      <figure class="card" id="ad-pup-02"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-02-bonjour-paris.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-02-bonjour-paris.jpg" alt="Bonjour Paris greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Bonjour Paris<span>AD-PUP-02</span></figcaption></figure>
+      <figure class="card" id="ad-pup-03"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-03-croissants.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-03-croissants.jpg" alt="Croissants greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Croissants<span>AD-PUP-03</span></figcaption></figure>
+      <figure class="card" id="ad-pup-04"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-04-famous-smile.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-04-famous-smile.jpg" alt="Famous Smile greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Famous Smile<span>AD-PUP-04</span></figcaption></figure>
+      <figure class="card" id="ad-pup-05"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-05-the-armor.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-05-the-armor.jpg" alt="The Armor greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>The Armor<span>AD-PUP-05</span></figcaption></figure>
+      <figure class="card" id="ad-pup-06"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-06-dinosaur-surprise.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-06-dinosaur-surprise.jpg" alt="Dinosaur Surprise greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Dinosaur Surprise<span>AD-PUP-06</span></figcaption></figure>
+      <figure class="card" id="ad-pup-07"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-07-rainbow-light.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-07-rainbow-light.jpg" alt="Rainbow Light greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Rainbow Light<span>AD-PUP-07</span></figcaption></figure>
+      <figure class="card" id="ad-pup-08"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-08-detective-pepper.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-08-detective-pepper.jpg" alt="Detective Pepper greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Detective Pepper<span>AD-PUP-08</span></figcaption></figure>
+      <figure class="card" id="ad-pup-09"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-09-the-biggest-boots.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-09-the-biggest-boots.jpg" alt="The Biggest Boots greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>The Biggest Boots<span>AD-PUP-09</span></figcaption></figure>
+      <figure class="card" id="ad-pup-10"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-10-into-the-grass-jungle.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-10-into-the-grass-jungle.jpg" alt="Into the Grass Jungle greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Into the Grass Jungle<span>AD-PUP-10</span></figcaption></figure>
+      <figure class="card" id="ad-pup-11"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-11-puddle-weather.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-11-puddle-weather.jpg" alt="Puddle Weather greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Puddle Weather<span>AD-PUP-11</span></figcaption></figure>
+      <figure class="card" id="ad-pup-12"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-12-nose-to-nose.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-12-nose-to-nose.jpg" alt="Nose to Nose greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Nose to Nose<span>AD-PUP-12</span></figcaption></figure>
+      <figure class="card" id="ad-pup-13"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-13-lick-the-hand.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-13-lick-the-hand.jpg" alt="Lick the Hand greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Lick the Hand<span>AD-PUP-13</span></figcaption></figure>
+      <figure class="card" id="ad-pup-14"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-14-smiling-grandpa.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-14-smiling-grandpa.jpg" alt="Smiling Grandpa greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Smiling Grandpa<span>AD-PUP-14</span></figcaption></figure>
+      <figure class="card" id="ad-pup-15"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-15-missing-you.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-15-missing-you.jpg" alt="Missing You greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Missing You<span>AD-PUP-15</span></figcaption></figure>
+      <figure class="card" id="ad-pup-19"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-19-on-the-scent.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-19-on-the-scent.jpg" alt="On the Scent greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>On the Scent<span>AD-PUP-19</span></figcaption></figure>
+    </div>
+    <h3 class="group-title">Birthday &middot; 5 designs</h3>
+    <div class="gallery">
+      <figure class="card" id="ad-pup-27"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-27-happy-birthday.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-27-happy-birthday.jpg" alt="Happy Birthday greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Happy Birthday<span>AD-PUP-27</span></figcaption></figure>
+      <figure class="card" id="ad-pup-28"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-28-lets-party.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-28-lets-party.jpg" alt="Let&#x27;s Party greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Let&#x27;s Party<span>AD-PUP-28</span></figcaption></figure>
+      <figure class="card" id="ad-pup-29"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-29-make-a-wish.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-29-make-a-wish.jpg" alt="Make a Wish greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Make a Wish<span>AD-PUP-29</span></figcaption></figure>
+      <figure class="card" id="ad-pup-30"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-30-happy-birthday-grandma.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-30-happy-birthday-grandma.jpg" alt="Happy Birthday Grandma greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Happy Birthday Grandma<span>AD-PUP-30</span></figcaption></figure>
+      <figure class="card" id="ad-pup-31"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-31-belated-birthday-wishes.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-31-belated-birthday-wishes.jpg" alt="Belated Birthday Wishes greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Belated Birthday Wishes<span>AD-PUP-31</span></figcaption></figure>
+    </div>
+    <h3 class="group-title">Thank You &middot; 5 designs</h3>
+    <div class="gallery">
+      <figure class="card" id="ad-pup-52"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-52-lantern-in-the-forest.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-52-lantern-in-the-forest.jpg" alt="Lantern in the Forest greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Lantern in the Forest<span>AD-PUP-52</span></figcaption></figure>
+      <figure class="card" id="ad-pup-53"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-53-messenger-bag.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-53-messenger-bag.jpg" alt="Messenger Bag greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Messenger Bag<span>AD-PUP-53</span></figcaption></figure>
+      <figure class="card" id="ad-pup-54"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-54-first-class-stamps.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-54-first-class-stamps.jpg" alt="First Class Stamps greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>First Class Stamps<span>AD-PUP-54</span></figcaption></figure>
+      <figure class="card" id="ad-pup-55"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-55-meadow-thank-you-sign.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-55-meadow-thank-you-sign.jpg" alt="Meadow Thank You Sign greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Meadow Thank You Sign<span>AD-PUP-55</span></figcaption></figure>
+      <figure class="card" id="ad-pup-56"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-56-teacup.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-56-teacup.jpg" alt="Teacup greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Teacup<span>AD-PUP-56</span></figcaption></figure>
+    </div>
+    <h3 class="group-title">Congratulations &middot; 5 designs</h3>
+    <div class="gallery">
+      <figure class="card" id="ad-pup-32"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-32-congratulations.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-32-congratulations.jpg" alt="Congratulations! greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Congratulations!<span>AD-PUP-32</span></figcaption></figure>
+      <figure class="card" id="ad-pup-33"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-33-hooray-graduate.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-33-hooray-graduate.jpg" alt="Hooray Graduate! greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Hooray Graduate!<span>AD-PUP-33</span></figcaption></figure>
+      <figure class="card" id="ad-pup-34"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-34-you-did-it.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-34-you-did-it.jpg" alt="You Did It! greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>You Did It!<span>AD-PUP-34</span></figcaption></figure>
+      <figure class="card" id="ad-pup-35"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-35-happy-new-home.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-35-happy-new-home.jpg" alt="Happy New Home! greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Happy New Home!<span>AD-PUP-35</span></figcaption></figure>
+      <figure class="card" id="ad-pup-36"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-36-congratulations-on-your-wedding.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-36-congratulations-on-your-wedding.jpg" alt="Congratulations on Your Wedding greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Congratulations on Your Wedding<span>AD-PUP-36</span></figcaption></figure>
+    </div>
+    <h3 class="group-title">Get Well &amp; Thinking of You &middot; 5 designs</h3>
+    <div class="gallery">
+      <figure class="card" id="ad-pup-37"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-37-get-well-soon.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-37-get-well-soon.jpg" alt="Get Well Soon greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Get Well Soon<span>AD-PUP-37</span></figcaption></figure>
+      <figure class="card" id="ad-pup-38"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-38-feel-better-soon.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-38-feel-better-soon.jpg" alt="Feel Better Soon greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Feel Better Soon<span>AD-PUP-38</span></figcaption></figure>
+      <figure class="card" id="ad-pup-39"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-39-sending-hugs.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-39-sending-hugs.jpg" alt="Sending Hugs greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Sending Hugs<span>AD-PUP-39</span></figcaption></figure>
+      <figure class="card" id="ad-pup-40"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-40-thinking-of-you.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-40-thinking-of-you.jpg" alt="Thinking of You greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Thinking of You<span>AD-PUP-40</span></figcaption></figure>
+      <figure class="card" id="ad-pup-41"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-41-here-for-you.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-41-here-for-you.jpg" alt="Here for You greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Here for You<span>AD-PUP-41</span></figcaption></figure>
+    </div>
+    <h3 class="group-title">New Baby &middot; 5 designs</h3>
+    <div class="gallery">
+      <figure class="card" id="ad-pup-42"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-42-welcome.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-42-welcome.jpg" alt="Welcome greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Welcome<span>AD-PUP-42</span></figcaption></figure>
+      <figure class="card" id="ad-pup-43"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-43-congratulations-on-your-new-arrival.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-43-congratulations-on-your-new-arrival.jpg" alt="Congratulations on Your New Arrival greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Congratulations on Your New Arrival<span>AD-PUP-43</span></figcaption></figure>
+      <figure class="card" id="ad-pup-44"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-44-sweet-dreams-baby.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-44-sweet-dreams-baby.jpg" alt="Sweet Dreams Baby greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Sweet Dreams Baby<span>AD-PUP-44</span></figcaption></figure>
+      <figure class="card" id="ad-pup-45"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-45-a-special-delivery.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-45-a-special-delivery.jpg" alt="A Special Delivery greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>A Special Delivery<span>AD-PUP-45</span></figcaption></figure>
+      <figure class="card" id="ad-pup-46"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-46-welcome-little-one.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-46-welcome-little-one.jpg" alt="Welcome Little One greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Welcome Little One<span>AD-PUP-46</span></figcaption></figure>
+    </div>
+    <h3 class="group-title">Sympathy &middot; 5 designs</h3>
+    <div class="gallery">
+      <figure class="card" id="ad-pup-47"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-47-with-deepest-sympathy.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-47-with-deepest-sympathy.jpg" alt="With Deepest Sympathy greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>With Deepest Sympathy<span>AD-PUP-47</span></figcaption></figure>
+      <figure class="card" id="ad-pup-48"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-48-wishing-you-peace-and-comfort.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-48-wishing-you-peace-and-comfort.jpg" alt="Wishing You Peace and Comfort greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Wishing You Peace and Comfort<span>AD-PUP-48</span></figcaption></figure>
+      <figure class="card" id="ad-pup-49"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-49-forever-in-our-hearts.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-49-forever-in-our-hearts.jpg" alt="Forever in Our Hearts greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Forever in Our Hearts<span>AD-PUP-49</span></figcaption></figure>
+      <figure class="card" id="ad-pup-50"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-50-thinking-of-you-sympathy.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-50-thinking-of-you-sympathy.jpg" alt="Thinking of You (Sympathy) greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Thinking of You (Sympathy)<span>AD-PUP-50</span></figcaption></figure>
+      <figure class="card" id="ad-pup-51"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-51-sorry-for-your-loss.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-51-sorry-for-your-loss.jpg" alt="Sorry for Your Loss greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Sorry for Your Loss<span>AD-PUP-51</span></figcaption></figure>
+    </div>
+    <h3 class="group-title">Valentine&rsquo;s Day &middot; 5 designs</h3>
+    <div class="gallery">
+      <figure class="card" id="ad-pup-57"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-57-be-mine.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-57-be-mine.jpg" alt="Be Mine greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Be Mine<span>AD-PUP-57</span></figcaption></figure>
+      <figure class="card" id="ad-pup-58"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-58-puppy-love.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-58-puppy-love.jpg" alt="Puppy Love greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Puppy Love<span>AD-PUP-58</span></figcaption></figure>
+      <figure class="card" id="ad-pup-59"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-59-sending-you-love.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-59-sending-you-love.jpg" alt="Sending You Love greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Sending You Love<span>AD-PUP-59</span></figcaption></figure>
+      <figure class="card" id="ad-pup-60"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-60-youre-pawsome.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-60-youre-pawsome.jpg" alt="You&#x27;re Pawsome greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>You&#x27;re Pawsome<span>AD-PUP-60</span></figcaption></figure>
+      <figure class="card" id="ad-pup-61"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-61-happy-valentines-day.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-61-happy-valentines-day.jpg" alt="Happy Valentine&#x27;s Day greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Happy Valentine&#x27;s Day<span>AD-PUP-61</span></figcaption></figure>
+    </div>
+    <h3 class="group-title">Christmas &middot; 12 designs</h3>
+    <div class="gallery">
+      <figure class="card" id="ad-pup-16"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-16-christmas-tree.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-16-christmas-tree.jpg" alt="Christmas Tree greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Christmas Tree<span>AD-PUP-16</span></figcaption></figure>
+      <figure class="card" id="ad-pup-17"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-17-first-snow.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-17-first-snow.jpg" alt="First Snow greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>First Snow<span>AD-PUP-17</span></figcaption></figure>
+      <figure class="card" id="ad-pup-18"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-18-safe-in-santas-arms.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-18-safe-in-santas-arms.jpg" alt="Safe in Santa&#x27;s Arms greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Safe in Santa&#x27;s Arms<span>AD-PUP-18</span></figcaption></figure>
+      <figure class="card" id="ad-pup-20"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-20-warmest-holiday-greetings.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-20-warmest-holiday-greetings.jpg" alt="Warmest Holiday Greetings greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Warmest Holiday Greetings<span>AD-PUP-20</span></figcaption></figure>
+      <figure class="card" id="ad-pup-21"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-21-snow-globe.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-21-snow-globe.jpg" alt="Snow Globe greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Snow Globe<span>AD-PUP-21</span></figcaption></figure>
+      <figure class="card" id="ad-pup-22"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-22-christmas-ornament.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-22-christmas-ornament.jpg" alt="Christmas Ornament greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Christmas Ornament<span>AD-PUP-22</span></figcaption></figure>
+      <figure class="card" id="ad-pup-23"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-23-happy-holidays.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-23-happy-holidays.jpg" alt="Happy Holidays greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Happy Holidays<span>AD-PUP-23</span></figcaption></figure>
+      <figure class="card" id="ad-pup-24"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-24-by-the-tree.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-24-by-the-tree.jpg" alt="By the Tree greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>By the Tree<span>AD-PUP-24</span></figcaption></figure>
+      <figure class="card" id="ad-pup-25"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-25-sleigh-ride.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-25-sleigh-ride.jpg" alt="Sleigh Ride greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Sleigh Ride<span>AD-PUP-25</span></figcaption></figure>
+      <figure class="card" id="ad-pup-26"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-PUP-26-christmas-stocking.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-PUP-26-christmas-stocking.jpg" alt="Christmas Stocking greeting card mockup with envelope, Adorable Puppy design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Christmas Stocking<span>AD-PUP-26</span></figcaption></figure>
+      <figure class="card" id="ad-gen-01"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-GEN-01-cozy-christmas-cat.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-GEN-01-cozy-christmas-cat.jpg" alt="Cozy Christmas Cat greeting card mockup with envelope, Adorable Greeting Cards design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Cozy Christmas Cat<span>AD-GEN-01</span></figcaption></figure>
+      <figure class="card" id="ad-gen-02"><a href="/images/cards/mockups/Adorable-Card-Mockup-AD-GEN-02-woodland-christmas-tree.jpg" target="_blank" rel="noopener"><img src="/images/cards/mockups/600/Adorable-Card-Mockup-AD-GEN-02-woodland-christmas-tree.jpg" alt="Woodland Christmas Tree greeting card mockup with envelope, Adorable Greeting Cards design" width="600" height="600" loading="lazy" decoding="async"></a><figcaption>Woodland Christmas Tree<span>AD-GEN-02</span></figcaption></figure>
     </div>
   </div>
 </section>
 
 <section class="cta">
   <div class="wrap">
-    <p>Pricing, minimums and ordering are all handled on Faire.</p>
-    <a class="faire-btn" href="https://melonglowbooks.faire.com" target="_blank" rel="noopener">Shop wholesale on Faire</a>
-    <p style="margin-top:22px;">Shop owners with questions: <a class="mail" href="mailto:Support@melonglowbooks.com">Support@melonglowbooks.com</a></p>
+    <h2>Ready to stock Adorable Greeting Cards?</h2>
+    <p>Browse every set and place your order on Faire. $100 minimum on your first order.</p>
+    <a class="btn btn-faire" href="https://faire.com/direct/melonglowbooks" target="_blank" rel="noopener">Shop Wholesale on Faire</a>
+    <p class="offer-note">New shops get 50% off their first order and free shipping when they order through this link.</p>
+    <p style="margin-top:22px;">Questions? Email <a class="mail" href="mailto:Support@melonglowbooks.com">Support@melonglowbooks.com</a></p>
   </div>
 </section>
 
 <footer>
-  <div>Adorable Greetings &middot; A division of Melon Glow Company LLC</div>
+  <div class="footer-faire">
+    <a class="btn btn-faire" href="https://faire.com/direct/melonglowbooks" target="_blank" rel="noopener">Shop Wholesale on Faire</a>
+    <p>New shops get 50% off their first order and free shipping when they order through this link.</p>
+  </div>
+  <div class="brand-line">Adorable Greeting Cards</div>
+  <p class="small">A division of Melon Glow Company, LLC &middot; Santa Rosa, California</p>
+  <div class="footer-links">
+    <a href="/home.html">Home</a>
+    <a href="/greeting-cards.html">Adorable Greeting Cards</a>
+    <a href="/pepper-the-dog.html">Children&rsquo;s Picture Books</a>
+    <a href="/melonglowbooks-whitfield-buy-page.html">Dr. James Whitfield</a>
+  </div>
   <a href="mailto:Support@melonglowbooks.com">Support@melonglowbooks.com</a>
 </footer>
 
