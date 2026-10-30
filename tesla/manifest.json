@@ -1,9 +1,10 @@
 {
-  "version": "202610292329-037d795e",
+  "version": "202610292347-037d795e",
   "updated": "Oct 29, 2026",
   "source": "Tesla-Catalog-FULL-Mixam-ver6.pdf",
   "pages": 96,
-  "aspect": 1.28548,
+  "hires": 3000,
+  "aspect": 1.28535,
   "pdf": "The-New-Tradition-Tesla-Catalog.pdf",
   "chapters": [
     {
