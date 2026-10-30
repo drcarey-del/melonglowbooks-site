@@ -1,0 +1,62 @@
+{
+  "version": "202610292329-037d795e",
+  "updated": "Oct 29, 2026",
+  "source": "Tesla-Catalog-FULL-Mixam-ver6.pdf",
+  "pages": 96,
+  "aspect": 1.28548,
+  "pdf": "The-New-Tradition-Tesla-Catalog.pdf",
+  "chapters": [
+    {
+      "title": "Cover",
+      "page": 1
+    },
+    {
+      "title": "Cover Letter",
+      "page": 3
+    },
+    {
+      "title": "Chapter 1 \u00b7 Delivery",
+      "page": 6
+    },
+    {
+      "title": "Chapter 2 \u00b7 Service",
+      "page": 20
+    },
+    {
+      "title": "Chapter 3 \u00b7 Retention",
+      "page": 32
+    },
+    {
+      "title": "Chapter 4 \u00b7 Seasons",
+      "page": 44
+    },
+    {
+      "title": "Chapter 5 \u00b7 Holidays",
+      "page": 59
+    },
+    {
+      "title": "Chapter 6 \u00b7 Pets",
+      "page": 78
+    },
+    {
+      "title": "Counter Integration",
+      "page": 92
+    },
+    {
+      "title": "Wholesale",
+      "page": 93
+    },
+    {
+      "title": "Order Matrix",
+      "page": 94
+    },
+    {
+      "title": "Production & Contact",
+      "page": 95
+    },
+    {
+      "title": "Back Cover",
+      "page": 96
+    }
+  ]
+}

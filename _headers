@@ -22,3 +22,9 @@
   Content-Type: text/csv; charset=utf-8
   Cache-Control: public, max-age=300, must-revalidate
   Access-Control-Allow-Origin: *
+
+# Private Tesla flipbook: direct link only, kept out of search engines.
+/tesla/*
+  X-Robots-Tag: noindex, nofollow
+/tesla/pages/*
+  Cache-Control: public, max-age=31536000, immutable
