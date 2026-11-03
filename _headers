@@ -28,3 +28,15 @@
   X-Robots-Tag: noindex, nofollow
 /tesla/pages/*
   Cache-Control: public, max-age=31536000, immutable
+
+# Private Ford flipbook: direct link only, kept out of search engines.
+/Ford1941
+  X-Robots-Tag: noindex, nofollow
+/Ford1941/*
+  X-Robots-Tag: noindex, nofollow
+/ford1941
+  X-Robots-Tag: noindex, nofollow
+/ford1941/*
+  X-Robots-Tag: noindex, nofollow
+/Ford1941/pages/*
+  Cache-Control: public, max-age=31536000, immutable

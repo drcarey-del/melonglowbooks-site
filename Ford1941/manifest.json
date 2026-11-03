@@ -1,0 +1,100 @@
+{
+  "version": "202611021958-11508c62",
+  "updated": "Nov 2, 2026",
+  "source": "Ford-Catalog-Interior-RGB-fallback.pdf",
+  "pages": 107,
+  "hires": 3000,
+  "aspect": 0.77841,
+  "pdf": "The-New-Tradition-Ford-Catalog.pdf",
+  "chapters": [
+    {
+      "title": "Title Page",
+      "page": 1
+    },
+    {
+      "title": "Contents",
+      "page": 2
+    },
+    {
+      "title": "Cover Letter",
+      "page": 3
+    },
+    {
+      "title": "The Counter Opportunity",
+      "page": 4
+    },
+    {
+      "title": "The Pilot Offer",
+      "page": 5
+    },
+    {
+      "title": "The 12 Pilot Designs",
+      "page": 6
+    },
+    {
+      "title": "Featured Card: The First Ride Pass",
+      "page": 8
+    },
+    {
+      "title": "How Your Dealership Can Use These Cards",
+      "page": 10
+    },
+    {
+      "title": "Chapter 1 \u00b7 Delivery Day & Welcome to the Ford Family",
+      "page": 12
+    },
+    {
+      "title": "Chapter 2 \u00b7 Service Visits & the Parts Counter",
+      "page": 22
+    },
+    {
+      "title": "Chapter 3 \u00b7 Truck Life: F-150, Super Duty & Ford Pro",
+      "page": 32
+    },
+    {
+      "title": "Chapter 4 \u00b7 Trail & Track: Bronco & Mustang",
+      "page": 42
+    },
+    {
+      "title": "Chapter 5 \u00b7 Family & Electric: Explorer, Mach-E & Lightning",
+      "page": 52
+    },
+    {
+      "title": "Chapter 6 \u00b7 Birthdays & Milestones",
+      "page": 62
+    },
+    {
+      "title": "Chapter 7 \u00b7 Holiday Line",
+      "page": 74
+    },
+    {
+      "title": "Chapter 8 \u00b7 Pets & Truck Dogs",
+      "page": 88
+    },
+    {
+      "title": "Chapter 9 \u00b7 The Future Is Ours",
+      "page": 96
+    },
+    {
+      "title": "Service & Parts Counter Integration",
+      "page": 102
+    },
+    {
+      "title": "Wholesale Options",
+      "page": 103
+    },
+    {
+      "title": "Order Matrix",
+      "page": 104
+    },
+    {
+      "title": "Dealer Group Rollout",
+      "page": 106
+    },
+    {
+      "title": "Production, Logistics & Contact",
+      "page": 107
+    }
+  ],
+  "back": false
+}
