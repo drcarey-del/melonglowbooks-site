@@ -40,3 +40,27 @@
   X-Robots-Tag: noindex, nofollow
 /Ford1941/pages/*
   Cache-Control: public, max-age=31536000, immutable
+
+# Private OReilly flipbook: direct link only, kept out of search engines.
+/oreilly
+  X-Robots-Tag: noindex, nofollow
+/oreilly/*
+  X-Robots-Tag: noindex, nofollow
+/OReilly
+  X-Robots-Tag: noindex, nofollow
+/OReilly/*
+  X-Robots-Tag: noindex, nofollow
+/oreilly/pages/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Private AutoZone flipbook: direct link only, kept out of search engines.
+/autozone
+  X-Robots-Tag: noindex, nofollow
+/autozone/*
+  X-Robots-Tag: noindex, nofollow
+/AutoZone
+  X-Robots-Tag: noindex, nofollow
+/AutoZone/*
+  X-Robots-Tag: noindex, nofollow
+/autozone/pages/*
+  Cache-Control: public, max-age=31536000, immutable

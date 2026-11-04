@@ -2,3 +2,7 @@ User-agent: *
 Disallow: /tesla/
 Disallow: /Ford1941/
 Disallow: /ford1941/
+Disallow: /oreilly/
+Disallow: /OReilly/
+Disallow: /autozone/
+Disallow: /AutoZone/

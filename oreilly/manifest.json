@@ -1,0 +1,56 @@
+{
+  "version": "202611031717-3fc20177",
+  "updated": "Nov 3, 2026",
+  "source": "OReilly-Pitch-Cover-RGB.pdf (front/back panels) + OReilly-Pitch-Interior-RGB.pdf pp.1-28",
+  "pages": 32,
+  "hires": 3000,
+  "aspect": 0.77882,
+  "pdf": "The-New-Tradition-OReilly-Catalog.pdf",
+  "chapters": [
+    {
+      "title": "Front Cover",
+      "page": 1
+    },
+    {
+      "title": "Opening Letter",
+      "page": 3
+    },
+    {
+      "title": "The Retail Opportunity",
+      "page": 4
+    },
+    {
+      "title": "Start with a Pilot",
+      "page": 5
+    },
+    {
+      "title": "The First 12 Designs",
+      "page": 6
+    },
+    {
+      "title": "Seasonal Rotation",
+      "page": 18
+    },
+    {
+      "title": "The Deep Bench",
+      "page": 19
+    },
+    {
+      "title": "Store-Use Collection",
+      "page": 27
+    },
+    {
+      "title": "Pricing & Pilot",
+      "page": 29
+    },
+    {
+      "title": "The Next Conversation",
+      "page": 30
+    },
+    {
+      "title": "Back Cover",
+      "page": 32
+    }
+  ],
+  "back": true
+}
