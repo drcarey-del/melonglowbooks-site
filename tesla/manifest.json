@@ -1,7 +1,7 @@
 {
-  "version": "202611021902-8bf3cf24",
-  "updated": "Nov 2, 2026",
-  "source": "Tesla-Catalog-ver7.pdf",
+  "version": "202611031718-3693072a",
+  "updated": "Nov 3, 2026",
+  "source": "Tesla-Catalog-v8d-full.pdf",
   "pages": 104,
   "hires": 3000,
   "aspect": 1.28535,
@@ -12,11 +12,19 @@
       "page": 1
     },
     {
+      "title": "Contents",
+      "page": 2
+    },
+    {
       "title": "Cover Letter",
       "page": 3
     },
     {
-      "title": "The Pilot Offer",
+      "title": "The Counter Opportunity",
+      "page": 4
+    },
+    {
+      "title": "How the Pilot Works",
       "page": 5
     },
     {
@@ -28,12 +36,16 @@
       "page": 8
     },
     {
+      "title": "How Tesla Can Use These Cards",
+      "page": 10
+    },
+    {
       "title": "Chapter 1 \u00b7 Delivery",
       "page": 12
     },
     {
       "title": "Chapter 2 \u00b7 Service",
-      "page": 27
+      "page": 26
     },
     {
       "title": "Chapter 3 \u00b7 Retention",
@@ -49,22 +61,22 @@
     },
     {
       "title": "Chapter 6 \u00b7 Pets",
-      "page": 85
+      "page": 84
     },
     {
       "title": "Counter Integration",
       "page": 98
     },
     {
-      "title": "Wholesale",
+      "title": "Rolling Out Across Locations",
       "page": 99
     },
     {
-      "title": "Order Matrix",
+      "title": "Choose Your Designs",
       "page": 100
     },
     {
-      "title": "Production & Contact",
+      "title": "Let\u2019s Talk",
       "page": 101
     },
     {
