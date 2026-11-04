@@ -6,3 +6,5 @@ Disallow: /oreilly/
 Disallow: /OReilly/
 Disallow: /autozone/
 Disallow: /AutoZone/
+Disallow: /gm1908/
+Disallow: /GM1908/

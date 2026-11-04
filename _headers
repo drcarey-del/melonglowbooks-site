@@ -64,3 +64,19 @@
   X-Robots-Tag: noindex, nofollow
 /autozone/pages/*
   Cache-Control: public, max-age=31536000, immutable
+
+# Private GM flipbook: direct link only, kept out of search engines.
+/gm1908
+  X-Robots-Tag: noindex, nofollow
+/gm1908/*
+  X-Robots-Tag: noindex, nofollow
+/GM1908
+  X-Robots-Tag: noindex, nofollow
+/GM1908/*
+  X-Robots-Tag: noindex, nofollow
+/Gm1908
+  X-Robots-Tag: noindex, nofollow
+/Gm1908/*
+  X-Robots-Tag: noindex, nofollow
+/gm1908/pages/*
+  Cache-Control: public, max-age=31536000, immutable

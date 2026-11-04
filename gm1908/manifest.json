@@ -1,0 +1,92 @@
+{
+  "version": "202611032108-734dbb50",
+  "updated": "Nov 3, 2026",
+  "source": "TheNewTradition-GM-cover-RGB.pdf (front/back panels, spine trimmed) + TheNewTradition-GM-interior-RGB.pdf pp.1-50",
+  "pages": 54,
+  "hires": 3000,
+  "aspect": 0.77841,
+  "pdf": "The-New-Tradition-GM-Catalog.pdf",
+  "chapters": [
+    {
+      "title": "Cover",
+      "page": 1
+    },
+    {
+      "title": "Title Page",
+      "page": 3
+    },
+    {
+      "title": "Contents",
+      "page": 4
+    },
+    {
+      "title": "A Letter from Brian",
+      "page": 5
+    },
+    {
+      "title": "Featured: The First Ride Pass",
+      "page": 6
+    },
+    {
+      "title": "The Pilot Offer",
+      "page": 8
+    },
+    {
+      "title": "The 12 Pilot Designs",
+      "page": 9
+    },
+    {
+      "title": "The Counter Opportunity",
+      "page": 10
+    },
+    {
+      "title": "A Note from Brian",
+      "page": 11
+    },
+    {
+      "title": "Section I \u00b7 The Pilot Collection",
+      "page": 12
+    },
+    {
+      "title": "Section II \u00b7 Delivery Day, Service & Truck Life",
+      "page": 26
+    },
+    {
+      "title": "Section III \u00b7 Trails, Big Days, Pets & Holidays",
+      "page": 35
+    },
+    {
+      "title": "The Full Collection",
+      "page": 43
+    },
+    {
+      "title": "Service & Parts Counter Integration",
+      "page": 46
+    },
+    {
+      "title": "How the Pilot Works",
+      "page": 47
+    },
+    {
+      "title": "Choose Your Designs",
+      "page": 48
+    },
+    {
+      "title": "Rolling Out Across Your Group",
+      "page": 50
+    },
+    {
+      "title": "Let\u2019s Talk",
+      "page": 51
+    },
+    {
+      "title": "See You Down the Road",
+      "page": 52
+    },
+    {
+      "title": "Back Cover",
+      "page": 54
+    }
+  ],
+  "back": true
+}
