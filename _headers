@@ -80,3 +80,15 @@
   X-Robots-Tag: noindex, nofollow
 /gm1908/pages/*
   Cache-Control: public, max-age=31536000, immutable
+
+# Private Mercedes-Benz flipbook: direct link only, kept out of search engines.
+/mercedes1886
+  X-Robots-Tag: noindex, nofollow
+/mercedes1886/*
+  X-Robots-Tag: noindex, nofollow
+/Mercedes1886
+  X-Robots-Tag: noindex, nofollow
+/Mercedes1886/*
+  X-Robots-Tag: noindex, nofollow
+/mercedes1886/pages/*
+  Cache-Control: public, max-age=31536000, immutable
