@@ -92,3 +92,15 @@
   X-Robots-Tag: noindex, nofollow
 /mercedes1886/pages/*
   Cache-Control: public, max-age=31536000, immutable
+
+# Private auto parts lookbook flipbook: direct link only, kept out of search engines.
+/autoparts
+  X-Robots-Tag: noindex, nofollow
+/autoparts/*
+  X-Robots-Tag: noindex, nofollow
+/AutoParts
+  X-Robots-Tag: noindex, nofollow
+/AutoParts/*
+  X-Robots-Tag: noindex, nofollow
+/autoparts/pages/*
+  Cache-Control: public, max-age=31536000, immutable
