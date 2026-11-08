@@ -1,0 +1,40 @@
+{
+  "version": "202611072100-77fb728c",
+  "updated": "Nov 7, 2026",
+  "source": "The-New-Tradition-Salon-Catalog.pdf",
+  "pages": 10,
+  "hires": 3000,
+  "aspect": 0.77273,
+  "pdf": "The-New-Tradition-Salon-Catalog.pdf",
+  "chapters": [
+    {
+      "title": "Front Cover",
+      "page": 1
+    },
+    {
+      "title": "Why Salons",
+      "page": 2
+    },
+    {
+      "title": "How It Works",
+      "page": 3
+    },
+    {
+      "title": "The Designs",
+      "page": 4
+    },
+    {
+      "title": "At a Glance",
+      "page": 8
+    },
+    {
+      "title": "Order Form",
+      "page": 9
+    },
+    {
+      "title": "How to Order",
+      "page": 10
+    }
+  ],
+  "back": false
+}
