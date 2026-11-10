@@ -1,6 +1,6 @@
 {
-  "version": "202611031717-f09958e9",
-  "updated": "Nov 3, 2026",
+  "version": "202611100045-launch",
+  "updated": "Nov 10, 2026",
   "source": "AutoZone-Pitch-Cover-RGB.pdf (front/back panels) + AutoZone-Pitch-Interior-RGB.pdf pp.1-28",
   "pages": 32,
   "hires": 3000,
@@ -20,11 +20,11 @@
       "page": 4
     },
     {
-      "title": "Start with a Pilot",
+      "title": "The Launch Order",
       "page": 5
     },
     {
-      "title": "The First 12 Designs",
+      "title": "The Launch 12",
       "page": 6
     },
     {
@@ -40,7 +40,7 @@
       "page": 27
     },
     {
-      "title": "Pricing & Pilot",
+      "title": "Pricing & Launch",
       "page": 29
     },
     {
