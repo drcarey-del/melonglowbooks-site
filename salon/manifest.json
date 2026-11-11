@@ -2,7 +2,7 @@
   "version": "202611102100-final",
   "updated": "Nov 10, 2026",
   "source": "The-New-Tradition-Salon-Catalog.pdf",
-  "pages": 10,
+  "pages": 22,
   "hires": 3000,
   "aspect": 0.77273,
   "pdf": "The-New-Tradition-Salon-Catalog.pdf",
@@ -20,20 +20,24 @@
       "page": 3
     },
     {
-      "title": "The Designs",
+      "title": "The Spinner Twelve",
       "page": 4
     },
     {
+      "title": "All Sixteen Designs",
+      "page": 16
+    },
+    {
       "title": "At a Glance",
-      "page": 8
+      "page": 20
     },
     {
       "title": "Order Form",
-      "page": 9
+      "page": 21
     },
     {
       "title": "How to Order",
-      "page": 10
+      "page": 22
     }
   ],
   "back": false
