@@ -2,7 +2,7 @@
   "version": "202611102100-final",
   "updated": "Nov 10, 2026",
   "source": "The-New-Tradition-Salon-Catalog.pdf",
-  "pages": 22,
+  "pages": 36,
   "hires": 3000,
   "aspect": 0.77273,
   "pdf": "The-New-Tradition-Salon-Catalog.pdf",
@@ -16,28 +16,40 @@
       "page": 2
     },
     {
-      "title": "How It Works",
+      "title": "Signature Characters",
       "page": 3
     },
     {
-      "title": "The Spinner Twelve",
+      "title": "Salon Elegance",
       "page": 4
     },
     {
-      "title": "All Sixteen Designs",
-      "page": 16
+      "title": "How It Works",
+      "page": 5
     },
     {
-      "title": "At a Glance",
-      "page": 20
+      "title": "Suggested Starter Twelve",
+      "page": 6
+    },
+    {
+      "title": "All 26 Designs, Full Size",
+      "page": 7
+    },
+    {
+      "title": "The Collection at a Glance",
+      "page": 33
     },
     {
       "title": "Order Form",
-      "page": 21
+      "page": 34
     },
     {
       "title": "How to Order",
-      "page": 22
+      "page": 35
+    },
+    {
+      "title": "Back Cover",
+      "page": 36
     }
   ],
   "back": false
