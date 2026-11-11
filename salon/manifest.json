@@ -1,40 +1,23 @@
 {
-  "version": "202611072100-77fb728c",
-  "updated": "Nov 7, 2026",
-  "source": "The-New-Tradition-Salon-Catalog.pdf",
-  "pages": 10,
+  "version": "202611111200-48aee767",
+  "updated": "Nov 11, 2026",
+  "source": "Salon & Spa catalog website edition, 16 pages",
+  "pages": 16,
   "hires": 3000,
   "aspect": 0.77273,
   "pdf": "The-New-Tradition-Salon-Catalog.pdf",
   "chapters": [
-    {
-      "title": "Front Cover",
-      "page": 1
-    },
-    {
-      "title": "Why Salons",
-      "page": 2
-    },
-    {
-      "title": "How It Works",
-      "page": 3
-    },
-    {
-      "title": "The Designs",
-      "page": 4
-    },
-    {
-      "title": "At a Glance",
-      "page": 8
-    },
-    {
-      "title": "Order Form",
-      "page": 9
-    },
-    {
-      "title": "How to Order",
-      "page": 10
-    }
+    {"title": "Front Cover", "page": 1},
+    {"title": "Why Salons", "page": 2},
+    {"title": "Signature Characters", "page": 3},
+    {"title": "Salon Elegance", "page": 4},
+    {"title": "How It Works", "page": 5},
+    {"title": "Suggested Twelve", "page": 6},
+    {"title": "The Designs", "page": 7},
+    {"title": "At a Glance", "page": 13},
+    {"title": "Order Form", "page": 14},
+    {"title": "How to Order", "page": 15},
+    {"title": "Back Cover", "page": 16}
   ],
-  "back": false
+  "back": true
 }
