@@ -1,23 +1,171 @@
 {
-  "version": "202611111200-48aee767",
+  "version": "202611111809-13d393a6",
   "updated": "Nov 11, 2026",
-  "source": "Salon & Spa catalog website edition, 16 pages",
-  "pages": 16,
+  "source": "Approved Salon & Spa catalog, 25 designs, one card per page",
+  "pages": 33,
   "hires": 3000,
   "aspect": 0.77273,
   "pdf": "The-New-Tradition-Salon-Catalog.pdf",
   "chapters": [
-    {"title": "Front Cover", "page": 1},
-    {"title": "Why Salons", "page": 2},
-    {"title": "Signature Characters", "page": 3},
-    {"title": "Salon Elegance", "page": 4},
-    {"title": "How It Works", "page": 5},
-    {"title": "Suggested Twelve", "page": 6},
-    {"title": "The Designs", "page": 7},
-    {"title": "At a Glance", "page": 13},
-    {"title": "Order Form", "page": 14},
-    {"title": "How to Order", "page": 15},
-    {"title": "Back Cover", "page": 16}
+    {
+      "title": "Front Cover",
+      "page": 1
+    },
+    {
+      "title": "Why Salons",
+      "page": 2
+    },
+    {
+      "title": "How It Works",
+      "page": 3
+    },
+    {
+      "title": "Suggested Twelve",
+      "page": 4
+    },
+    {
+      "title": "SL-BD-01 · Great Hair Days",
+      "page": 5
+    },
+    {
+      "title": "SL-BD-02 · The Happiest Birthday",
+      "page": 6
+    },
+    {
+      "title": "SL-BD-03 · Wonderful Friend",
+      "page": 7
+    },
+    {
+      "title": "SL-BD-04 · Next Beautiful Chapter",
+      "page": 8
+    },
+    {
+      "title": "SL-BD-05 · Polished & Pampered",
+      "page": 9
+    },
+    {
+      "title": "SL-BD-06 · Beautiful Birthday",
+      "page": 10
+    },
+    {
+      "title": "SL-BD-07 · A Little Love",
+      "page": 11
+    },
+    {
+      "title": "SL-BD-08 · The Whole Bouquet",
+      "page": 12
+    },
+    {
+      "title": "SL-FR-01 · Spa Together",
+      "page": 13
+    },
+    {
+      "title": "SL-FR-02 · The Perfect Shade",
+      "page": 14
+    },
+    {
+      "title": "SL-TO-01 · Fresh Cut and a Best Friend",
+      "page": 15
+    },
+    {
+      "title": "SL-TY-01 · Every Day a Spa Day",
+      "page": 16
+    },
+    {
+      "title": "SL-TY-02 · Every Bad Hair Day",
+      "page": 17
+    },
+    {
+      "title": "SL-TY-03 · Thank You for Being There",
+      "page": 18
+    },
+    {
+      "title": "SL-TY-04 · Appreciated",
+      "page": 19
+    },
+    {
+      "title": "SL-EN-01 · I’m Here",
+      "page": 20
+    },
+    {
+      "title": "SL-EN-02 · This Means So Much",
+      "page": 21
+    },
+    {
+      "title": "SL-GW-01 · Spa Day On Me",
+      "page": 22
+    },
+    {
+      "title": "SL-BB-01 · Perfect Hair Already",
+      "page": 23
+    },
+    {
+      "title": "SL-SY-01 · Comfort and Care",
+      "page": 24
+    },
+    {
+      "title": "SL-MD-01 · Every Braid",
+      "page": 25
+    },
+    {
+      "title": "SL-WD-01 · Today, Forever Begins",
+      "page": 26
+    },
+    {
+      "title": "SL-XM-01 · Sparkle Like Fresh Polish",
+      "page": 27
+    },
+    {
+      "title": "SL-LV-01 · Happy Valentine’s Day",
+      "page": 28
+    },
+    {
+      "title": "SL-LV-02 · Sending You Love",
+      "page": 29
+    },
+    {
+      "title": "At a Glance",
+      "page": 30
+    },
+    {
+      "title": "Order Form",
+      "page": 31
+    },
+    {
+      "title": "How to Order",
+      "page": 32
+    },
+    {
+      "title": "Back Cover",
+      "page": 33
+    }
   ],
+  "labels": {
+    "5": "SL-BD-01",
+    "6": "SL-BD-02",
+    "7": "SL-BD-03",
+    "8": "SL-BD-04",
+    "9": "SL-BD-05",
+    "10": "SL-BD-06",
+    "11": "SL-BD-07",
+    "12": "SL-BD-08",
+    "13": "SL-FR-01",
+    "14": "SL-FR-02",
+    "15": "SL-TO-01",
+    "16": "SL-TY-01",
+    "17": "SL-TY-02",
+    "18": "SL-TY-03",
+    "19": "SL-TY-04",
+    "20": "SL-EN-01",
+    "21": "SL-EN-02",
+    "22": "SL-GW-01",
+    "23": "SL-BB-01",
+    "24": "SL-SY-01",
+    "25": "SL-MD-01",
+    "26": "SL-WD-01",
+    "27": "SL-XM-01",
+    "28": "SL-LV-01",
+    "29": "SL-LV-02"
+  },
   "back": true
 }
