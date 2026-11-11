@@ -1,0 +1,72 @@
+{
+  "version": "202611102100-final",
+  "updated": "Nov 10, 2026",
+  "source": "The-New-Tradition-Harbor-Freight-Edition.pdf",
+  "pages": 42,
+  "hires": 3000,
+  "aspect": 0.77963,
+  "pdf": "The-New-Tradition-Harbor-Freight-Edition.pdf",
+  "chapters": [
+    {
+      "title": "Front Cover",
+      "page": 1
+    },
+    {
+      "title": "Opening Letter",
+      "page": 2
+    },
+    {
+      "title": "The Opportunity in Numbers",
+      "page": 4
+    },
+    {
+      "title": "The Retail Opportunity",
+      "page": 5
+    },
+    {
+      "title": "The Card Station",
+      "page": 7
+    },
+    {
+      "title": "Store Economics",
+      "page": 12
+    },
+    {
+      "title": "The Launch Order",
+      "page": 13
+    },
+    {
+      "title": "The Launch 12",
+      "page": 14
+    },
+    {
+      "title": "The Deep Bench",
+      "page": 27
+    },
+    {
+      "title": "All 47 Designs",
+      "page": 36
+    },
+    {
+      "title": "Seasonal Calendar",
+      "page": 37
+    },
+    {
+      "title": "Pricing & Launch",
+      "page": 38
+    },
+    {
+      "title": "Growing the Program",
+      "page": 39
+    },
+    {
+      "title": "The Next Conversation",
+      "page": 40
+    },
+    {
+      "title": "Back Cover",
+      "page": 42
+    }
+  ],
+  "back": true
+}

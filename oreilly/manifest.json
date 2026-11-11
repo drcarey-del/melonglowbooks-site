@@ -1,11 +1,11 @@
 {
-  "version": "202611031717-3fc20177",
-  "updated": "Nov 3, 2026",
-  "source": "OReilly-Pitch-Cover-RGB.pdf (front/back panels) + OReilly-Pitch-Interior-RGB.pdf pp.1-28",
-  "pages": 32,
+  "version": "202611102100-final",
+  "updated": "Nov 10, 2026",
+  "source": "The-New-Tradition-OReilly-Edition.pdf",
+  "pages": 34,
   "hires": 3000,
-  "aspect": 0.77882,
-  "pdf": "The-New-Tradition-OReilly-Catalog.pdf",
+  "aspect": 0.77963,
+  "pdf": "The-New-Tradition-OReilly-Edition.pdf",
   "chapters": [
     {
       "title": "Front Cover",
@@ -13,43 +13,63 @@
     },
     {
       "title": "Opening Letter",
+      "page": 2
+    },
+    {
+      "title": "At Your Parts Counter",
       "page": 3
     },
     {
-      "title": "The Retail Opportunity",
+      "title": "The Opportunity in Numbers",
       "page": 4
     },
     {
-      "title": "Start with a Pilot",
+      "title": "The Retail Opportunity",
       "page": 5
     },
     {
-      "title": "The First 12 Designs",
+      "title": "The Counter Spinner",
       "page": 6
     },
     {
-      "title": "Seasonal Rotation",
-      "page": 18
+      "title": "Store Economics",
+      "page": 7
+    },
+    {
+      "title": "The Launch Order",
+      "page": 8
+    },
+    {
+      "title": "The Launch 12",
+      "page": 9
     },
     {
       "title": "The Deep Bench",
-      "page": 19
+      "page": 22
     },
     {
       "title": "Store-Use Collection",
-      "page": 27
+      "page": 28
     },
     {
-      "title": "Pricing & Pilot",
+      "title": "All 40 Designs",
       "page": 29
     },
     {
-      "title": "The Next Conversation",
+      "title": "Seasonal Calendar",
       "page": 30
     },
     {
-      "title": "Back Cover",
+      "title": "Pricing & Launch",
+      "page": 31
+    },
+    {
+      "title": "The Next Conversation",
       "page": 32
+    },
+    {
+      "title": "Back Cover",
+      "page": 34
     }
   ],
   "back": true

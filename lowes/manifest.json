@@ -1,0 +1,80 @@
+{
+  "version": "202611102100-final",
+  "updated": "Nov 10, 2026",
+  "source": "The-New-Tradition-Lowes-Edition.pdf",
+  "pages": 60,
+  "hires": 3000,
+  "aspect": 0.77963,
+  "pdf": "The-New-Tradition-Lowes-Edition.pdf",
+  "chapters": [
+    {
+      "title": "Front Cover",
+      "page": 1
+    },
+    {
+      "title": "Opening Letter",
+      "page": 2
+    },
+    {
+      "title": "The Opportunity in Numbers",
+      "page": 3
+    },
+    {
+      "title": "The Gift and the Card",
+      "page": 5
+    },
+    {
+      "title": "The Two Displays",
+      "page": 6
+    },
+    {
+      "title": "Store Economics",
+      "page": 11
+    },
+    {
+      "title": "The Launch Order",
+      "page": 12
+    },
+    {
+      "title": "The Garden Center",
+      "page": 13
+    },
+    {
+      "title": "The Checkout",
+      "page": 38
+    },
+    {
+      "title": "The Deep Bench",
+      "page": 41
+    },
+    {
+      "title": "The Painted Garden",
+      "page": 47
+    },
+    {
+      "title": "Meet the Sentinel",
+      "page": 55
+    },
+    {
+      "title": "All 112 Designs",
+      "page": 56
+    },
+    {
+      "title": "Seasonal Calendar",
+      "page": 57
+    },
+    {
+      "title": "Pricing & Rollout",
+      "page": 58
+    },
+    {
+      "title": "The Next Conversation",
+      "page": 59
+    },
+    {
+      "title": "Back Cover",
+      "page": 60
+    }
+  ],
+  "back": true
+}

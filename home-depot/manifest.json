@@ -1,0 +1,72 @@
+{
+  "version": "202611102100-final",
+  "updated": "Nov 10, 2026",
+  "source": "The-New-Tradition-Home-Depot-Edition.pdf",
+  "pages": 64,
+  "hires": 3000,
+  "aspect": 0.77963,
+  "pdf": "The-New-Tradition-Home-Depot-Edition.pdf",
+  "chapters": [
+    {
+      "title": "Front Cover",
+      "page": 1
+    },
+    {
+      "title": "Opening Letter",
+      "page": 2
+    },
+    {
+      "title": "The Retail Opportunity",
+      "page": 3
+    },
+    {
+      "title": "Store Economics",
+      "page": 6
+    },
+    {
+      "title": "Seasonal Calendar",
+      "page": 7
+    },
+    {
+      "title": "The Launch Order",
+      "page": 8
+    },
+    {
+      "title": "Meet the Sentinel",
+      "page": 9
+    },
+    {
+      "title": "The Workshop",
+      "page": 10
+    },
+    {
+      "title": "The Garden",
+      "page": 23
+    },
+    {
+      "title": "The Deep Bench",
+      "page": 36
+    },
+    {
+      "title": "Tools & Garden",
+      "page": 49
+    },
+    {
+      "title": "All 144 Designs",
+      "page": 60
+    },
+    {
+      "title": "Pricing & Launch",
+      "page": 61
+    },
+    {
+      "title": "The Next Conversation",
+      "page": 62
+    },
+    {
+      "title": "Back Cover",
+      "page": 64
+    }
+  ],
+  "back": true
+}
