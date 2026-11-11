@@ -1,91 +1,75 @@
 {
-  "version": "202611032108-734dbb50",
-  "updated": "Nov 3, 2026",
-  "source": "TheNewTradition-GM-cover-RGB.pdf (front/back panels, spine trimmed) + TheNewTradition-GM-interior-RGB.pdf pp.1-50",
-  "pages": 54,
+  "version": "202611102100-final",
+  "updated": "Nov 10, 2026",
+  "source": "The-New-Tradition-Chevrolet-Edition.pdf",
+  "pages": 32,
   "hires": 3000,
-  "aspect": 0.77841,
-  "pdf": "The-New-Tradition-GM-Catalog.pdf",
+  "aspect": 0.77963,
+  "pdf": "The-New-Tradition-Chevrolet-Edition.pdf",
   "chapters": [
     {
-      "title": "Cover",
+      "title": "Front Cover",
       "page": 1
     },
     {
-      "title": "Title Page",
+      "title": "Opening Letter",
+      "page": 2
+    },
+    {
+      "title": "At Your Counter",
       "page": 3
     },
     {
-      "title": "Contents",
+      "title": "Two Card Streams",
       "page": 4
     },
     {
-      "title": "A Letter from Brian",
+      "title": "The First Ride Pass",
       "page": 5
     },
     {
-      "title": "Featured: The First Ride Pass",
+      "title": "Store Economics",
       "page": 6
     },
     {
-      "title": "The Pilot Offer",
+      "title": "The Launch Order",
+      "page": 7
+    },
+    {
+      "title": "The Launch 12",
       "page": 8
     },
     {
-      "title": "The 12 Pilot Designs",
-      "page": 9
+      "title": "The Collection",
+      "page": 21
     },
     {
-      "title": "The Counter Opportunity",
-      "page": 10
+      "title": "Customer Love",
+      "page": 24
     },
     {
-      "title": "A Note from Brian",
-      "page": 11
+      "title": "All 31 Designs",
+      "page": 27
     },
     {
-      "title": "Section I \u00b7 The Pilot Collection",
-      "page": 12
+      "title": "Seasonal Calendar",
+      "page": 28
     },
     {
-      "title": "Section II \u00b7 Delivery Day, Service & Truck Life",
-      "page": 26
+      "title": "Pricing & Launch",
+      "page": 29
     },
     {
-      "title": "Section III \u00b7 Trails, Big Days, Pets & Holidays",
-      "page": 35
+      "title": "Group Rollout",
+      "page": 30
     },
     {
-      "title": "The Full Collection",
-      "page": 43
-    },
-    {
-      "title": "Service & Parts Counter Integration",
-      "page": 46
-    },
-    {
-      "title": "How the Pilot Works",
-      "page": 47
-    },
-    {
-      "title": "Choose Your Designs",
-      "page": 48
-    },
-    {
-      "title": "Rolling Out Across Your Group",
-      "page": 50
-    },
-    {
-      "title": "Let\u2019s Talk",
-      "page": 51
-    },
-    {
-      "title": "See You Down the Road",
-      "page": 52
+      "title": "The Next Conversation",
+      "page": 31
     },
     {
       "title": "Back Cover",
-      "page": 54
+      "page": 32
     }
   ],
   "back": true
