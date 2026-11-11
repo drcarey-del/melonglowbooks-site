@@ -12,3 +12,5 @@ Disallow: /mercedes1886/
 Disallow: /Mercedes1886/
 Disallow: /autoparts/
 Disallow: /AutoParts/
+Disallow: /salon/
+Disallow: /Salon/

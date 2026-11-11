@@ -1,7 +1,7 @@
 {
-  "version": "202611102100-final",
+  "version": "202611111140-starter",
   "updated": "Nov 10, 2026",
-  "source": "The-New-Tradition-Salon-Catalog.pdf",
+  "source": "Salon & Spa catalog, 26 designs, every card full size",
   "pages": 36,
   "hires": 3000,
   "aspect": 0.77273,
@@ -32,11 +32,111 @@
       "page": 6
     },
     {
-      "title": "All 26 Designs, Full Size",
+      "title": "SL-BD-04 · Next Beautiful Chapter",
       "page": 7
     },
     {
-      "title": "The Collection at a Glance",
+      "title": "SL-BD-01 · Great Hair Days",
+      "page": 8
+    },
+    {
+      "title": "SL-BD-05 · Polished & Pampered",
+      "page": 9
+    },
+    {
+      "title": "SL-BD-06 · Beautiful Birthday",
+      "page": 10
+    },
+    {
+      "title": "SL-BD-02 · The Happiest Birthday",
+      "page": 11
+    },
+    {
+      "title": "SL-BD-03 · Wonderful Friend",
+      "page": 12
+    },
+    {
+      "title": "SL-BD-08 · The Whole Bouquet",
+      "page": 13
+    },
+    {
+      "title": "SL-BD-09 · A Little Love, Portrait",
+      "page": 14
+    },
+    {
+      "title": "SL-BD-07 · A Little Love",
+      "page": 15
+    },
+    {
+      "title": "SL-TY-01 · Every Day a Spa Day",
+      "page": 16
+    },
+    {
+      "title": "SL-TY-02 · Every Bad Hair Day",
+      "page": 17
+    },
+    {
+      "title": "SL-TY-03 · Thank You for Being There",
+      "page": 18
+    },
+    {
+      "title": "SL-TY-04 · Appreciated",
+      "page": 19
+    },
+    {
+      "title": "SL-FR-01 · Spa Together",
+      "page": 20
+    },
+    {
+      "title": "SL-FR-02 · The Perfect Shade",
+      "page": 21
+    },
+    {
+      "title": "SL-EN-01 · I’m Here",
+      "page": 22
+    },
+    {
+      "title": "SL-EN-02 · This Means So Much",
+      "page": 23
+    },
+    {
+      "title": "SL-TO-01 · Fresh Cut and a Best Friend",
+      "page": 24
+    },
+    {
+      "title": "SL-GW-01 · Spa Day On Me",
+      "page": 25
+    },
+    {
+      "title": "SL-BB-01 · Perfect Hair Already",
+      "page": 26
+    },
+    {
+      "title": "SL-SY-01 · Comfort and Care",
+      "page": 27
+    },
+    {
+      "title": "SL-MD-01 · Every Braid",
+      "page": 28
+    },
+    {
+      "title": "SL-WD-01 · Today, Forever Begins",
+      "page": 29
+    },
+    {
+      "title": "SL-XM-01 · Sparkle Like Fresh Polish",
+      "page": 30
+    },
+    {
+      "title": "SL-LV-01 · Happy Valentine’s Day",
+      "page": 31
+    },
+    {
+      "title": "SL-LV-02 · Sending You Love",
+      "page": 32
+    },
+    {
+      "title": "At a Glance",
       "page": 33
     },
     {
@@ -52,5 +152,33 @@
       "page": 36
     }
   ],
-  "back": false
+  "back": true,
+  "labels": {
+    "7": "SL-BD-04",
+    "8": "SL-BD-01",
+    "9": "SL-BD-05",
+    "10": "SL-BD-06",
+    "11": "SL-BD-02",
+    "12": "SL-BD-03",
+    "13": "SL-BD-08",
+    "14": "SL-BD-09",
+    "15": "SL-BD-07",
+    "16": "SL-TY-01",
+    "17": "SL-TY-02",
+    "18": "SL-TY-03",
+    "19": "SL-TY-04",
+    "20": "SL-FR-01",
+    "21": "SL-FR-02",
+    "22": "SL-EN-01",
+    "23": "SL-EN-02",
+    "24": "SL-TO-01",
+    "25": "SL-GW-01",
+    "26": "SL-BB-01",
+    "27": "SL-SY-01",
+    "28": "SL-MD-01",
+    "29": "SL-WD-01",
+    "30": "SL-XM-01",
+    "31": "SL-LV-01",
+    "32": "SL-LV-02"
+  }
 }

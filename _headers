@@ -104,3 +104,15 @@
   X-Robots-Tag: noindex, nofollow
 /autoparts/pages/*
   Cache-Control: public, max-age=31536000, immutable
+
+# Private Salon & Spa flipbook: direct link only, kept out of search engines.
+/salon
+  X-Robots-Tag: noindex, nofollow
+/salon/*
+  X-Robots-Tag: noindex, nofollow
+/Salon
+  X-Robots-Tag: noindex, nofollow
+/Salon/*
+  X-Robots-Tag: noindex, nofollow
+/salon/pages/*
+  Cache-Control: public, max-age=31536000, immutable
