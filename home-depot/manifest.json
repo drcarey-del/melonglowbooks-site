@@ -1,8 +1,8 @@
 {
-  "version": "202611171640-v2",
+  "version": "202611172115-v3",
   "updated": "Nov 17, 2026",
   "source": "The-New-Tradition-Home-Depot-Edition.pdf",
-  "pages": 66,
+  "pages": 78,
   "hires": 3000,
   "aspect": 0.77963,
   "pdf": "The-New-Tradition-Home-Depot-Edition.pdf",
@@ -20,12 +20,20 @@
       "page": 3
     },
     {
+      "title": "The Card Section",
+      "page": 4
+    },
+    {
       "title": "Where It Sells",
       "page": 5
     },
     {
       "title": "Room to Grow",
       "page": 6
+    },
+    {
+      "title": "The Resealable Sleeve",
+      "page": 7
     },
     {
       "title": "Store Economics",
@@ -44,36 +52,36 @@
       "page": 11
     },
     {
-      "title": "The Workshop",
+      "title": "The Workshop Eighteen",
       "page": 12
     },
     {
-      "title": "The Garden",
-      "page": 25
+      "title": "The Garden Eighteen",
+      "page": 31
     },
     {
       "title": "The Deep Bench",
-      "page": 38
+      "page": 50
     },
     {
       "title": "Tools & Garden",
-      "page": 51
-    },
-    {
-      "title": "All 144 Designs",
-      "page": 62
-    },
-    {
-      "title": "Pricing & Launch",
       "page": 63
     },
     {
+      "title": "All Designs",
+      "page": 74
+    },
+    {
+      "title": "Pricing & Launch",
+      "page": 75
+    },
+    {
       "title": "The Next Conversation",
-      "page": 64
+      "page": 76
     },
     {
       "title": "Back Cover",
-      "page": 66
+      "page": 78
     }
   ],
   "back": true
