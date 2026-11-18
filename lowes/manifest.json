@@ -1,8 +1,8 @@
 {
-  "version": "202611102100-final",
-  "updated": "Nov 10, 2026",
+  "version": "202611171640-v2",
+  "updated": "Nov 17, 2026",
   "source": "The-New-Tradition-Lowes-Edition.pdf",
-  "pages": 60,
+  "pages": 62,
   "hires": 3000,
   "aspect": 0.77963,
   "pdf": "The-New-Tradition-Lowes-Edition.pdf",
@@ -28,52 +28,60 @@
       "page": 6
     },
     {
+      "title": "Where It Sells",
+      "page": 8
+    },
+    {
+      "title": "Room to Grow",
+      "page": 9
+    },
+    {
       "title": "Store Economics",
-      "page": 11
-    },
-    {
-      "title": "The Launch Order",
-      "page": 12
-    },
-    {
-      "title": "The Garden Center",
       "page": 13
     },
     {
+      "title": "The Launch Order",
+      "page": 14
+    },
+    {
+      "title": "The Garden Center",
+      "page": 15
+    },
+    {
       "title": "The Checkout",
-      "page": 38
+      "page": 40
     },
     {
       "title": "The Deep Bench",
-      "page": 41
+      "page": 43
     },
     {
       "title": "The Painted Garden",
-      "page": 47
+      "page": 49
     },
     {
       "title": "Meet the Sentinel",
-      "page": 55
-    },
-    {
-      "title": "All 112 Designs",
-      "page": 56
-    },
-    {
-      "title": "Seasonal Calendar",
       "page": 57
     },
     {
-      "title": "Pricing & Rollout",
+      "title": "All 112 Designs",
       "page": 58
     },
     {
-      "title": "The Next Conversation",
+      "title": "Seasonal Calendar",
       "page": 59
     },
     {
-      "title": "Back Cover",
+      "title": "Pricing & Rollout",
       "page": 60
+    },
+    {
+      "title": "The Next Conversation",
+      "page": 61
+    },
+    {
+      "title": "Back Cover",
+      "page": 62
     }
   ],
   "back": true

@@ -1,8 +1,8 @@
 {
-  "version": "202611102100-final",
-  "updated": "Nov 10, 2026",
+  "version": "202611171640-v2",
+  "updated": "Nov 17, 2026",
   "source": "The-New-Tradition-Home-Depot-Edition.pdf",
-  "pages": 64,
+  "pages": 66,
   "hires": 3000,
   "aspect": 0.77963,
   "pdf": "The-New-Tradition-Home-Depot-Edition.pdf",
@@ -20,52 +20,60 @@
       "page": 3
     },
     {
-      "title": "Store Economics",
+      "title": "Where It Sells",
+      "page": 5
+    },
+    {
+      "title": "Room to Grow",
       "page": 6
     },
     {
-      "title": "Seasonal Calendar",
-      "page": 7
-    },
-    {
-      "title": "The Launch Order",
+      "title": "Store Economics",
       "page": 8
     },
     {
-      "title": "Meet the Sentinel",
+      "title": "Seasonal Calendar",
       "page": 9
     },
     {
-      "title": "The Workshop",
+      "title": "The Launch Order",
       "page": 10
     },
     {
+      "title": "Meet the Sentinel",
+      "page": 11
+    },
+    {
+      "title": "The Workshop",
+      "page": 12
+    },
+    {
       "title": "The Garden",
-      "page": 23
+      "page": 25
     },
     {
       "title": "The Deep Bench",
-      "page": 36
+      "page": 38
     },
     {
       "title": "Tools & Garden",
-      "page": 49
+      "page": 51
     },
     {
       "title": "All 144 Designs",
-      "page": 60
-    },
-    {
-      "title": "Pricing & Launch",
-      "page": 61
-    },
-    {
-      "title": "The Next Conversation",
       "page": 62
     },
     {
-      "title": "Back Cover",
+      "title": "Pricing & Launch",
+      "page": 63
+    },
+    {
+      "title": "The Next Conversation",
       "page": 64
+    },
+    {
+      "title": "Back Cover",
+      "page": 66
     }
   ],
   "back": true
