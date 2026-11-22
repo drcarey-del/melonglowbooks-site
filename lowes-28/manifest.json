@@ -1,0 +1,60 @@
+{
+  "version": "202611211630-v5",
+  "updated": "Nov 21, 2026",
+  "source": "The-New-Tradition-Lowes-Introduction.pdf",
+  "pages": 30,
+  "hires": 3000,
+  "aspect": 0.77963,
+  "pdf": "The-New-Tradition-Lowes-Introduction.pdf",
+  "chapters": [
+    {
+      "title": "Front Cover",
+      "page": 1
+    },
+    {
+      "title": "Opening Letter",
+      "page": 2
+    },
+    {
+      "title": "The Opportunity in Numbers",
+      "page": 3
+    },
+    {
+      "title": "Who Buys Greeting Cards",
+      "page": 4
+    },
+    {
+      "title": "The Gift and the Card",
+      "page": 5
+    },
+    {
+      "title": "Store Economics",
+      "page": 11
+    },
+    {
+      "title": "The Garden Center",
+      "page": 12
+    },
+    {
+      "title": "The Checkout",
+      "page": 22
+    },
+    {
+      "title": "The Deep Bench",
+      "page": 24
+    },
+    {
+      "title": "Pricing & Rollout",
+      "page": 28
+    },
+    {
+      "title": "The Next Conversation",
+      "page": 29
+    },
+    {
+      "title": "Back Cover",
+      "page": 30
+    }
+  ],
+  "back": true
+}

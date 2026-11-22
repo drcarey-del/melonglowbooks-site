@@ -1,11 +1,11 @@
 {
-  "version": "202611041622-b2943685",
-  "updated": "Nov 4, 2026",
-  "source": "TheNewTradition-AutoPartsHardware-REVIEW-RGB.pdf",
-  "pages": 34,
+  "version": "202611211630-v5",
+  "updated": "Nov 21, 2026",
+  "source": "The-New-Tradition-Auto-Parts-Edition.pdf",
+  "pages": 46,
   "hires": 3000,
-  "aspect": 0.77459,
-  "pdf": "The-New-Tradition-AutoParts-Lookbook.pdf",
+  "aspect": 0.77963,
+  "pdf": "The-New-Tradition-Auto-Parts-Edition.pdf",
   "chapters": [
     {
       "title": "Front Cover",
@@ -16,36 +16,64 @@
       "page": 2
     },
     {
-      "title": "The Retail Opportunity",
+      "title": "Store Economics",
       "page": 3
     },
     {
-      "title": "Start with a Pilot",
+      "title": "The Opportunity in Numbers",
       "page": 4
     },
     {
-      "title": "The Pilot 12 Designs",
+      "title": "The Retail Opportunity",
       "page": 5
     },
     {
+      "title": "The Card and the Gift Card",
+      "page": 6
+    },
+    {
+      "title": "The Counter Spinner",
+      "page": 7
+    },
+    {
+      "title": "The Launch Order",
+      "page": 8
+    },
+    {
+      "title": "The Launch 24",
+      "page": 9
+    },
+    {
       "title": "The Deep Bench",
-      "page": 17
+      "page": 34
     },
     {
-      "title": "The Full Collection",
-      "page": 31
+      "title": "Store-Use Collection",
+      "page": 39
     },
     {
-      "title": "Pricing & Pilot",
-      "page": 32
+      "title": "All 47 Designs",
+      "page": 40
+    },
+    {
+      "title": "Seasonal Calendar",
+      "page": 41
+    },
+    {
+      "title": "Pricing & Launch",
+      "page": 42
     },
     {
       "title": "The Next Conversation",
-      "page": 33
+      "page": 43
+    },
+    {
+      "title": "Your Launch Order",
+      "page": 45
     },
     {
       "title": "Back Cover",
-      "page": 34
+      "page": 46
     }
   ],
   "back": true

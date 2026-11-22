@@ -1,0 +1,76 @@
+{
+  "version": "202611211630-v5",
+  "updated": "Nov 21, 2026",
+  "source": "The-New-Tradition-Tractor-Supply-Edition.pdf",
+  "pages": 44,
+  "hires": 3000,
+  "aspect": 0.77844,
+  "pdf": "The-New-Tradition-Tractor-Supply-Edition.pdf",
+  "chapters": [
+    {
+      "title": "Front Cover",
+      "page": 1
+    },
+    {
+      "title": "Opening Letter",
+      "page": 2
+    },
+    {
+      "title": "Who Buys",
+      "page": 3
+    },
+    {
+      "title": "Store Economics",
+      "page": 4
+    },
+    {
+      "title": "The Counter Spinner",
+      "page": 5
+    },
+    {
+      "title": "The Card and the Gift Card",
+      "page": 6
+    },
+    {
+      "title": "The Launch Order",
+      "page": 7
+    },
+    {
+      "title": "The Launch 24",
+      "page": 8
+    },
+    {
+      "title": "Country Birthdays",
+      "page": 20
+    },
+    {
+      "title": "Garden, Pets and Family",
+      "page": 27
+    },
+    {
+      "title": "All 24 Designs",
+      "page": 34
+    },
+    {
+      "title": "Seasonal Calendar",
+      "page": 35
+    },
+    {
+      "title": "The Deep Bench",
+      "page": 36
+    },
+    {
+      "title": "Pricing & Launch",
+      "page": 42
+    },
+    {
+      "title": "Your Launch Order",
+      "page": 43
+    },
+    {
+      "title": "Back Cover",
+      "page": 44
+    }
+  ],
+  "back": true
+}
