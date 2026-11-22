@@ -1,6 +1,6 @@
 {
-  "version": "202611041130-dcf00c5e",
-  "updated": "Nov 4, 2026",
+  "version": "202611211630-v5",
+  "updated": "Nov 21, 2026",
   "source": "TheNewTradition-Mercedes-cover-RGB.pdf (front/back panels, spine trimmed) + TheNewTradition-Mercedes-interior-RGB.pdf pp.1-50",
   "pages": 54,
   "hires": 3000,
@@ -28,11 +28,11 @@
       "page": 6
     },
     {
-      "title": "The Pilot Offer",
+      "title": "The Launch Offer",
       "page": 8
     },
     {
-      "title": "The 12 Pilot Designs",
+      "title": "The 12 Launch Designs",
       "page": 9
     },
     {
@@ -44,15 +44,15 @@
       "page": 11
     },
     {
-      "title": "Section I \u00b7 The Pilot Collection",
+      "title": "Section I · The Launch Collection",
       "page": 12
     },
     {
-      "title": "Section II \u00b7 Delivery Day, Service & the Open Road",
+      "title": "Section II · Delivery Day, Service & the Open Road",
       "page": 26
     },
     {
-      "title": "Section III \u00b7 Celebrations, Pets & Holidays",
+      "title": "Section III · Celebrations, Pets & Holidays",
       "page": 35
     },
     {
@@ -64,7 +64,7 @@
       "page": 46
     },
     {
-      "title": "How the Pilot Works",
+      "title": "How the Launch Works",
       "page": 47
     },
     {
@@ -76,7 +76,7 @@
       "page": 50
     },
     {
-      "title": "Let\u2019s Talk",
+      "title": "Let’s Talk",
       "page": 51
     },
     {
